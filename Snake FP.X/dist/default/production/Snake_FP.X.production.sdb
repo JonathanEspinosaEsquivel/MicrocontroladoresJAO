@@ -1,0 +1,181 @@
+[p LITE_MODE AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F18877 ]
+[d frameptr 6 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\rand.c
+[v _rand rand `(i  1 e 2 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"20 C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+[v _main main `(v  1 e 1 0 ]
+"390 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f18877.h
+[v _PORTA PORTA `VEuc  1 e 1 @12 ]
+[s S60 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+"407
+[u S69 . 1 `S60 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES69  1 e 1 @12 ]
+"514
+[v _PORTC PORTC `VEuc  1 e 1 @14 ]
+"576
+[v _PORTD PORTD `VEuc  1 e 1 @15 ]
+"676
+[v _TRISA TRISA `VEuc  1 e 1 @17 ]
+"800
+[v _TRISC TRISC `VEuc  1 e 1 @19 ]
+"862
+[v _TRISD TRISD `VEuc  1 e 1 @20 ]
+"1080
+[v _LATC LATC `VEuc  1 e 1 @24 ]
+"1142
+[v _LATD LATD `VEuc  1 e 1 @25 ]
+[s S22 . 1 `uc 1 HFFRQ 1 0 :3:0 
+]
+"23928
+[s S24 . 1 `uc 1 HFFRQ0 1 0 :1:0 
+`uc 1 HFFRQ1 1 0 :1:1 
+`uc 1 HFFRQ2 1 0 :1:2 
+]
+[u S28 . 1 `S22 1 . 1 0 `S24 1 . 1 0 ]
+[v _OSCFRQbits OSCFRQbits `VES28  1 e 1 @2195 ]
+"33618
+[v _ANSELA ANSELA `VEuc  1 e 1 @7992 ]
+"33680
+[v _WPUA WPUA `VEuc  1 e 1 @7993 ]
+"34858
+[v _ANSELC ANSELC `VEuc  1 e 1 @8014 ]
+"35478
+[v _ANSELD ANSELD `VEuc  1 e 1 @8025 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\rand.c
+[v _seed seed `ul  1 s 4 seed ]
+"20 C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+[v _main main `(v  1 e 1 0 ]
+{
+"73
+[v main@cabeza cabeza `[8][8]uc  1 a 64 15 ]
+"39
+[v main@CportC CportC `[8]uc  1 a 8 28 ]
+"40
+[v main@fportd fportd `[8]uc  1 a 8 16 ]
+"42
+[v main@bolitaf bolitaf `[8]uc  1 a 8 8 ]
+"41
+[v main@bolitac bolitac `[8]uc  1 a 8 0 ]
+"44
+[v main@bolita2f bolita2f `[8]uc  1 a 8 60 ]
+"43
+[v main@bolita2c bolita2c `[8]uc  1 a 8 52 ]
+"54
+[v main@filaMsj filaMsj `[8]uc  1 a 8 44 ]
+"53
+[v main@columnaMsj columnaMsj `[8]uc  1 a 8 36 ]
+"46
+[v main@bolita3f bolita3f `[8]uc  1 a 8 26 ]
+"45
+[v main@bolita3c bolita3c `[8]uc  1 a 8 18 ]
+"48
+[v main@comidaf1 comidaf1 `[8]uc  1 a 8 10 ]
+"47
+[v main@comidac comidac `[8]uc  1 a 8 2 ]
+"114
+[v main@comidaf comidaf `i  1 a 2 48 ]
+"51
+[v main@c c `i  1 a 2 46 ]
+"52
+[v main@f f `i  1 a 2 44 ]
+"121
+[v main@i i `i  1 a 2 42 ]
+"122
+[v main@x x `i  1 a 2 40 ]
+"35
+[v main@valor valor `i  1 a 2 38 ]
+"119
+[v main@boton boton `i  1 a 2 36 ]
+"38
+[v main@caso3 caso3 `i  1 a 2 26 ]
+"36
+[v main@caso2 caso2 `i  1 a 2 24 ]
+"75
+[v main@velocidad velocidad `i  1 a 2 74 ]
+"124
+[v main@j j `i  1 a 2 72 ]
+"120
+[v main@contador contador `i  1 a 2 70 ]
+"123
+[v main@y y `i  1 a 2 68 ]
+"134
+[v main@valor2 valor2 `i  1 a 2 34 ]
+"125
+[v main@a a `i  1 a 2 0 ]
+"130
+[v main@aaaa aaaa `uc  1 a 1 76 ]
+"38
+[v main@F12621 F12621 `[8]uc  1 s 8 F12621 ]
+"39
+[v main@F12623 F12623 `[8]uc  1 s 8 F12623 ]
+"40
+[v main@F12625 F12625 `[8]uc  1 s 8 F12625 ]
+"41
+[v main@F12627 F12627 `[8]uc  1 s 8 F12627 ]
+"42
+[v main@F12629 F12629 `[8]uc  1 s 8 F12629 ]
+"43
+[v main@F12631 F12631 `[8]uc  1 s 8 F12631 ]
+"44
+[v main@F12633 F12633 `[8]uc  1 s 8 F12633 ]
+"45
+[v main@F12635 F12635 `[8]uc  1 s 8 F12635 ]
+"46
+[v main@F12637 F12637 `[8]uc  1 s 8 F12637 ]
+"47
+[v main@F12639 F12639 `[8]uc  1 s 8 F12639 ]
+"52
+[v main@F12643 F12643 `[8]uc  1 s 8 F12643 ]
+"53
+[v main@F12645 F12645 `[8]uc  1 s 8 F12645 ]
+"1047
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\rand.c
+[v _rand rand `(i  1 e 2 0 ]
+{
+"27
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+{
+"17
+[v ___lmul@product product `ul  1 a 4 8 ]
+"15
+[v ___lmul@multiplier multiplier `ul  1 p 4 0 ]
+[v ___lmul@multiplicand multiplicand `ul  1 p 4 4 ]
+"129
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 10 ]
+[v ___awmod@counter counter `uc  1 a 1 9 ]
+"5
+[v ___awmod@divisor divisor `i  1 p 2 4 ]
+[v ___awmod@dividend dividend `i  1 p 2 6 ]
+"34
+} 0

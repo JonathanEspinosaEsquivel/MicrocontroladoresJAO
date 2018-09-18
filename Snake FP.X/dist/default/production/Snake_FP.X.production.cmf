@@ -1,0 +1,1693 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\Travelur\AppData\Local\Temp\s41c.o
+reset_vec CODE 0 0 0 2 2
+end_init CODE 0 2 2 2 2
+config CONFIG 0 8007 8007 5 2
+$dist/default/production\Snake_FP.X.production.o
+cinit CODE 0 7D5 7D5 2B 2
+text1 CODE 0 12A5 12A5 3D 2
+text2 CODE 0 126E 126E 37 2
+text3 CODE 0 1D 1D 5E 2
+maintext CODE 0 E5C E5C 1A4 2
+cstackCOMMON COMMON 1 70 70 E 1
+cstackBANK0 BANK0 1 20 20 4F 1
+cstackBANK1 BANK1 1 A0 A0 4D 1
+cstackBANK2 BANK2 1 120 120 32 1
+inittext CODE 0 7 7 6 2
+bssBANK2 BANK2 1 162 162 C 1
+bssBANK3 BANK3 1 1C8 1C8 20 1
+idataBANK2 CODE 0 D D 10 2
+idataBANK3 CODE 0 805 805 28 2
+maintext_split_10 CODE 0 82D 82D 112 2
+maintext_split_11 CODE 0 7B 7B 75A 2
+dataBANK2 BANK2 1 152 152 10 1
+dataBANK3 BANK3 1 1A0 1A0 28 1
+clrtext CODE 0 1268 1268 6 2
+maintext_split_1 CODE 0 15F0 15F0 107 2
+maintext_split_2 CODE 0 14E9 14E9 107 2
+maintext_split_3 CODE 0 A55 A55 145 2
+maintext_split_4 CODE 0 CE0 CE0 17C 2
+maintext_split_5 CODE 0 B9A B9A 146 2
+maintext_split_6 CODE 0 12E2 12E2 103 2
+maintext_split_7 CODE 0 93F 93F 116 2
+maintext_split_8 CODE 0 13E5 13E5 104 2
+maintext_split_9 CODE 0 16F7 16F7 109 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 6F-6F 1
+RAM ED-EF 1
+RAM 16E-16F 1
+RAM 1E8-1EF 1
+RAM 220-26F 1
+RAM 2A0-2EF 1
+RAM 320-36F 1
+RAM 3A0-3EF 1
+RAM 420-46F 1
+RAM 4A0-4EF 1
+RAM 520-56F 1
+RAM 5A0-5EF 1
+RAM 620-66F 1
+RAM 6A0-6EF 1
+RAM 720-76F 1
+RAM 7A0-7EF 1
+RAM 820-86F 1
+RAM 8A0-8EF 1
+RAM 920-96F 1
+RAM 9A0-9EF 1
+RAM A20-A6F 1
+RAM AA0-AEF 1
+RAM B20-B6F 1
+RAM BA0-BEF 1
+RAM C20-C6F 1
+RAM CA0-CEF 1
+RAM D20-D6F 1
+RAM DA0-DEF 1
+RAM E20-E6F 1
+RAM EA0-EEF 1
+RAM F20-F6F 1
+RAM FA0-FEF 1
+RAM 1020-106F 1
+RAM 10A0-10EF 1
+RAM 1120-116F 1
+RAM 11A0-11EF 1
+RAM 1220-126F 1
+RAM 12A0-12EF 1
+RAM 1320-136F 1
+RAM 13A0-13EF 1
+RAM 1420-146F 1
+RAM 14A0-14EF 1
+RAM 1520-156F 1
+RAM 15A0-15EF 1
+RAM 1620-166F 1
+RAM 16A0-16EF 1
+RAM 1720-176F 1
+RAM 17A0-17EF 1
+RAM 1820-186F 1
+RAM 18A0-18EF 1
+RAM 1920-196F 1
+BANK0 6F-6F 1
+BANK1 ED-EF 1
+BANK2 16E-16F 1
+BANK3 1E8-1EF 1
+BANK4 220-26F 1
+BANK5 2A0-2EF 1
+BANK6 320-36F 1
+BANK7 3A0-3EF 1
+BANK8 420-46F 1
+BANK9 4A0-4EF 1
+CONST 4-6 2
+CONST 800-804 2
+CONST 1000-1267 2
+CONST 1800-7FFF 2
+ENTRY 4-6 2
+ENTRY 800-804 2
+ENTRY 1000-1267 2
+ENTRY 1800-7FFF 2
+IDLOC 8000-8003 2
+SFR10 500-51F 1
+SFR11 580-59F 1
+SFR12 600-61F 1
+SFR13 680-69F 1
+SFR14 700-71F 1
+SFR15 780-79F 1
+SFR16 800-81F 1
+SFR17 880-89F 1
+SFR18 900-91F 1
+SFR19 980-99F 1
+SFR20 A00-A1F 1
+SFR21 A80-A9F 1
+SFR22 B00-B1F 1
+SFR23 B80-B9F 1
+SFR24 C00-C1F 1
+SFR25 C80-C9F 1
+SFR26 D00-D1F 1
+SFR27 D80-D9F 1
+SFR28 E00-E1F 1
+SFR29 E80-E9F 1
+SFR30 F00-F1F 1
+SFR31 F80-F9F 1
+SFR32 1000-101F 1
+SFR33 1080-109F 1
+SFR34 1100-111F 1
+SFR35 1180-119F 1
+SFR36 1200-121F 1
+SFR37 1280-129F 1
+SFR38 1300-131F 1
+SFR39 1380-139F 1
+SFR40 1400-141F 1
+SFR41 1480-149F 1
+SFR42 1500-151F 1
+SFR43 1580-159F 1
+SFR44 1600-161F 1
+SFR45 1680-169F 1
+SFR46 1700-171F 1
+SFR47 1780-179F 1
+SFR48 1800-181F 1
+SFR49 1880-189F 1
+SFR50 1900-191F 1
+SFR51 1980-19EF 1
+SFR52 1A00-1A6F 1
+SFR53 1A80-1AEF 1
+SFR54 1B00-1B6F 1
+SFR55 1B80-1BEF 1
+SFR56 1C00-1C6F 1
+SFR57 1C80-1CEF 1
+SFR58 1D00-1D6F 1
+SFR59 1D80-1DEF 1
+SFR60 1E00-1E6F 1
+SFR61 1E80-1EEF 1
+SFR62 1F00-1F6F 1
+SFR63 1F80-1FEF 1
+STACK 2138-2FEF 1
+CODE 4-6 2
+CODE 800-804 2
+CODE 1000-1267 2
+CODE 1800-7FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-11F 1
+SFR3 180-19F 1
+SFR4 200-21F 1
+SFR5 280-29F 1
+SFR6 300-31F 1
+SFR7 380-39F 1
+SFR8 400-41F 1
+SFR9 480-49F 1
+BANK10 520-56F 1
+BANK11 5A0-5EF 1
+BANK12 620-66F 1
+BANK13 6A0-6EF 1
+BANK14 720-76F 1
+BANK15 7A0-7EF 1
+BANK16 820-86F 1
+BANK17 8A0-8EF 1
+BANK18 920-96F 1
+BANK19 9A0-9EF 1
+BANK20 A20-A6F 1
+BANK21 AA0-AEF 1
+BANK22 B20-B6F 1
+BANK23 BA0-BEF 1
+BANK24 C20-C6F 1
+BANK25 CA0-CEF 1
+BANK26 D20-D6F 1
+BANK27 DA0-DEF 1
+BANK28 E20-E6F 1
+BANK29 EA0-EEF 1
+BANK30 F20-F6F 1
+BANK31 FA0-FEF 1
+BANK32 1020-106F 1
+BANK33 10A0-10EF 1
+BANK34 1120-116F 1
+BANK35 11A0-11EF 1
+BANK36 1220-126F 1
+BANK37 12A0-12EF 1
+BANK38 1320-136F 1
+BANK39 13A0-13EF 1
+BANK40 1420-146F 1
+BANK41 14A0-14EF 1
+BANK42 1520-156F 1
+BANK43 15A0-15EF 1
+BANK44 1620-166F 1
+BANK45 16A0-16EF 1
+BANK46 1720-176F 1
+BANK47 17A0-17EF 1
+BANK48 1820-186F 1
+BANK49 18A0-18EF 1
+BANK50 1920-196F 1
+BIGRAM 2000-2FEF 1
+EEDATA F000-F0FF 2
+STRCODE 4-6 2
+STRCODE 800-804 2
+STRCODE 1000-1267 2
+STRCODE 1800-7FFF 2
+STRING 4-6 2
+STRING 800-804 2
+STRING 1000-1267 2
+STRING 1800-7FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\Snake_FP.X.production.o
+7D5 cinit CODE >2452:C:\Users\Travelur\AppData\Local\Temp\s41c.
+7D5 cinit CODE >2455:C:\Users\Travelur\AppData\Local\Temp\s41c.
+7D5 cinit CODE >2541:C:\Users\Travelur\AppData\Local\Temp\s41c.
+7D6 cinit CODE >2542:C:\Users\Travelur\AppData\Local\Temp\s41c.
+7D7 cinit CODE >2543:C:\Users\Travelur\AppData\Local\Temp\s41c.
+7D8 cinit CODE >2544:C:\Users\Travelur\AppData\Local\Temp\s41c.
+7D9 cinit CODE >2545:C:\Users\Travelur\AppData\Local\Temp\s41c.
+7DA cinit CODE >2546:C:\Users\Travelur\AppData\Local\Temp\s41c.
+7DB cinit CODE >2547:C:\Users\Travelur\AppData\Local\Temp\s41c.
+7DC cinit CODE >2548:C:\Users\Travelur\AppData\Local\Temp\s41c.
+7DD cinit CODE >2549:C:\Users\Travelur\AppData\Local\Temp\s41c.
+7DE cinit CODE >2550:C:\Users\Travelur\AppData\Local\Temp\s41c.
+7E1 cinit CODE >2554:C:\Users\Travelur\AppData\Local\Temp\s41c.
+7E2 cinit CODE >2555:C:\Users\Travelur\AppData\Local\Temp\s41c.
+7E3 cinit CODE >2556:C:\Users\Travelur\AppData\Local\Temp\s41c.
+7E4 cinit CODE >2557:C:\Users\Travelur\AppData\Local\Temp\s41c.
+7E5 cinit CODE >2558:C:\Users\Travelur\AppData\Local\Temp\s41c.
+7E6 cinit CODE >2559:C:\Users\Travelur\AppData\Local\Temp\s41c.
+7E7 cinit CODE >2560:C:\Users\Travelur\AppData\Local\Temp\s41c.
+7E8 cinit CODE >2561:C:\Users\Travelur\AppData\Local\Temp\s41c.
+7E9 cinit CODE >2562:C:\Users\Travelur\AppData\Local\Temp\s41c.
+7EA cinit CODE >2563:C:\Users\Travelur\AppData\Local\Temp\s41c.
+7ED cinit CODE >2580:C:\Users\Travelur\AppData\Local\Temp\s41c.
+7EE cinit CODE >2581:C:\Users\Travelur\AppData\Local\Temp\s41c.
+7EF cinit CODE >2582:C:\Users\Travelur\AppData\Local\Temp\s41c.
+7F0 cinit CODE >2583:C:\Users\Travelur\AppData\Local\Temp\s41c.
+7F1 cinit CODE >2584:C:\Users\Travelur\AppData\Local\Temp\s41c.
+7F2 cinit CODE >2585:C:\Users\Travelur\AppData\Local\Temp\s41c.
+7F5 cinit CODE >2589:C:\Users\Travelur\AppData\Local\Temp\s41c.
+7F6 cinit CODE >2590:C:\Users\Travelur\AppData\Local\Temp\s41c.
+7F7 cinit CODE >2591:C:\Users\Travelur\AppData\Local\Temp\s41c.
+7F8 cinit CODE >2592:C:\Users\Travelur\AppData\Local\Temp\s41c.
+7F9 cinit CODE >2593:C:\Users\Travelur\AppData\Local\Temp\s41c.
+7FA cinit CODE >2594:C:\Users\Travelur\AppData\Local\Temp\s41c.
+7FD cinit CODE >2600:C:\Users\Travelur\AppData\Local\Temp\s41c.
+7FD cinit CODE >2602:C:\Users\Travelur\AppData\Local\Temp\s41c.
+7FE cinit CODE >2603:C:\Users\Travelur\AppData\Local\Temp\s41c.
+7B maintext_split_11 CODE >699:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+7B maintext_split_11 CODE >700:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+83 maintext_split_11 CODE >701:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+87 maintext_split_11 CODE >702:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+97 maintext_split_11 CODE >703:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+A8 maintext_split_11 CODE >704:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+B1 maintext_split_11 CODE >705:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+B1 maintext_split_11 CODE >706:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+B9 maintext_split_11 CODE >707:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+BD maintext_split_11 CODE >708:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+CD maintext_split_11 CODE >709:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+DE maintext_split_11 CODE >710:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+E7 maintext_split_11 CODE >711:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+E7 maintext_split_11 CODE >712:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+EF maintext_split_11 CODE >713:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+F3 maintext_split_11 CODE >714:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+103 maintext_split_11 CODE >715:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+114 maintext_split_11 CODE >716:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+11D maintext_split_11 CODE >718:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+11D maintext_split_11 CODE >736:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+12A maintext_split_11 CODE >738:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+12F maintext_split_11 CODE >739:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+12F maintext_split_11 CODE >741:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+13C maintext_split_11 CODE >743:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+141 maintext_split_11 CODE >744:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+141 maintext_split_11 CODE >746:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+14E maintext_split_11 CODE >748:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+153 maintext_split_11 CODE >749:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+153 maintext_split_11 CODE >751:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+15F maintext_split_11 CODE >753:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+164 maintext_split_11 CODE >754:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+164 maintext_split_11 CODE >756:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+178 maintext_split_11 CODE >757:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+18C maintext_split_11 CODE >758:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+198 maintext_split_11 CODE >759:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+19F maintext_split_11 CODE >761:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1B3 maintext_split_11 CODE >762:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1C8 maintext_split_11 CODE >767:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1C9 maintext_split_11 CODE >768:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1C9 maintext_split_11 CODE >770:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1CE maintext_split_11 CODE >772:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1D4 maintext_split_11 CODE >774:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1E6 maintext_split_11 CODE >775:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1FA maintext_split_11 CODE >777:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+202 maintext_split_11 CODE >778:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+208 maintext_split_11 CODE >781:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+219 maintext_split_11 CODE >799:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+229 maintext_split_11 CODE >800:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+22C maintext_split_11 CODE >801:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+230 maintext_split_11 CODE >802:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+230 maintext_split_11 CODE >804:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+231 maintext_split_11 CODE >805:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+231 maintext_split_11 CODE >807:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+236 maintext_split_11 CODE >809:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+23C maintext_split_11 CODE >811:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+248 maintext_split_11 CODE >812:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+254 maintext_split_11 CODE >813:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+268 maintext_split_11 CODE >814:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+274 maintext_split_11 CODE >815:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+27B maintext_split_11 CODE >816:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+28C maintext_split_11 CODE >818:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+28D maintext_split_11 CODE >819:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+28D maintext_split_11 CODE >820:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+29A maintext_split_11 CODE >821:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+2A6 maintext_split_11 CODE >822:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+2BA maintext_split_11 CODE >823:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+2C6 maintext_split_11 CODE >824:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+2CD maintext_split_11 CODE >825:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+2DE maintext_split_11 CODE >827:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+2DF maintext_split_11 CODE >828:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+2DF maintext_split_11 CODE >829:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+2EC maintext_split_11 CODE >830:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+2F8 maintext_split_11 CODE >831:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+30C maintext_split_11 CODE >832:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+318 maintext_split_11 CODE >833:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+31F maintext_split_11 CODE >834:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+330 maintext_split_11 CODE >836:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+331 maintext_split_11 CODE >837:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+331 maintext_split_11 CODE >838:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+33E maintext_split_11 CODE >839:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+34A maintext_split_11 CODE >840:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+35E maintext_split_11 CODE >841:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+36A maintext_split_11 CODE >842:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+371 maintext_split_11 CODE >843:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+382 maintext_split_11 CODE >846:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+383 maintext_split_11 CODE >847:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+383 maintext_split_11 CODE >848:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+390 maintext_split_11 CODE >849:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+39C maintext_split_11 CODE >850:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+3B0 maintext_split_11 CODE >851:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+3BC maintext_split_11 CODE >852:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+3C3 maintext_split_11 CODE >854:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+3D4 maintext_split_11 CODE >856:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+3D5 maintext_split_11 CODE >857:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+3D5 maintext_split_11 CODE >858:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+3E2 maintext_split_11 CODE >859:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+3EE maintext_split_11 CODE >860:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+402 maintext_split_11 CODE >861:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+40E maintext_split_11 CODE >862:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+415 maintext_split_11 CODE >863:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+426 maintext_split_11 CODE >865:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+427 maintext_split_11 CODE >866:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+427 maintext_split_11 CODE >867:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+434 maintext_split_11 CODE >868:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+440 maintext_split_11 CODE >869:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+454 maintext_split_11 CODE >870:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+460 maintext_split_11 CODE >871:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+467 maintext_split_11 CODE >872:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+478 maintext_split_11 CODE >874:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+479 maintext_split_11 CODE >875:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+479 maintext_split_11 CODE >876:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+486 maintext_split_11 CODE >878:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+48A maintext_split_11 CODE >879:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+48A maintext_split_11 CODE >880:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+48B maintext_split_11 CODE >881:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+48B maintext_split_11 CODE >884:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+490 maintext_split_11 CODE >885:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+496 maintext_split_11 CODE >887:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+4A2 maintext_split_11 CODE >888:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+4AE maintext_split_11 CODE >889:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+4C2 maintext_split_11 CODE >890:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+4CE maintext_split_11 CODE >891:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+4D5 maintext_split_11 CODE >892:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+4E6 maintext_split_11 CODE >894:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+4E7 maintext_split_11 CODE >895:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+4E7 maintext_split_11 CODE >897:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+4F4 maintext_split_11 CODE >898:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+500 maintext_split_11 CODE >899:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+514 maintext_split_11 CODE >900:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+520 maintext_split_11 CODE >901:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+527 maintext_split_11 CODE >902:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+538 maintext_split_11 CODE >905:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+539 maintext_split_11 CODE >906:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+539 maintext_split_11 CODE >907:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+546 maintext_split_11 CODE >908:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+552 maintext_split_11 CODE >909:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+566 maintext_split_11 CODE >910:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+572 maintext_split_11 CODE >911:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+579 maintext_split_11 CODE >912:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+58A maintext_split_11 CODE >914:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+58B maintext_split_11 CODE >915:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+58B maintext_split_11 CODE >916:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+598 maintext_split_11 CODE >917:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+5A4 maintext_split_11 CODE >918:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+5B8 maintext_split_11 CODE >919:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+5C4 maintext_split_11 CODE >920:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+5CB maintext_split_11 CODE >921:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+5DC maintext_split_11 CODE >924:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+5DD maintext_split_11 CODE >925:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+5DD maintext_split_11 CODE >928:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+5EA maintext_split_11 CODE >929:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+5F6 maintext_split_11 CODE >930:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+60A maintext_split_11 CODE >931:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+616 maintext_split_11 CODE >932:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+61D maintext_split_11 CODE >933:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+62E maintext_split_11 CODE >936:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+62F maintext_split_11 CODE >937:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+62F maintext_split_11 CODE >938:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+63C maintext_split_11 CODE >939:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+648 maintext_split_11 CODE >940:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+65C maintext_split_11 CODE >941:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+668 maintext_split_11 CODE >942:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+66F maintext_split_11 CODE >943:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+680 maintext_split_11 CODE >946:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+681 maintext_split_11 CODE >947:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+681 maintext_split_11 CODE >948:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+68E maintext_split_11 CODE >949:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+69A maintext_split_11 CODE >950:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+6AE maintext_split_11 CODE >951:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+6BA maintext_split_11 CODE >952:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+6C1 maintext_split_11 CODE >953:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+6D2 maintext_split_11 CODE >956:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+6D3 maintext_split_11 CODE >957:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+6D3 maintext_split_11 CODE >960:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+6E0 maintext_split_11 CODE >962:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+6E4 maintext_split_11 CODE >963:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+6E4 maintext_split_11 CODE >964:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+6E5 maintext_split_11 CODE >967:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+6E6 maintext_split_11 CODE >969:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+6E6 maintext_split_11 CODE >971:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+6EB maintext_split_11 CODE >972:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+6F1 maintext_split_11 CODE >974:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+703 maintext_split_11 CODE >975:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+717 maintext_split_11 CODE >977:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+71F maintext_split_11 CODE >979:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+730 maintext_split_11 CODE >981:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+735 maintext_split_11 CODE >982:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+739 maintext_split_11 CODE >983:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+739 maintext_split_11 CODE >984:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+740 maintext_split_11 CODE >985:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+741 maintext_split_11 CODE >988:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+757 maintext_split_11 CODE >348:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+757 maintext_split_11 CODE >1023:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+760 maintext_split_11 CODE >1036:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+773 maintext_split_11 CODE >1037:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+787 maintext_split_11 CODE >1039:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+78F maintext_split_11 CODE >1040:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+797 maintext_split_11 CODE >1041:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+7A0 maintext_split_11 CODE >1043:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+7B5 maintext_split_11 CODE >1044:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+7BE maintext_split_11 CODE >1045:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+7D3 maintext_split_11 CODE >1047:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+82D maintext_split_10 CODE >665:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+82D maintext_split_10 CODE >666:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+834 maintext_split_10 CODE >667:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+844 maintext_split_10 CODE >668:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+855 maintext_split_10 CODE >669:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+855 maintext_split_10 CODE >670:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+85D maintext_split_10 CODE >672:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+86D maintext_split_10 CODE >673:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+87E maintext_split_10 CODE >674:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+87E maintext_split_10 CODE >675:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+886 maintext_split_10 CODE >676:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+896 maintext_split_10 CODE >677:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+8A7 maintext_split_10 CODE >678:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+8A7 maintext_split_10 CODE >683:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+8BB maintext_split_10 CODE >684:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+8CF maintext_split_10 CODE >685:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+8DA maintext_split_10 CODE >686:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+8E0 maintext_split_10 CODE >687:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+8F4 maintext_split_10 CODE >688:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+909 maintext_split_10 CODE >694:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+911 maintext_split_10 CODE >695:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+915 maintext_split_10 CODE >696:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+925 maintext_split_10 CODE >697:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+936 maintext_split_10 CODE >698:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+16F7 maintext_split_9 CODE >614:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+16FE maintext_split_9 CODE >615:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+16FE maintext_split_9 CODE >616:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1706 maintext_split_9 CODE >617:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+170D maintext_split_9 CODE >618:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+170D maintext_split_9 CODE >619:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1715 maintext_split_9 CODE >620:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+171C maintext_split_9 CODE >621:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+171C maintext_split_9 CODE >622:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1724 maintext_split_9 CODE >623:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+172B maintext_split_9 CODE >624:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+172B maintext_split_9 CODE >625:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1733 maintext_split_9 CODE >626:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+173A maintext_split_9 CODE >627:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+173A maintext_split_9 CODE >628:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1742 maintext_split_9 CODE >629:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1749 maintext_split_9 CODE >630:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1749 maintext_split_9 CODE >631:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1751 maintext_split_9 CODE >632:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1758 maintext_split_9 CODE >633:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1758 maintext_split_9 CODE >634:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+175F maintext_split_9 CODE >635:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1766 maintext_split_9 CODE >636:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1767 maintext_split_9 CODE >637:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1767 maintext_split_9 CODE >640:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1774 maintext_split_9 CODE >642:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1774 maintext_split_9 CODE >655:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1788 maintext_split_9 CODE >656:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+179C maintext_split_9 CODE >657:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+17A7 maintext_split_9 CODE >658:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+17AD maintext_split_9 CODE >659:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+17C1 maintext_split_9 CODE >660:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+17D6 maintext_split_9 CODE >662:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+17DF maintext_split_9 CODE >663:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+17EF maintext_split_9 CODE >664:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+13E5 maintext_split_8 CODE >561:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+13EC maintext_split_8 CODE >562:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+13F3 maintext_split_8 CODE >563:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+13F3 maintext_split_8 CODE >564:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+13FA maintext_split_8 CODE >565:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1401 maintext_split_8 CODE >566:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1401 maintext_split_8 CODE >567:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1408 maintext_split_8 CODE >568:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+140F maintext_split_8 CODE >569:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+140F maintext_split_8 CODE >570:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1417 maintext_split_8 CODE >571:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+141E maintext_split_8 CODE >572:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+141E maintext_split_8 CODE >573:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1426 maintext_split_8 CODE >574:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+142D maintext_split_8 CODE >575:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+142D maintext_split_8 CODE >576:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1435 maintext_split_8 CODE >577:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+143C maintext_split_8 CODE >578:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+143C maintext_split_8 CODE >579:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1444 maintext_split_8 CODE >580:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+144B maintext_split_8 CODE >581:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+144B maintext_split_8 CODE >582:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1453 maintext_split_8 CODE >583:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+145A maintext_split_8 CODE >584:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+145B maintext_split_8 CODE >585:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+145B maintext_split_8 CODE >586:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1463 maintext_split_8 CODE >587:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1469 maintext_split_8 CODE >588:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1470 maintext_split_8 CODE >589:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1470 maintext_split_8 CODE >590:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1477 maintext_split_8 CODE >591:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+147E maintext_split_8 CODE >592:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+147E maintext_split_8 CODE >593:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1485 maintext_split_8 CODE >594:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+148C maintext_split_8 CODE >595:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+148C maintext_split_8 CODE >596:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1494 maintext_split_8 CODE >597:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+149B maintext_split_8 CODE >598:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+149B maintext_split_8 CODE >599:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+14A3 maintext_split_8 CODE >600:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+14AA maintext_split_8 CODE >601:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+14AA maintext_split_8 CODE >602:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+14B2 maintext_split_8 CODE >603:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+14B9 maintext_split_8 CODE >604:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+14B9 maintext_split_8 CODE >605:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+14C1 maintext_split_8 CODE >606:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+14C8 maintext_split_8 CODE >607:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+14C8 maintext_split_8 CODE >608:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+14D0 maintext_split_8 CODE >609:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+14D7 maintext_split_8 CODE >610:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+14D8 maintext_split_8 CODE >611:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+14D8 maintext_split_8 CODE >612:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+14E1 maintext_split_8 CODE >613:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+93F maintext_split_7 CODE >503:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+93F maintext_split_7 CODE >504:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+947 maintext_split_7 CODE >505:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+94E maintext_split_7 CODE >506:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+94F maintext_split_7 CODE >507:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+94F maintext_split_7 CODE >508:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+957 maintext_split_7 CODE >509:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+95E maintext_split_7 CODE >510:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+965 maintext_split_7 CODE >511:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+965 maintext_split_7 CODE >512:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+96D maintext_split_7 CODE >513:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+974 maintext_split_7 CODE >514:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+974 maintext_split_7 CODE >515:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+97C maintext_split_7 CODE >516:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+983 maintext_split_7 CODE >517:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+983 maintext_split_7 CODE >518:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+98A maintext_split_7 CODE >519:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+991 maintext_split_7 CODE >520:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+991 maintext_split_7 CODE >521:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+998 maintext_split_7 CODE >522:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+99F maintext_split_7 CODE >523:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+99F maintext_split_7 CODE >524:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+9A7 maintext_split_7 CODE >525:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+9AE maintext_split_7 CODE >526:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+9AE maintext_split_7 CODE >527:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+9B6 maintext_split_7 CODE >528:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+9BD maintext_split_7 CODE >529:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+9BD maintext_split_7 CODE >530:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+9C5 maintext_split_7 CODE >531:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+9CC maintext_split_7 CODE >532:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+9CD maintext_split_7 CODE >533:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+9CD maintext_split_7 CODE >534:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+9D5 maintext_split_7 CODE >535:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+9DC maintext_split_7 CODE >536:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+9E3 maintext_split_7 CODE >537:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+9E3 maintext_split_7 CODE >538:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+9EB maintext_split_7 CODE >539:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+9F2 maintext_split_7 CODE >540:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+9F2 maintext_split_7 CODE >541:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+9F9 maintext_split_7 CODE >542:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+A00 maintext_split_7 CODE >543:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+A00 maintext_split_7 CODE >544:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+A07 maintext_split_7 CODE >545:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+A0E maintext_split_7 CODE >546:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+A0E maintext_split_7 CODE >547:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+A16 maintext_split_7 CODE >548:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+A1D maintext_split_7 CODE >549:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+A1D maintext_split_7 CODE >550:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+A25 maintext_split_7 CODE >551:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+A2C maintext_split_7 CODE >552:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+A2C maintext_split_7 CODE >553:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+A34 maintext_split_7 CODE >554:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+A3B maintext_split_7 CODE >555:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+A3B maintext_split_7 CODE >556:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+A43 maintext_split_7 CODE >557:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+A4A maintext_split_7 CODE >558:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+A4B maintext_split_7 CODE >559:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+A4B maintext_split_7 CODE >560:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+12E2 maintext_split_6 CODE >450:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+12E9 maintext_split_6 CODE >451:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+12E9 maintext_split_6 CODE >452:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+12F0 maintext_split_6 CODE >453:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+12F7 maintext_split_6 CODE >454:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+12F8 maintext_split_6 CODE >455:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+12F8 maintext_split_6 CODE >456:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+12FF maintext_split_6 CODE >457:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1306 maintext_split_6 CODE >458:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+130D maintext_split_6 CODE >459:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+130D maintext_split_6 CODE >460:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1315 maintext_split_6 CODE >461:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+131C maintext_split_6 CODE >462:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+131C maintext_split_6 CODE >463:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1324 maintext_split_6 CODE >464:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+132B maintext_split_6 CODE >465:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+132B maintext_split_6 CODE >466:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1333 maintext_split_6 CODE >467:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+133A maintext_split_6 CODE >468:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+133A maintext_split_6 CODE >469:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1342 maintext_split_6 CODE >470:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1349 maintext_split_6 CODE >471:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1349 maintext_split_6 CODE >472:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1350 maintext_split_6 CODE >473:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1357 maintext_split_6 CODE >474:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1357 maintext_split_6 CODE >475:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+135E maintext_split_6 CODE >476:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1365 maintext_split_6 CODE >477:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1365 maintext_split_6 CODE >478:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+136D maintext_split_6 CODE >479:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1374 maintext_split_6 CODE >480:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1375 maintext_split_6 CODE >481:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1375 maintext_split_6 CODE >482:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+137E maintext_split_6 CODE >483:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1385 maintext_split_6 CODE >484:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+138C maintext_split_6 CODE >485:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+138C maintext_split_6 CODE >486:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1394 maintext_split_6 CODE >487:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+139B maintext_split_6 CODE >488:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+139B maintext_split_6 CODE >489:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+13A3 maintext_split_6 CODE >490:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+13AA maintext_split_6 CODE >491:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+13AA maintext_split_6 CODE >492:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+13B2 maintext_split_6 CODE >493:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+13B9 maintext_split_6 CODE >494:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+13B9 maintext_split_6 CODE >495:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+13C0 maintext_split_6 CODE >496:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+13C7 maintext_split_6 CODE >497:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+13C7 maintext_split_6 CODE >498:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+13CE maintext_split_6 CODE >499:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+13D5 maintext_split_6 CODE >500:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+13D5 maintext_split_6 CODE >501:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+13DE maintext_split_6 CODE >502:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+BA2 maintext_split_5 CODE >399:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+BA7 maintext_split_5 CODE >400:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+BA7 maintext_split_5 CODE >402:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+BB3 maintext_split_5 CODE >404:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+BB7 maintext_split_5 CODE >405:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+BB7 maintext_split_5 CODE >406:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+BCD maintext_split_5 CODE >409:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+BD1 maintext_split_5 CODE >410:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+BE7 maintext_split_5 CODE >411:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+C00 maintext_split_5 CODE >413:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+C1F maintext_split_5 CODE >414:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+C24 maintext_split_5 CODE >415:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+C2F maintext_split_5 CODE >417:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+C3F maintext_split_5 CODE >419:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+C45 maintext_split_5 CODE >421:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+C45 maintext_split_5 CODE >422:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+C4D maintext_split_5 CODE >423:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+C4D maintext_split_5 CODE >425:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+C58 maintext_split_5 CODE >426:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+C62 maintext_split_5 CODE >428:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+C76 maintext_split_5 CODE >430:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+C7E maintext_split_5 CODE >431:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+C85 maintext_split_5 CODE >432:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+C8C maintext_split_5 CODE >433:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+C8C maintext_split_5 CODE >434:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+C94 maintext_split_5 CODE >435:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+C9B maintext_split_5 CODE >436:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+C9B maintext_split_5 CODE >437:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+CA3 maintext_split_5 CODE >438:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+CAA maintext_split_5 CODE >439:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+CAA maintext_split_5 CODE >440:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+CB2 maintext_split_5 CODE >441:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+CB9 maintext_split_5 CODE >442:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+CB9 maintext_split_5 CODE >443:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+CC1 maintext_split_5 CODE >444:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+CC8 maintext_split_5 CODE >445:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+CC8 maintext_split_5 CODE >446:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+CD0 maintext_split_5 CODE >447:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+CD7 maintext_split_5 CODE >448:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+CD7 maintext_split_5 CODE >449:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+CE0 maintext_split_4 CODE >309:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+CE0 maintext_split_4 CODE >310:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+CE8 maintext_split_4 CODE >311:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+CEF maintext_split_4 CODE >312:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+CEF maintext_split_4 CODE >313:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+CF7 maintext_split_4 CODE >314:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+CFE maintext_split_4 CODE >315:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+CFE maintext_split_4 CODE >316:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+D06 maintext_split_4 CODE >317:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+D0D maintext_split_4 CODE >318:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+D0E maintext_split_4 CODE >319:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+D0E maintext_split_4 CODE >320:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+D16 maintext_split_4 CODE >321:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+D1C maintext_split_4 CODE >322:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+D23 maintext_split_4 CODE >323:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+D23 maintext_split_4 CODE >324:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+D2B maintext_split_4 CODE >325:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+D32 maintext_split_4 CODE >326:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+D32 maintext_split_4 CODE >327:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+D3A maintext_split_4 CODE >328:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+D41 maintext_split_4 CODE >329:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+D41 maintext_split_4 CODE >330:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+D49 maintext_split_4 CODE >331:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+D50 maintext_split_4 CODE >332:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+D50 maintext_split_4 CODE >333:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+D58 maintext_split_4 CODE >334:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+D5F maintext_split_4 CODE >335:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+D5F maintext_split_4 CODE >336:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+D67 maintext_split_4 CODE >337:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+D6E maintext_split_4 CODE >338:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+D6E maintext_split_4 CODE >339:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+D76 maintext_split_4 CODE >340:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+D7D maintext_split_4 CODE >341:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+D7D maintext_split_4 CODE >342:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+D84 maintext_split_4 CODE >343:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+D8B maintext_split_4 CODE >344:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+D8C maintext_split_4 CODE >345:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+D8C maintext_split_4 CODE >347:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+D98 maintext_split_4 CODE >348:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+D9A maintext_split_4 CODE >367:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+D9F maintext_split_4 CODE >369:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+DB4 maintext_split_4 CODE >370:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+DC9 maintext_split_4 CODE >371:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+DD2 maintext_split_4 CODE >372:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+DDB maintext_split_4 CODE >373:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+DDF maintext_split_4 CODE >374:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+DE8 maintext_split_4 CODE >375:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+DF1 maintext_split_4 CODE >376:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+DF5 maintext_split_4 CODE >377:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+DFD maintext_split_4 CODE >378:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+E05 maintext_split_4 CODE >379:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+E09 maintext_split_4 CODE >380:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+E11 maintext_split_4 CODE >381:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+E19 maintext_split_4 CODE >382:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+E1D maintext_split_4 CODE >383:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+E25 maintext_split_4 CODE >384:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+E2D maintext_split_4 CODE >385:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+E31 maintext_split_4 CODE >387:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+E3E maintext_split_4 CODE >389:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+E43 maintext_split_4 CODE >390:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+E43 maintext_split_4 CODE >392:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+E50 maintext_split_4 CODE >394:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+E55 maintext_split_4 CODE >395:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+E55 maintext_split_4 CODE >397:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+A55 maintext_split_3 CODE >243:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+A5C maintext_split_3 CODE >244:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+A63 maintext_split_3 CODE >245:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+A63 maintext_split_3 CODE >246:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+A6B maintext_split_3 CODE >247:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+A72 maintext_split_3 CODE >248:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+A72 maintext_split_3 CODE >249:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+A79 maintext_split_3 CODE >250:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+A80 maintext_split_3 CODE >251:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+A80 maintext_split_3 CODE >252:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+A87 maintext_split_3 CODE >253:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+A8E maintext_split_3 CODE >254:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+A8E maintext_split_3 CODE >255:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+A96 maintext_split_3 CODE >256:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+A9D maintext_split_3 CODE >257:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+A9D maintext_split_3 CODE >258:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+AA5 maintext_split_3 CODE >259:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+AAC maintext_split_3 CODE >260:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+AAC maintext_split_3 CODE >261:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+AB4 maintext_split_3 CODE >262:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+ABB maintext_split_3 CODE >263:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+ABB maintext_split_3 CODE >264:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+AC3 maintext_split_3 CODE >265:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+ACA maintext_split_3 CODE >266:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+ACB maintext_split_3 CODE >267:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+ACB maintext_split_3 CODE >268:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+AD3 maintext_split_3 CODE >269:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+ADA maintext_split_3 CODE >270:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+AE1 maintext_split_3 CODE >271:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+AE1 maintext_split_3 CODE >272:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+AE8 maintext_split_3 CODE >273:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+AEF maintext_split_3 CODE >274:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+AEF maintext_split_3 CODE >275:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+AF6 maintext_split_3 CODE >276:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+AFD maintext_split_3 CODE >277:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+AFD maintext_split_3 CODE >278:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+B05 maintext_split_3 CODE >279:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+B0C maintext_split_3 CODE >280:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+B0C maintext_split_3 CODE >281:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+B14 maintext_split_3 CODE >282:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+B1B maintext_split_3 CODE >283:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+B1B maintext_split_3 CODE >284:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+B23 maintext_split_3 CODE >285:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+B2A maintext_split_3 CODE >286:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+B2A maintext_split_3 CODE >287:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+B32 maintext_split_3 CODE >288:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+B39 maintext_split_3 CODE >289:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+B39 maintext_split_3 CODE >290:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+B41 maintext_split_3 CODE >291:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+B48 maintext_split_3 CODE >292:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+B49 maintext_split_3 CODE >293:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+B49 maintext_split_3 CODE >294:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+B52 maintext_split_3 CODE >295:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+B58 maintext_split_3 CODE >296:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+B5F maintext_split_3 CODE >297:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+B5F maintext_split_3 CODE >298:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+B66 maintext_split_3 CODE >299:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+B6D maintext_split_3 CODE >300:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+B6D maintext_split_3 CODE >301:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+B74 maintext_split_3 CODE >302:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+B7B maintext_split_3 CODE >303:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+B7B maintext_split_3 CODE >304:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+B83 maintext_split_3 CODE >305:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+B8A maintext_split_3 CODE >306:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+B8A maintext_split_3 CODE >307:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+B93 maintext_split_3 CODE >308:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+14E9 maintext_split_2 CODE >188:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+14EA maintext_split_2 CODE >189:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+14EA maintext_split_2 CODE >190:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+14F2 maintext_split_2 CODE >191:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+14F9 maintext_split_2 CODE >192:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1500 maintext_split_2 CODE >193:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1500 maintext_split_2 CODE >194:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1508 maintext_split_2 CODE >195:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+150F maintext_split_2 CODE >196:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+150F maintext_split_2 CODE >197:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1517 maintext_split_2 CODE >198:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+151E maintext_split_2 CODE >199:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+151E maintext_split_2 CODE >200:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1526 maintext_split_2 CODE >201:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+152D maintext_split_2 CODE >202:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+152D maintext_split_2 CODE >203:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1534 maintext_split_2 CODE >204:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+153B maintext_split_2 CODE >205:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+153B maintext_split_2 CODE >206:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1542 maintext_split_2 CODE >207:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1549 maintext_split_2 CODE >208:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1549 maintext_split_2 CODE >209:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1551 maintext_split_2 CODE >210:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1558 maintext_split_2 CODE >211:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1558 maintext_split_2 CODE >212:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1560 maintext_split_2 CODE >213:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1567 maintext_split_2 CODE >214:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1568 maintext_split_2 CODE >215:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1568 maintext_split_2 CODE >216:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1570 maintext_split_2 CODE >217:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1577 maintext_split_2 CODE >218:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+157E maintext_split_2 CODE >219:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+157E maintext_split_2 CODE >220:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1586 maintext_split_2 CODE >221:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+158D maintext_split_2 CODE >222:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+158D maintext_split_2 CODE >223:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1595 maintext_split_2 CODE >224:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+159C maintext_split_2 CODE >225:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+159C maintext_split_2 CODE >226:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+15A3 maintext_split_2 CODE >227:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+15AA maintext_split_2 CODE >228:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+15AA maintext_split_2 CODE >229:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+15B1 maintext_split_2 CODE >230:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+15B8 maintext_split_2 CODE >231:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+15B8 maintext_split_2 CODE >232:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+15C0 maintext_split_2 CODE >233:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+15C7 maintext_split_2 CODE >234:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+15C7 maintext_split_2 CODE >235:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+15CF maintext_split_2 CODE >236:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+15D6 maintext_split_2 CODE >237:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+15D6 maintext_split_2 CODE >238:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+15DE maintext_split_2 CODE >239:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+15E5 maintext_split_2 CODE >240:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+15E6 maintext_split_2 CODE >241:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+15E6 maintext_split_2 CODE >242:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+15F0 maintext_split_1 CODE >137:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+15FD maintext_split_1 CODE >138:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1604 maintext_split_1 CODE >139:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+160B maintext_split_1 CODE >140:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1612 maintext_split_1 CODE >141:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1612 maintext_split_1 CODE >142:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+161A maintext_split_1 CODE >143:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1621 maintext_split_1 CODE >144:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1621 maintext_split_1 CODE >145:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1629 maintext_split_1 CODE >146:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1630 maintext_split_1 CODE >147:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1630 maintext_split_1 CODE >148:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1638 maintext_split_1 CODE >149:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+163F maintext_split_1 CODE >150:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+163F maintext_split_1 CODE >151:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1647 maintext_split_1 CODE >152:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+164E maintext_split_1 CODE >153:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+164E maintext_split_1 CODE >154:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1656 maintext_split_1 CODE >155:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+165D maintext_split_1 CODE >156:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+165D maintext_split_1 CODE >157:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1664 maintext_split_1 CODE >158:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+166B maintext_split_1 CODE >159:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+166B maintext_split_1 CODE >160:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1672 maintext_split_1 CODE >161:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1679 maintext_split_1 CODE >162:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+167A maintext_split_1 CODE >163:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+167A maintext_split_1 CODE >164:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1682 maintext_split_1 CODE >165:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1689 maintext_split_1 CODE >166:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1690 maintext_split_1 CODE >167:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1690 maintext_split_1 CODE >168:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1698 maintext_split_1 CODE >169:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+169F maintext_split_1 CODE >170:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+169F maintext_split_1 CODE >171:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+16A7 maintext_split_1 CODE >172:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+16AE maintext_split_1 CODE >173:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+16AE maintext_split_1 CODE >174:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+16B6 maintext_split_1 CODE >175:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+16BD maintext_split_1 CODE >176:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+16BD maintext_split_1 CODE >177:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+16C5 maintext_split_1 CODE >178:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+16CC maintext_split_1 CODE >179:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+16CC maintext_split_1 CODE >180:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+16D3 maintext_split_1 CODE >181:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+16DA maintext_split_1 CODE >182:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+16DA maintext_split_1 CODE >183:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+16E1 maintext_split_1 CODE >184:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+16E8 maintext_split_1 CODE >185:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+16E8 maintext_split_1 CODE >186:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+16F0 maintext_split_1 CODE >187:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1D text3 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awmod.c
+1D text3 CODE >12:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awmod.c
+1F text3 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awmod.c
+23 text3 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awmod.c
+28 text3 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awmod.c
+2B text3 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awmod.c
+2B text3 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awmod.c
+2F text3 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awmod.c
+35 text3 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awmod.c
+3B text3 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awmod.c
+3D text3 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awmod.c
+3E text3 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awmod.c
+43 text3 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awmod.c
+48 text3 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awmod.c
+48 text3 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awmod.c
+4E text3 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awmod.c
+4E text3 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awmod.c
+58 text3 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awmod.c
+5D text3 CODE >28:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awmod.c
+62 text3 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awmod.c
+6A text3 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awmod.c
+6A text3 CODE >31:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awmod.c
+6F text3 CODE >32:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awmod.c
+75 text3 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awmod.c
+7A text3 CODE >34:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awmod.c
+126E text2 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul32.c
+126E text2 CODE >119:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul32.c
+1277 text2 CODE >120:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul32.c
+1277 text2 CODE >121:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul32.c
+127B text2 CODE >122:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul32.c
+1284 text2 CODE >123:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul32.c
+128B text2 CODE >124:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul32.c
+1292 text2 CODE >125:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul32.c
+129B text2 CODE >128:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul32.c
+12A4 text2 CODE >129:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul32.c
+12A5 text1 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\rand.c
+12A5 text1 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\rand.c
+12C6 text1 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\rand.c
+12E1 text1 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\rand.c
+E5C maintext CODE >20:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+E5C maintext CODE >22:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+E61 maintext CODE >23:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+E63 maintext CODE >24:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+E65 maintext CODE >25:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+E66 maintext CODE >26:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+E68 maintext CODE >27:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+E6A maintext CODE >28:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+E6B maintext CODE >29:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+E6D maintext CODE >30:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+E6F maintext CODE >31:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+E71 maintext CODE >33:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+E74 maintext CODE >35:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+E77 maintext CODE >36:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+E79 maintext CODE >38:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+E7B maintext CODE >39:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+E8A maintext CODE >40:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+E98 maintext CODE >41:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+EA6 maintext CODE >42:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+EB4 maintext CODE >43:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+EC2 maintext CODE >44:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+ED0 maintext CODE >45:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+EDE maintext CODE >46:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+EEC maintext CODE >47:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+EFA maintext CODE >48:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+F08 maintext CODE >51:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+F0D maintext CODE >52:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+F11 maintext CODE >53:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+F20 maintext CODE >54:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+F2E maintext CODE >55:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+F31 maintext CODE >56:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+F37 maintext CODE >57:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+F3D maintext CODE >58:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+F43 maintext CODE >59:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+F45 maintext CODE >60:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+F4B maintext CODE >61:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+F4D maintext CODE >62:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+F53 maintext CODE >63:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+F59 maintext CODE >64:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+F5F maintext CODE >65:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+F65 maintext CODE >66:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+F6B maintext CODE >67:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+F71 maintext CODE >68:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+F77 maintext CODE >69:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+F7D maintext CODE >70:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+F83 maintext CODE >76:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+F87 maintext CODE >110:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+F93 maintext CODE >111:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+F9E maintext CODE >119:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+FA1 maintext CODE >120:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+FA6 maintext CODE >122:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+FAB maintext CODE >123:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+FAE maintext CODE >124:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+FB2 maintext CODE >125:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+FB4 maintext CODE >127:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+FDC maintext CODE >131:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+FDE maintext CODE >134:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+FE0 maintext CODE >135:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+FF8 maintext CODE >137:C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+1268 clrtext CODE >2569:C:\Users\Travelur\AppData\Local\Temp\s41c.
+1268 clrtext CODE >2570:C:\Users\Travelur\AppData\Local\Temp\s41c.
+1269 clrtext CODE >2571:C:\Users\Travelur\AppData\Local\Temp\s41c.
+1269 clrtext CODE >2572:C:\Users\Travelur\AppData\Local\Temp\s41c.
+126A clrtext CODE >2573:C:\Users\Travelur\AppData\Local\Temp\s41c.
+126B clrtext CODE >2574:C:\Users\Travelur\AppData\Local\Temp\s41c.
+126C clrtext CODE >2575:C:\Users\Travelur\AppData\Local\Temp\s41c.
+126D clrtext CODE >2576:C:\Users\Travelur\AppData\Local\Temp\s41c.
+7 inittext CODE >2530:C:\Users\Travelur\AppData\Local\Temp\s41c.
+7 inittext CODE >2531:C:\Users\Travelur\AppData\Local\Temp\s41c.
+8 inittext CODE >2532:C:\Users\Travelur\AppData\Local\Temp\s41c.
+8 inittext CODE >2533:C:\Users\Travelur\AppData\Local\Temp\s41c.
+9 inittext CODE >2534:C:\Users\Travelur\AppData\Local\Temp\s41c.
+A inittext CODE >2535:C:\Users\Travelur\AppData\Local\Temp\s41c.
+B inittext CODE >2536:C:\Users\Travelur\AppData\Local\Temp\s41c.
+C inittext CODE >2537:C:\Users\Travelur\AppData\Local\Temp\s41c.
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 4 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+main@bolitac 120 0 BANK2 1 cstackBANK2 dist/default/production\Snake_FP.X.production.o
+main@bolitaf 128 0 BANK2 1 cstackBANK2 dist/default/production\Snake_FP.X.production.o
+__LdataBANK2 0 0 ABS 0 dataBANK2 -
+__LdataBANK3 0 0 ABS 0 dataBANK3 -
+__Hspace_0 800C 0 ABS 0 - -
+__Hspace_1 1E8 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__HidataBANK2 0 0 ABS 0 idataBANK2 -
+__HidataBANK3 0 0 ABS 0 idataBANK3 -
+__Lmaintext_split_1 0 0 ABS 0 maintext_split_1 -
+__Lmaintext_split_2 0 0 ABS 0 maintext_split_2 -
+__Lmaintext_split_3 0 0 ABS 0 maintext_split_3 -
+__Lmaintext_split_4 0 0 ABS 0 maintext_split_4 -
+__Lmaintext_split_5 0 0 ABS 0 maintext_split_5 -
+__Lmaintext_split_6 0 0 ABS 0 maintext_split_6 -
+__Lmaintext_split_7 0 0 ABS 0 maintext_split_7 -
+__Lmaintext_split_8 0 0 ABS 0 maintext_split_8 -
+__Lmaintext_split_9 0 0 ABS 0 maintext_split_9 -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+main@a A0 0 BANK1 1 cstackBANK1 dist/default/production\Snake_FP.X.production.o
+main@c 14E 0 BANK2 1 cstackBANK2 dist/default/production\Snake_FP.X.production.o
+main@f 14C 0 BANK2 1 cstackBANK2 dist/default/production\Snake_FP.X.production.o
+main@i 14A 0 BANK2 1 cstackBANK2 dist/default/production\Snake_FP.X.production.o
+main@j E8 0 BANK1 1 cstackBANK1 dist/default/production\Snake_FP.X.production.o
+main@x 148 0 BANK2 1 cstackBANK2 dist/default/production\Snake_FP.X.production.o
+main@y E4 0 BANK1 1 cstackBANK1 dist/default/production\Snake_FP.X.production.o
+__Hstrings 0 0 ABS 0 strings -
+__CFG_WDTCCS$SC 0 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+_LATC 18 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+_LATD 19 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+_WPUA 1F39 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\Travelur\AppData\Local\Temp\s41c.o
+_main 1CB8 0 CODE 0 maintext dist/default/production\Snake_FP.X.production.o
+_rand 254A 0 CODE 0 text1 dist/default/production\Snake_FP.X.production.o
+_seed 16A 0 BANK2 1 bssBANK2 dist/default/production\Snake_FP.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+start 4 0 CODE 0 init C:\Users\Travelur\AppData\Local\Temp\s41c.o
+__size_of___awmod 0 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+__size_of_rand 0 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+__CFG_SCANE$available 0 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+_OSCFRQbits 893 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+?___lmul 70 0 COMMON 1 cstackCOMMON dist/default/production\Snake_FP.X.production.o
+main@comidaf1 AA 0 BANK1 1 cstackBANK1 dist/default/production\Snake_FP.X.production.o
+__LidataBANK2 0 0 ABS 0 idataBANK2 -
+__LidataBANK3 0 0 ABS 0 idataBANK3 -
+main@contador E6 0 BANK1 1 cstackBANK1 dist/default/production\Snake_FP.X.production.o
+__Hpowerup 0 0 CODE 0 powerup -
+___awmod@sign 2A 0 BANK0 1 cstackBANK0 dist/default/production\Snake_FP.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\Travelur\AppData\Local\Temp\s41c.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\Travelur\AppData\Local\Temp\s41c.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\Travelur\AppData\Local\Temp\s41c.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\Travelur\AppData\Local\Temp\s41c.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\Travelur\AppData\Local\Temp\s41c.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\Travelur\AppData\Local\Temp\s41c.o
+wtemp0 7E 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+main@filaMsj CC 0 BANK1 1 cstackBANK1 dist/default/production\Snake_FP.X.production.o
+main@bolita2c D4 0 BANK1 1 cstackBANK1 dist/default/production\Snake_FP.X.production.o
+main@bolita2f DC 0 BANK1 1 cstackBANK1 dist/default/production\Snake_FP.X.production.o
+main@bolita3c B2 0 BANK1 1 cstackBANK1 dist/default/production\Snake_FP.X.production.o
+main@bolita3f BA 0 BANK1 1 cstackBANK1 dist/default/production\Snake_FP.X.production.o
+main@velocidad EA 0 BANK1 1 cstackBANK1 dist/default/production\Snake_FP.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+_ANSELA 1F38 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+_ANSELC 1F4E 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+_ANSELD 1F59 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+__end_of___lmul 254A 0 CODE 0 text2 dist/default/production\Snake_FP.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+__Hmaintext_split_10 0 0 ABS 0 maintext_split_10 -
+__Hmaintext_split_11 0 0 ABS 0 maintext_split_11 -
+__end_of___awmod F6 0 CODE 0 text3 dist/default/production\Snake_FP.X.production.o
+__CFG_FEXTOSC$OFF 0 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+main@comidac A2 0 BANK1 1 cstackBANK1 dist/default/production\Snake_FP.X.production.o
+main@comidaf 150 0 BANK2 1 cstackBANK2 dist/default/production\Snake_FP.X.production.o
+start_initialization FAA 0 CODE 0 cinit dist/default/production\Snake_FP.X.production.o
+__CFG_WDTCPS$WDTCPS_31 0 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+clear_ram0 24D0 0 CODE 0 clrtext dist/default/production\Snake_FP.X.production.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\Snake_FP.X.production.o
+__pcstackBANK1 A0 0 BANK1 1 cstackBANK1 dist/default/production\Snake_FP.X.production.o
+__pcstackBANK2 120 0 BANK2 1 cstackBANK2 dist/default/production\Snake_FP.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\Travelur\AppData\Local\Temp\s41c.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hbank4 0 0 ABS 0 bank4 -
+__Hbank5 0 0 ABS 0 bank5 -
+__Hbank6 0 0 ABS 0 bank6 -
+__Hbank7 0 0 ABS 0 bank7 -
+__Hbank8 0 0 ABS 0 bank8 -
+__Hbank9 0 0 ABS 0 bank9 -
+__Hcinit 1000 0 CODE 0 cinit -
+__Hidloc 0 0 IDLOC 0 idloc -
+__Hsfr10 0 0 ABS 0 sfr10 -
+__Hsfr11 0 0 ABS 0 sfr11 -
+__Hsfr12 0 0 ABS 0 sfr12 -
+__Hsfr13 0 0 ABS 0 sfr13 -
+__Hsfr14 0 0 ABS 0 sfr14 -
+__Hsfr15 0 0 ABS 0 sfr15 -
+__Hsfr16 0 0 ABS 0 sfr16 -
+__Hsfr17 0 0 ABS 0 sfr17 -
+__Hsfr18 0 0 ABS 0 sfr18 -
+__Hsfr19 0 0 ABS 0 sfr19 -
+__Hsfr20 0 0 ABS 0 sfr20 -
+__Hsfr21 0 0 ABS 0 sfr21 -
+__Hsfr22 0 0 ABS 0 sfr22 -
+__Hsfr23 0 0 ABS 0 sfr23 -
+__Hsfr24 0 0 ABS 0 sfr24 -
+__Hsfr25 0 0 ABS 0 sfr25 -
+__Hsfr26 0 0 ABS 0 sfr26 -
+__Hsfr27 0 0 ABS 0 sfr27 -
+__Hsfr28 0 0 ABS 0 sfr28 -
+__Hsfr29 0 0 ABS 0 sfr29 -
+__Hsfr30 0 0 ABS 0 sfr30 -
+__Hsfr31 0 0 ABS 0 sfr31 -
+__Hsfr32 0 0 ABS 0 sfr32 -
+__Hsfr33 0 0 ABS 0 sfr33 -
+__Hsfr34 0 0 ABS 0 sfr34 -
+__Hsfr35 0 0 ABS 0 sfr35 -
+__Hsfr36 0 0 ABS 0 sfr36 -
+__Hsfr37 0 0 ABS 0 sfr37 -
+__Hsfr38 0 0 ABS 0 sfr38 -
+__Hsfr39 0 0 ABS 0 sfr39 -
+__Hsfr40 0 0 ABS 0 sfr40 -
+__Hsfr41 0 0 ABS 0 sfr41 -
+__Hsfr42 0 0 ABS 0 sfr42 -
+__Hsfr43 0 0 ABS 0 sfr43 -
+__Hsfr44 0 0 ABS 0 sfr44 -
+__Hsfr45 0 0 ABS 0 sfr45 -
+__Hsfr46 0 0 ABS 0 sfr46 -
+__Hsfr47 0 0 ABS 0 sfr47 -
+__Hsfr48 0 0 ABS 0 sfr48 -
+__Hsfr49 0 0 ABS 0 sfr49 -
+__Hsfr50 0 0 ABS 0 sfr50 -
+__Hsfr51 0 0 ABS 0 sfr51 -
+__Hsfr52 0 0 ABS 0 sfr52 -
+__Hsfr53 0 0 ABS 0 sfr53 -
+__Hsfr54 0 0 ABS 0 sfr54 -
+__Hsfr55 0 0 ABS 0 sfr55 -
+__Hsfr56 0 0 ABS 0 sfr56 -
+__Hsfr57 0 0 ABS 0 sfr57 -
+__Hsfr58 0 0 ABS 0 sfr58 -
+__Hsfr59 0 0 ABS 0 sfr59 -
+__Hsfr60 0 0 ABS 0 sfr60 -
+__Hsfr61 0 0 ABS 0 sfr61 -
+__Hsfr62 0 0 ABS 0 sfr62 -
+__Hsfr63 0 0 ABS 0 sfr63 -
+__Hstack 0 0 STACK 2 stack -
+main@CportC 13C 0 BANK2 1 cstackBANK2 dist/default/production\Snake_FP.X.production.o
+__Hbank10 0 0 ABS 0 bank10 -
+__Hbank11 0 0 ABS 0 bank11 -
+__Hbank12 0 0 ABS 0 bank12 -
+__Hbank13 0 0 ABS 0 bank13 -
+__Hbank14 0 0 ABS 0 bank14 -
+__Hbank15 0 0 ABS 0 bank15 -
+__Hbank16 0 0 ABS 0 bank16 -
+__Hbank17 0 0 ABS 0 bank17 -
+__Hbank18 0 0 ABS 0 bank18 -
+__Hbank19 0 0 ABS 0 bank19 -
+__Hbank20 0 0 ABS 0 bank20 -
+__Hbank21 0 0 ABS 0 bank21 -
+__Hbank22 0 0 ABS 0 bank22 -
+__Hbank23 0 0 ABS 0 bank23 -
+__Hbank24 0 0 ABS 0 bank24 -
+__Hbank25 0 0 ABS 0 bank25 -
+__Hbank26 0 0 ABS 0 bank26 -
+__Hbank27 0 0 ABS 0 bank27 -
+__Hbank28 0 0 ABS 0 bank28 -
+__Hbank29 0 0 ABS 0 bank29 -
+__Hbank30 0 0 ABS 0 bank30 -
+__Hbank31 0 0 ABS 0 bank31 -
+__Hbank32 0 0 ABS 0 bank32 -
+__Hbank33 0 0 ABS 0 bank33 -
+__Hbank34 0 0 ABS 0 bank34 -
+__Hbank35 0 0 ABS 0 bank35 -
+__Hbank36 0 0 ABS 0 bank36 -
+__Hbank37 0 0 ABS 0 bank37 -
+__Hbank38 0 0 ABS 0 bank38 -
+__Hbank39 0 0 ABS 0 bank39 -
+__Hbank40 0 0 ABS 0 bank40 -
+__Hbank41 0 0 ABS 0 bank41 -
+__Hbank42 0 0 ABS 0 bank42 -
+__Hbank43 0 0 ABS 0 bank43 -
+__Hbank44 0 0 ABS 0 bank44 -
+__Hbank45 0 0 ABS 0 bank45 -
+__Hbank46 0 0 ABS 0 bank46 -
+__Hbank47 0 0 ABS 0 bank47 -
+__Hbank48 0 0 ABS 0 bank48 -
+__Hbank49 0 0 ABS 0 bank49 -
+__Hbank50 0 0 ABS 0 bank50 -
+__Hbank51 0 0 BANK51 1 bank51 -
+__Hbank52 0 0 BANK52 1 bank52 -
+__Hbank53 0 0 BANK53 1 bank53 -
+__Hbank54 0 0 BANK54 1 bank54 -
+__Hbank55 0 0 BANK55 1 bank55 -
+__Hbank56 0 0 BANK56 1 bank56 -
+__Hbank57 0 0 BANK57 1 bank57 -
+__Hbank58 0 0 BANK58 1 bank58 -
+__Hbank59 0 0 BANK59 1 bank59 -
+__Hbank60 0 0 BANK60 1 bank60 -
+__Hbank61 0 0 BANK61 1 bank61 -
+__Hbank62 0 0 BANK62 1 bank62 -
+__Hbank63 0 0 BANK63 1 bank63 -
+__Hbigram 0 0 ABS 0 bigram -
+__Hmaintext 0 0 ABS 0 maintext -
+main@F12621 15A 0 BANK2 1 dataBANK2 dist/default/production\Snake_FP.X.production.o
+main@F12623 162 0 BANK2 1 bssBANK2 dist/default/production\Snake_FP.X.production.o
+main@F12625 152 0 BANK2 1 dataBANK2 dist/default/production\Snake_FP.X.production.o
+main@F12627 1E0 0 BANK3 1 bssBANK3 dist/default/production\Snake_FP.X.production.o
+main@F12629 1C0 0 BANK3 1 dataBANK3 dist/default/production\Snake_FP.X.production.o
+main@F12631 1D8 0 BANK3 1 bssBANK3 dist/default/production\Snake_FP.X.production.o
+main@F12633 1B8 0 BANK3 1 dataBANK3 dist/default/production\Snake_FP.X.production.o
+main@F12635 1D0 0 BANK3 1 bssBANK3 dist/default/production\Snake_FP.X.production.o
+main@F12637 1B0 0 BANK3 1 dataBANK3 dist/default/production\Snake_FP.X.production.o
+main@F12639 1C8 0 BANK3 1 bssBANK3 dist/default/production\Snake_FP.X.production.o
+main@F12643 1A8 0 BANK3 1 dataBANK3 dist/default/production\Snake_FP.X.production.o
+main@F12645 1A0 0 BANK3 1 dataBANK3 dist/default/production\Snake_FP.X.production.o
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 10018 0 CONFIG 0 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lbank4 0 0 ABS 0 bank4 -
+__Lbank5 0 0 ABS 0 bank5 -
+__Lbank6 0 0 ABS 0 bank6 -
+__Lbank7 0 0 ABS 0 bank7 -
+__Lbank8 0 0 ABS 0 bank8 -
+__Lbank9 0 0 ABS 0 bank9 -
+__Lcinit FAA 0 CODE 0 cinit -
+__Lidloc 0 0 IDLOC 0 idloc -
+main@columnaMsj C4 0 BANK1 1 cstackBANK1 dist/default/production\Snake_FP.X.production.o
+__Lsfr10 0 0 ABS 0 sfr10 -
+__Lsfr11 0 0 ABS 0 sfr11 -
+__Lsfr12 0 0 ABS 0 sfr12 -
+__Lsfr13 0 0 ABS 0 sfr13 -
+__Lsfr14 0 0 ABS 0 sfr14 -
+__Lsfr15 0 0 ABS 0 sfr15 -
+__Lsfr16 0 0 ABS 0 sfr16 -
+__Lsfr17 0 0 ABS 0 sfr17 -
+__Lsfr18 0 0 ABS 0 sfr18 -
+__Lsfr19 0 0 ABS 0 sfr19 -
+__Lsfr20 0 0 ABS 0 sfr20 -
+__Lsfr21 0 0 ABS 0 sfr21 -
+__Lsfr22 0 0 ABS 0 sfr22 -
+__Lsfr23 0 0 ABS 0 sfr23 -
+__Lsfr24 0 0 ABS 0 sfr24 -
+__Lsfr25 0 0 ABS 0 sfr25 -
+__Lsfr26 0 0 ABS 0 sfr26 -
+__Lsfr27 0 0 ABS 0 sfr27 -
+__Lsfr28 0 0 ABS 0 sfr28 -
+__Lsfr29 0 0 ABS 0 sfr29 -
+__Lsfr30 0 0 ABS 0 sfr30 -
+__Lsfr31 0 0 ABS 0 sfr31 -
+__Lsfr32 0 0 ABS 0 sfr32 -
+__Lsfr33 0 0 ABS 0 sfr33 -
+__Lsfr34 0 0 ABS 0 sfr34 -
+__Lsfr35 0 0 ABS 0 sfr35 -
+__Lsfr36 0 0 ABS 0 sfr36 -
+__Lsfr37 0 0 ABS 0 sfr37 -
+__Lsfr38 0 0 ABS 0 sfr38 -
+__Lsfr39 0 0 ABS 0 sfr39 -
+__Lsfr40 0 0 ABS 0 sfr40 -
+__Lsfr41 0 0 ABS 0 sfr41 -
+__Lsfr42 0 0 ABS 0 sfr42 -
+__Lsfr43 0 0 ABS 0 sfr43 -
+__Lsfr44 0 0 ABS 0 sfr44 -
+__Lsfr45 0 0 ABS 0 sfr45 -
+__Lsfr46 0 0 ABS 0 sfr46 -
+__Lsfr47 0 0 ABS 0 sfr47 -
+__Lsfr48 0 0 ABS 0 sfr48 -
+__Lsfr49 0 0 ABS 0 sfr49 -
+__Lsfr50 0 0 ABS 0 sfr50 -
+__Lsfr51 0 0 ABS 0 sfr51 -
+__Lsfr52 0 0 ABS 0 sfr52 -
+__Lsfr53 0 0 ABS 0 sfr53 -
+__Lsfr54 0 0 ABS 0 sfr54 -
+__Lsfr55 0 0 ABS 0 sfr55 -
+__Lsfr56 0 0 ABS 0 sfr56 -
+__Lsfr57 0 0 ABS 0 sfr57 -
+__Lsfr58 0 0 ABS 0 sfr58 -
+__Lsfr59 0 0 ABS 0 sfr59 -
+__Lsfr60 0 0 ABS 0 sfr60 -
+__Lsfr61 0 0 ABS 0 sfr61 -
+__Lsfr62 0 0 ABS 0 sfr62 -
+__Lsfr63 0 0 ABS 0 sfr63 -
+__Lstack 0 0 STACK 2 stack -
+init_ram E 0 CODE 0 inittext dist/default/production\Snake_FP.X.production.o
+__Linittext 0 0 ABS 0 inittext -
+_PORTAbits C 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 4 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Hsfr4 0 0 ABS 0 sfr4 -
+__Hsfr5 0 0 ABS 0 sfr5 -
+__Hsfr6 0 0 ABS 0 sfr6 -
+__Hsfr7 0 0 ABS 0 sfr7 -
+__Hsfr8 0 0 ABS 0 sfr8 -
+__Hsfr9 0 0 ABS 0 sfr9 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 4 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Lsfr4 0 0 ABS 0 sfr4 -
+__Lsfr5 0 0 ABS 0 sfr5 -
+__Lsfr6 0 0 ABS 0 sfr6 -
+__Lsfr7 0 0 ABS 0 sfr7 -
+__Lsfr8 0 0 ABS 0 sfr8 -
+__Lsfr9 0 0 ABS 0 sfr9 -
+__Ltext 0 0 ABS 0 text -
+___lmul 24DC 0 CODE 0 text2 dist/default/production\Snake_FP.X.production.o
+__CFG_WDTCWS$WDTCWS_7 0 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 -
+__LcstackBANK2 0 0 ABS 0 cstackBANK2 -
+psplit$0 F0013 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+psplit$1 130014 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+psplit$2 140015 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+psplit$3 150016 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+psplit$4 160017 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+psplit$5 170018 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+psplit$6 180019 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+psplit$7 19001A 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+psplit$8 1A001B 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+psplit$9 1B001C 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__S0 800C 0 ABS 0 - -
+__S1 1E8 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+__Lintentry 4 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Travelur\AppData\Local\Temp\s41c.o
+__pdataBANK2 152 0 BANK2 1 dataBANK2 dist/default/production\Snake_FP.X.production.o
+__pdataBANK3 1A0 0 BANK3 1 dataBANK3 dist/default/production\Snake_FP.X.production.o
+__size_of___lmul 0 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+__LbssBANK2 0 0 ABS 0 bssBANK2 -
+__LbssBANK3 0 0 ABS 0 bssBANK3 -
+__CFG_FCMEN$ON 0 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+___awmod@counter 29 0 BANK0 1 cstackBANK0 dist/default/production\Snake_FP.X.production.o
+___awmod 3A 0 CODE 0 text3 dist/default/production\Snake_FP.X.production.o
+__Lbank10 0 0 ABS 0 bank10 -
+__Lbank11 0 0 ABS 0 bank11 -
+__Lbank12 0 0 ABS 0 bank12 -
+__Lbank13 0 0 ABS 0 bank13 -
+__Lbank14 0 0 ABS 0 bank14 -
+__Lbank15 0 0 ABS 0 bank15 -
+__Lbank16 0 0 ABS 0 bank16 -
+__Lbank17 0 0 ABS 0 bank17 -
+__Lbank18 0 0 ABS 0 bank18 -
+__Lbank19 0 0 ABS 0 bank19 -
+__Lbank20 0 0 ABS 0 bank20 -
+__Lbank21 0 0 ABS 0 bank21 -
+__Lbank22 0 0 ABS 0 bank22 -
+__Lbank23 0 0 ABS 0 bank23 -
+__Lbank24 0 0 ABS 0 bank24 -
+__Lbank25 0 0 ABS 0 bank25 -
+__Lbank26 0 0 ABS 0 bank26 -
+__Lbank27 0 0 ABS 0 bank27 -
+__Lbank28 0 0 ABS 0 bank28 -
+__Lbank29 0 0 ABS 0 bank29 -
+__Lbank30 0 0 ABS 0 bank30 -
+__Lbank31 0 0 ABS 0 bank31 -
+__Lbank32 0 0 ABS 0 bank32 -
+__Lbank33 0 0 ABS 0 bank33 -
+__Lbank34 0 0 ABS 0 bank34 -
+__Lbank35 0 0 ABS 0 bank35 -
+__Lbank36 0 0 ABS 0 bank36 -
+__Lbank37 0 0 ABS 0 bank37 -
+__Lbank38 0 0 ABS 0 bank38 -
+__Lbank39 0 0 ABS 0 bank39 -
+__Lbank40 0 0 ABS 0 bank40 -
+__Lbank41 0 0 ABS 0 bank41 -
+__Lbank42 0 0 ABS 0 bank42 -
+__Lbank43 0 0 ABS 0 bank43 -
+__Lbank44 0 0 ABS 0 bank44 -
+__Lbank45 0 0 ABS 0 bank45 -
+__Lbank46 0 0 ABS 0 bank46 -
+__Lbank47 0 0 ABS 0 bank47 -
+__Lbank48 0 0 ABS 0 bank48 -
+__Lbank49 0 0 ABS 0 bank49 -
+__Lbank50 0 0 ABS 0 bank50 -
+__Lbank51 0 0 BANK51 1 bank51 -
+__Lbank52 0 0 BANK52 1 bank52 -
+__Lbank53 0 0 BANK53 1 bank53 -
+__Lbank54 0 0 BANK54 1 bank54 -
+__Lbank55 0 0 BANK55 1 bank55 -
+__Lbank56 0 0 BANK56 1 bank56 -
+__Lbank57 0 0 BANK57 1 bank57 -
+__Lbank58 0 0 BANK58 1 bank58 -
+__Lbank59 0 0 BANK59 1 bank59 -
+__Lbank60 0 0 BANK60 1 bank60 -
+__Lbank61 0 0 BANK61 1 bank61 -
+__Lbank62 0 0 BANK62 1 bank62 -
+__Lbank63 0 0 BANK63 1 bank63 -
+__pmaintext 1CB8 0 CODE 0 maintext dist/default/production\Snake_FP.X.production.o
+__Lbigram 0 0 ABS 0 bigram -
+__CFG_BORV$LO 0 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+___lmul@multiplier 70 0 COMMON 1 cstackCOMMON dist/default/production\Snake_FP.X.production.o
+?_rand 7C 0 COMMON 1 cstackCOMMON dist/default/production\Snake_FP.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 1000E 0 CONFIG 0 config -
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+__Hinittext 0 0 ABS 0 inittext -
+pnum$maintext_split_10 1C 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+pnum$maintext_split_11 1D 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+pnum$maintext_split_1 13 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+pnum$maintext_split_2 14 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+pnum$maintext_split_3 15 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+pnum$maintext_split_4 16 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+pnum$maintext_split_5 17 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+pnum$maintext_split_6 18 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+pnum$maintext_split_7 19 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+pnum$maintext_split_8 1A 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+pnum$maintext_split_9 1B 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+main@aaaa EC 0 BANK1 1 cstackBANK1 dist/default/production\Snake_FP.X.production.o
+main@boton 144 0 BANK2 1 cstackBANK2 dist/default/production\Snake_FP.X.production.o
+main@caso2 138 0 BANK2 1 cstackBANK2 dist/default/production\Snake_FP.X.production.o
+main@caso3 13A 0 BANK2 1 cstackBANK2 dist/default/production\Snake_FP.X.production.o
+main@valor 146 0 BANK2 1 cstackBANK2 dist/default/production\Snake_FP.X.production.o
+stackhi 2FEF 0 ABS 0 - C:\Users\Travelur\AppData\Local\Temp\s41c.o
+stacklo 2138 0 ABS 0 - C:\Users\Travelur\AppData\Local\Temp\s41c.o
+main@cabeza 2F 0 BANK0 1 cstackBANK0 dist/default/production\Snake_FP.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__CFG_LPBOREN$OFF 0 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 -
+__HcstackBANK2 0 0 ABS 0 cstackBANK2 -
+__Lend_init 4 0 CODE 0 end_init -
+__CFG_LVP$ON 0 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+__CFG_CSWEN$ON 0 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__CFG_ZCD$OFF 0 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+end_of_initialization FFA 0 CODE 0 cinit dist/default/production\Snake_FP.X.production.o
+psplit$10 1C001D 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+main@fportd 130 0 BANK2 1 cstackBANK2 dist/default/production\Snake_FP.X.production.o
+__Hmaintext_split_1 0 0 ABS 0 maintext_split_1 -
+__Hmaintext_split_2 0 0 ABS 0 maintext_split_2 -
+__Hmaintext_split_3 0 0 ABS 0 maintext_split_3 -
+__Hmaintext_split_4 0 0 ABS 0 maintext_split_4 -
+__Hmaintext_split_5 0 0 ABS 0 maintext_split_5 -
+__Hmaintext_split_6 0 0 ABS 0 maintext_split_6 -
+__Hmaintext_split_7 0 0 ABS 0 maintext_split_7 -
+__Hmaintext_split_8 0 0 ABS 0 maintext_split_8 -
+__Hmaintext_split_9 0 0 ABS 0 maintext_split_9 -
+__Hintentry 4 0 CODE 0 intentry -
+__CFG_STVREN$ON 0 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+__CFG_RSTOSC$HFINT32 0 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+__Lstrings 0 0 ABS 0 strings -
+?___awmod 24 0 BANK0 1 cstackBANK0 dist/default/production\Snake_FP.X.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec -
+__HbssBANK2 0 0 ABS 0 bssBANK2 -
+__HbssBANK3 0 0 ABS 0 bssBANK3 -
+___awmod@dividend 26 0 BANK0 1 cstackBANK0 dist/default/production\Snake_FP.X.production.o
+__ptext1 254A 0 CODE 0 text1 dist/default/production\Snake_FP.X.production.o
+__ptext2 24DC 0 CODE 0 text2 dist/default/production\Snake_FP.X.production.o
+__ptext3 3A 0 CODE 0 text3 dist/default/production\Snake_FP.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__CFG_CLKOUTEN$OFF 0 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+__end_of__initialization FFA 0 CODE 0 cinit dist/default/production\Snake_FP.X.production.o
+___awmod@divisor 24 0 BANK0 1 cstackBANK0 dist/default/production\Snake_FP.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__pidataBANK2 1A 0 CODE 0 idataBANK2 dist/default/production\Snake_FP.X.production.o
+__pidataBANK3 100A 0 CODE 0 idataBANK3 dist/default/production\Snake_FP.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+___lmul@product 78 0 COMMON 1 cstackCOMMON dist/default/production\Snake_FP.X.production.o
+main@valor2 C2 0 BANK1 1 cstackBANK1 dist/default/production\Snake_FP.X.production.o
+___lmul@multiplicand 74 0 COMMON 1 cstackCOMMON dist/default/production\Snake_FP.X.production.o
+__CFG_PWRTE$ON 0 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\Snake_FP.X.production.o
+__Hend_init 8 0 CODE 0 end_init -
+__end_of_main FAA 0 CODE 0 maintext_split_11 dist/default/production\Snake_FP.X.production.o
+__end_of_rand 25C4 0 CODE 0 text1 dist/default/production\Snake_FP.X.production.o
+_PORTA C 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+_PORTC E 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+_PORTD F 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+_TRISA 11 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+_TRISC 13 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+_TRISD 14 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+__HdataBANK2 0 0 ABS 0 dataBANK2 -
+__HdataBANK3 0 0 ABS 0 dataBANK3 -
+__CFG_PPS1WAY$ON 0 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+__initialization FAA 0 CODE 0 cinit dist/default/production\Snake_FP.X.production.o
+__pbssBANK2 162 0 BANK2 1 bssBANK2 dist/default/production\Snake_FP.X.production.o
+__pbssBANK3 1C8 0 BANK3 1 bssBANK3 dist/default/production\Snake_FP.X.production.o
+__CFG_WRT$OFF 0 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+__Lmaintext_split_10 0 0 ABS 0 maintext_split_10 -
+__Lmaintext_split_11 0 0 ABS 0 maintext_split_11 -
+pnum$maintext F 0 ABS 0 - dist/default/production\Snake_FP.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+maintext maintext_split_1
+maintext_split_1 maintext_split_2
+maintext_split_2 maintext_split_3
+maintext_split_3 maintext_split_4
+maintext_split_4 maintext_split_5
+maintext_split_5 maintext_split_6
+maintext_split_6 maintext_split_7
+maintext_split_7 maintext_split_8
+maintext_split_8 maintext_split_9
+maintext_split_9 maintext_split_10
+maintext_split_10 maintext_split_11
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cinit 0 7D5 FAA 2B 2
+text1 0 12A5 254A 3D 2
+text2 0 126E 24DC 37 2
+text3 0 1D 3A 5E 2
+maintext 0 E5C 1CB8 1A4 2
+cstackCOMMON 1 70 70 E 1
+cstackBANK0 1 20 20 4F 1
+cstackBANK1 1 A0 A0 4D 1
+cstackBANK2 1 120 120 4E 1
+inittext 0 7 E 6 2
+reset_vec 0 0 0 4 2
+idataBANK2 0 D 1A 10 2
+idataBANK3 0 805 100A 28 2
+maintext_split_10 0 82D 105A 112 2
+maintext_split_11 0 7B F6 75A 2
+dataBANK3 1 1A0 1A0 48 1
+clrtext 0 1268 24D0 6 2
+config 0 8007 1000E 5 2
+maintext_split_1 0 15F0 2BE0 107 2
+maintext_split_2 0 14E9 29D2 107 2
+maintext_split_3 0 A55 14AA 145 2
+maintext_split_4 0 CE0 19C0 17C 2
+maintext_split_5 0 B9A 1734 146 2
+maintext_split_6 0 12E2 25C4 103 2
+maintext_split_7 0 93F 127E 116 2
+maintext_split_8 0 13E5 27CA 104 2
+maintext_split_9 0 16F7 2DEE 109 2
