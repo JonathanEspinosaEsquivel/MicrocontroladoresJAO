@@ -1,0 +1,112 @@
+[p LITE_MODE AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F18877 ]
+[d frameptr 6 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"12 C:\Users\Travelur\Desktop\Micros\PuntosExtra.X\extrapoints.c
+[v _main main `(v  1 e 1 0 ]
+"41
+[v _isr isr `II(v  1 e 1 0 ]
+[s S140 . 1 `uc 1 INTEDG 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"370 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f18877.h
+[u S145 . 1 `S140 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES145  1 e 1 @11 ]
+"452
+[v _PORTB PORTB `VEuc  1 e 1 @13 ]
+"738
+[v _TRISB TRISB `VEuc  1 e 1 @18 ]
+"1374
+[v _TMR0H TMR0H `VEuc  1 e 1 @29 ]
+[s S38 . 1 `uc 1 T0OUTPS 1 0 :4:0 
+`uc 1 T016BIT 1 0 :1:4 
+`uc 1 T0OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 T0EN 1 0 :1:7 
+]
+"1648
+[s S44 . 1 `uc 1 T0OUTPS0 1 0 :1:0 
+`uc 1 T0OUTPS1 1 0 :1:1 
+`uc 1 T0OUTPS2 1 0 :1:2 
+`uc 1 T0OUTPS3 1 0 :1:3 
+]
+[u S49 . 1 `S38 1 . 1 0 `S44 1 . 1 0 ]
+[v _T0CON0bits T0CON0bits `VES49  1 e 1 @30 ]
+[s S64 . 1 `uc 1 T0CKPS 1 0 :4:0 
+`uc 1 T0ASYNC 1 0 :1:4 
+`uc 1 T0CS 1 0 :3:5 
+]
+"1724
+[s S68 . 1 `uc 1 T0CKPS0 1 0 :1:0 
+`uc 1 T0CKPS1 1 0 :1:1 
+`uc 1 T0CKPS2 1 0 :1:2 
+`uc 1 T0CKPS3 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 T0CS0 1 0 :1:5 
+`uc 1 T0CS1 1 0 :1:6 
+`uc 1 T0CS2 1 0 :1:7 
+]
+[s S77 . 1 `uc 1 T0PS0 1 0 :1:0 
+`uc 1 T0PS1 1 0 :1:1 
+`uc 1 T0PS2 1 0 :1:2 
+`uc 1 T0PS3 1 0 :1:3 
+]
+[s S82 . 1 `uc 1 T0PS 1 0 :4:0 
+]
+[u S84 . 1 `S64 1 . 1 0 `S68 1 . 1 0 `S77 1 . 1 0 `S82 1 . 1 0 ]
+[v _T0CON1bits T0CON1bits `VES84  1 e 1 @31 ]
+[s S114 . 1 `uc 1 INTF 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 IOCIF 1 0 :1:4 
+`uc 1 TMR0IF 1 0 :1:5 
+]
+"21399
+[u S119 . 1 `S114 1 . 1 0 ]
+[v _PIR0bits PIR0bits `VES119  1 e 1 @1804 ]
+[s S127 . 1 `uc 1 INTE 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 IOCIE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+"21821
+[u S132 . 1 `S127 1 . 1 0 ]
+[v _PIE0bits PIE0bits `VES132  1 e 1 @1814 ]
+[s S22 . 1 `uc 1 HFFRQ 1 0 :3:0 
+]
+"23928
+[s S24 . 1 `uc 1 HFFRQ0 1 0 :1:0 
+`uc 1 HFFRQ1 1 0 :1:1 
+`uc 1 HFFRQ2 1 0 :1:2 
+]
+[u S28 . 1 `S22 1 . 1 0 `S24 1 . 1 0 ]
+[v _OSCFRQbits OSCFRQbits `VES28  1 e 1 @2195 ]
+"34238
+[v _ANSELB ANSELB `VEuc  1 e 1 @8003 ]
+"39464
+"39464
+[v _LATB7 LATB7 `VEb  1 e 0 @191 ]
+"44078
+[v _TMR0IF TMR0IF `VEb  1 e 0 @14437 ]
+"11 C:\Users\Travelur\Desktop\Micros\PuntosExtra.X\extrapoints.c
+[v _cont cont `i  1 e 2 0 ]
+"12
+[v _main main `(v  1 e 1 0 ]
+{
+"39
+} 0
+"41
+[v _isr isr `II(v  1 e 1 0 ]
+{
+"48
+} 0

@@ -14,8 +14,7 @@
 #include <xc.h>
 #include "config1.h"
 #define _XTAL_FREQ 32000000
-#define N 8
-#define M 8 
+
  
 void main(void) {
    
@@ -34,16 +33,33 @@ void main(void) {
    //srand(time(NULL));
      int valor=0;
    int caso2=0;
-   
+   unsigned char posicionf;
+   unsigned char posicionc;
     int caso3=0;
     unsigned char CportC[] = {0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111};
     unsigned char fportd[] = {0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000}; 
-    unsigned char bolitac[] = {0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111};  
-    unsigned char bolitaf[] = {0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000};
-   unsigned char bolita2c[] = {0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111};  
-    unsigned char bolita2f[] = {0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000};
-    unsigned char bolita3c[] = {0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111};  
-    unsigned char bolita3f[] = {0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000};
+    unsigned char bolitac[] = {0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,
+    0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,
+    0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,
+    0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,
+    0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,
+    0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,
+    0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,
+    0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111};
+
+    unsigned char bolitaf[] = {0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,
+   0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,
+  0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,
+    0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,
+   0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,
+    0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,
+    0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,
+    0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000};
+    
+   // unsigned char bolita2c[] = {0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111};  
+   // unsigned char bolita2f[] = {0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000};
+   // unsigned char bolita3c[] = {0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111};  
+   // unsigned char bolita3f[] = {0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000};
     unsigned char comidac[] = {0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111};
     unsigned char comidaf1[] = {0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000};
    // unsigned char posactual[] = {0b00000000,0b00000000,0b00010000,0b00010000,0b00010000,0b00000000,0b00000000,0b00000000};
@@ -105,7 +121,7 @@ void main(void) {
     
     */
     
-    
+   int cuerpo=1;
     
     fportd[f]=0b00000100;
     CportC[c]=0b11011111;
@@ -131,7 +147,7 @@ void main(void) {
    aaaa=0;
 
     
-       int valor2=0;
+       int valorC=0;
   comidaf= rand () % 7;   //numero al azar  
   
    comidaf1[comidaf]=1<<comidaf;
@@ -365,24 +381,25 @@ void main(void) {
        
        //Aqui se imprime la cabeza, cuerpo1, cuerpo2, y 3 bb...
        for(y=0;y<velocidad;y++){
-           y;
+           
+         
+       
+            for (x=0;x<cuerpo;x++){
+                 LATC=bolitac[x];  ///SIGUE DEL A VER QUE PASA
+                 LATD=bolitaf[x];
+            __delay_us(15);
+            }
+      
        for(i = 0; i<8; i++){
            for(x =0; x<8; x++){
         LATC=CportC[i];
         LATD=fportd[x];
-        __delay_us(25);
-                 LATC=bolitac[i];
-                 LATD=bolitaf[x];
-            __delay_us(25);
-             LATC=  bolita2c[i]; 
-            LATD=bolita2f[x];
-         __delay_us(25);
-           LATC=  bolita3c[i]; 
-            LATD=bolita3f[x];
-         __delay_us(25);
+        __delay_us(15);
+                
+       
           LATD=comidaf1[i];
             LATC=comidac[x];
-              __delay_us(25);
+              __delay_us(15);
                 
       if(PORTAbits.RA0 == 0 && boton!=4){
        //   __delay_ms(150); 
@@ -406,20 +423,27 @@ void main(void) {
            }
            
            
-            __delay_us(50);
+           
         }
        }
+       
+       
+     
+       
+       
+       
      //si la cabeza esta en la comida, esta cambia a cero y se vuelve a generar otra posicion....
         if ((fportd[f]==comidaf1[comidaf])&&(CportC[c]==comidac[comidaf])){
              comidaf1[comidaf]=0;
              comidac[comidaf]=0b11111111; 
+             cuerpo= cuerpo+1;
             
              if (velocidad<21){
                
-                 velocidad=20+10;
+                 velocidad=20+30;
                 
              } 
-           velocidad=velocidad-20;
+           velocidad=velocidad-10;
        }   
        // otra posicion....
    if ((comidaf1[comidaf]==0)){
@@ -640,84 +664,14 @@ void main(void) {
   
    comidac[comidaf]=aaaa;
                  
-             }
+             }  
       
+
        
-  /*      if ((( fportd[comidaf]=0b00010000)&&(CportC[comidaf]=0b11101111))){
-             comidaf1[comidaf]=0;
-             comidac[comidaf]=0b11111111;
-             
-        }
-       */
+    
       
-       
-      // if (cuartabolita>=2){ 
-         ////  Borrar datitos JUST FOR FUN necesario para evitar registros encendidos :v
-           for(i = 0; i<8; i++){
-           for(x =0; x<8; x++){
-      bolita3c[i]=0b11111111; 
-     bolita3f[x]=0b00000000;
-           }            
-        }
-         //para tomar los valores anteriores de la bolita 2 en la bolita 3....
-         if(caso3==4){
-       bolita3f[valor]=bolita2f[valor+1];
-      bolita3c[c]=bolita2c[c];
-       }
-        if(caso3==1){
-       bolita3f[valor]=bolita2f[valor-1];
-      bolita3c[c]=bolita2c[c];
-       }
-        if(caso3==2){
-      
-      bolita3c[valor]=bolita2c[valor+1];
-       bolita3f[f]=bolita2f[f];
-       }
-        if(caso3==3){
-       bolita3c[valor]=bolita2c[valor-1];
-       bolita3f[f]=bolita2f[f];
-       }  
-           
-        
-       
-       //borrar bolita 2
-       for(i=0;i<8;i++){
-           for(x=0;x<8;x++){
-           bolita2c[i]=0b11111111;
-       bolita2f[x]=0b00000000;
-       }
-       }
-       
-       
        
      
-      //para tomar los valores anteriores de la bolita 1 en al bolita 2 
-       if(caso2==1){
-                caso3=1;
-       bolita2f[valor]=bolitaf[valor];///change por valor
-      bolita2c[c]=bolitac[c];
-      valor2=c;
-       }
-        if(caso2==4){
-                 caso3=4;
-       bolita2f[valor]=bolitaf[valor];
-      bolita2c[c]=bolitac[c];
-        valor2=c;
-       }
-        if(caso2==2){
-           caso3=2;
-      bolita2c[valor]=bolitac[valor];
-       bolita2f[f]=bolitaf[f];
-         valor2=c;
-       }
-        if(caso2==3){
-            caso3=3;
-       bolita2c[valor]=bolitac[valor];
-       bolita2f[f]=bolitaf[f];
-         valor2=c;
-    
-       }
-       
        
        
  /*      for(y=0;y<50;y++){
@@ -754,13 +708,198 @@ void main(void) {
          boton = 4;
       }
        ///Para borrar el rastro gg :V
-          for(i = 0; i<8; i++){
-           for(x =0; x<8; x++){
+        /*  for(i = (cuerpo-1); i<64; i++){
+           for(x =(cuerpo-1); x<64; x++){
     bolitac[i]=0b11111111; 
      bolitaf[x]=0b00000000;
   
            }            
-        }
+        }*/
+       
+        switch(cuerpo){
+               case 2:
+                   bolitaf[0]=posicionf;
+                   bolitac[0]=posicionc;
+               break;
+               case 3:
+                   for(x=1;x>0;x--){
+                       bolitaf[x]=bolitaf[x-1];
+                        bolitac[x]=bolitac[x-1];  
+                   }
+                   bolitaf[0]=posicionf;
+                   bolitac[0]=posicionc;
+               
+               break;
+               case 4:
+                     for(x=2;x>0;x--){
+                       bolitaf[x]=bolitaf[x-1];
+                        bolitac[x]=bolitac[x-1];  
+                   }
+                   bolitaf[0]=posicionf;
+                   bolitac[0]=posicionc;
+     
+               break;
+               case 5:
+                   
+                    for(x=3;x>0;x--){
+                       bolitaf[x]=bolitaf[x-1];
+                        bolitac[x]=bolitac[x-1];  
+                   }
+                   bolitaf[0]=posicionf;
+                   bolitac[0]=posicionc;
+               break;
+               case 6:
+                   for(x=4;x>0;x--){
+                       bolitaf[x]=bolitaf[x-1];
+                        bolitac[x]=bolitac[x-1];  
+                   }
+                   bolitaf[0]=posicionf;
+                   bolitac[0]=posicionc;
+                   
+               break;
+               case 7:
+                 
+                
+                   for(x=5;x>0;x--){
+                       bolitaf[x]=bolitaf[x-1];
+                        bolitac[x]=bolitac[x-1];  
+                   }
+                   bolitaf[0]=posicionf;
+                   bolitac[0]=posicionc;
+         
+               break;
+               case 8:
+               
+                   for(x=6;x>0;x--){
+                       bolitaf[x]=bolitaf[x-1];
+                        bolitac[x]=bolitac[x-1];  
+                   }
+                  bolitaf[0]=posicionf;
+                   bolitac[0]=posicionc;
+                
+               break;
+            case 9:
+                
+                   for(x=7;x>0;x--){
+                       bolitaf[x]=bolitaf[x-1];
+                        bolitac[x]=bolitac[x-1];  
+                   }
+                  bolitaf[0]=posicionf;
+                   bolitac[0]=posicionc;
+                
+                break;
+            case 10:
+                
+                   for(x=8;x>0;x--){
+                       bolitaf[x]=bolitaf[x-1];
+                        bolitac[x]=bolitac[x-1];  
+                   }
+                  bolitaf[0]=posicionf;
+                   bolitac[0]=posicionc;
+                
+                break;
+                
+                 case 11:
+                
+                   for(x=9;x>0;x--){
+                       bolitaf[x]=bolitaf[x-1];
+                        bolitac[x]=bolitac[x-1];  
+                   }
+                  bolitaf[0]=posicionf;
+                   bolitac[0]=posicionc;
+                
+                break;
+                 case 12:
+                
+                   for(x=10;x>0;x--){
+                       bolitaf[x]=bolitaf[x-1];
+                        bolitac[x]=bolitac[x-1];  
+                   }
+                  bolitaf[0]=posicionf;
+                   bolitac[0]=posicionc;
+                
+                break;
+                 case 13:
+                
+                   for(x=11;x>0;x--){
+                       bolitaf[x]=bolitaf[x-1];
+                        bolitac[x]=bolitac[x-1];  
+                   }
+                  bolitaf[0]=posicionf;
+                   bolitac[0]=posicionc;
+                
+                break;
+                 case 14:
+                
+                   for(x=12;x>0;x--){
+                       bolitaf[x]=bolitaf[x-1];
+                        bolitac[x]=bolitac[x-1];  
+                   }
+                  bolitaf[0]=posicionf;
+                   bolitac[0]=posicionc;
+                
+                break;
+                 case 15:
+                
+                   for(x=13;x>0;x--){
+                       bolitaf[x]=bolitaf[x-1];
+                        bolitac[x]=bolitac[x-1];  
+                   }
+                  bolitaf[0]=posicionf;
+                   bolitac[0]=posicionc;
+                
+                break;
+                 case 16:
+                
+                   for(x=14;x>0;x--){
+                       bolitaf[x]=bolitaf[x-1];
+                        bolitac[x]=bolitac[x-1];  
+                   }
+                  bolitaf[0]=posicionf;
+                   bolitac[0]=posicionc;
+                
+                break;
+                 case 17:
+                
+                   for(x=15;x>0;x--){
+                       bolitaf[x]=bolitaf[x-1];
+                        bolitac[x]=bolitac[x-1];  
+                   }
+                  bolitaf[0]=posicionf;
+                   bolitac[0]=posicionc;
+                
+                break;
+                 case 18:
+                
+                   for(x=16;x>0;x--){
+                       bolitaf[x]=bolitaf[x-1];
+                        bolitac[x]=bolitac[x-1];  
+                   }
+                  bolitaf[0]=posicionf;
+                   bolitac[0]=posicionc;
+                
+                break;
+                 case 19:
+                
+                   for(x=17;x>0;x--){
+                       bolitaf[x]=bolitaf[x-1];
+                        bolitac[x]=bolitac[x-1];  
+                   }
+                  bolitaf[0]=posicionf;
+                   bolitac[0]=posicionc;
+                
+                break;
+                 case 20:
+                
+                   for(x=18;x>0;x--){
+                       bolitaf[x]=bolitaf[x-1];
+                        bolitac[x]=bolitac[x-1];  
+                   }
+                  bolitaf[0]=posicionf;
+                   bolitac[0]=posicionc;
+                
+                break;
+       }
          
        
        
@@ -773,13 +912,14 @@ void main(void) {
             f=f+1;
                   
             fportd[f] = fportd[f-1]>>1;
-            bolitaf[f-1]=fportd[f-1]; //tomo valor del la cabeza anterior en fila
-            
+           // bolitaf[f-1]=fportd[f-1]; //tomo valor del la cabeza anterior en fila
+            posicionf=fportd[f];
              fportd[f-1] = 0b00000000;
                  valor=f-1; 
-            
+                  
+                 valorC=c;
             //columnas cuerpo
-            bolitac[c]=CportC[c];
+        posicionc=CportC[c];
           
           
           
@@ -811,67 +951,75 @@ void main(void) {
                  
                  if(CportC[c+1]==0b11111110){
                    CportC[c]=0b11111101; 
-                     bolitac[c+1]=CportC[c+1];
+                 posicionc=CportC[c];
                    CportC [c+1]=0b11111111;
-                   valor=c+1;
-            bolitaf[f]=fportd[f];
+                   valorC=c+1;
+          
+                   valor=f; 
+                   posicionf=fportd[f];
                  //   bolitac[j+1]=0b11111111;
                    break;
                 }
                  if(CportC[c+1]==0b11111101){
                    CportC [c]=0b11111011;  
-                    bolitac[c+1]=CportC[c+1];
+                 posicionc=CportC[c];
                    CportC [c+1]=0b11111111;
-                   valor=c+1;
-                  bolitaf[f]=fportd[f];
+                   valorC=c+1;
+           posicionf=fportd[f];
+                   valor=f; 
+                //  bolitaf[f]=fportd[f];
                 //   bolitac[c+1]=0b11111111;
                    break;
                 }
                  if(CportC[c+1]==0b11111011){
                    CportC [c]=0b11110111; 
-                    bolitac[c+1]=CportC[c+1];
+                 posicionc=CportC[c];
                    CportC [c+1]=0b11111111;
-                   valor=c+1;
-                 bolitaf[f]=fportd[f];
+                   valorC=c+1;
+            posicionf=fportd[f];
+                   valor=f; 
+               //  bolitaf[f]=fportd[f];
              //     bolitac[c+1]=0b11111111;
                    break;
                 }
                  if(CportC[c+1]==0b11110111){
                    CportC [c]=0b11101111;  
-                    bolitac[c+1]=CportC[c+1];
+                 posicionc=CportC[c];
                    CportC [c+1]=0b11111111;
-                   valor=c+1;
-                   bolitaf[f]=fportd[f];
-              //      bolitac[c+1]=0b11111111;
+                   valorC=c+1;
+            posicionf=fportd[f];
+                   valor=f; 
                     
                    break;
                 }
                 if(CportC[c+1]==0b11101111){
                     CportC [c]=0b11011111; 
-                      bolitac[c+1]=CportC[c+1];
+                    posicionc=CportC[c];
                     CportC [c+1]=0b11111111;
-                   valor=c+1;
-                
-                    bolitaf[f]=fportd[f];
-             //      bolitac[c+1]=0b11111111;
+                  valorC=c+1;
+            posicionf=fportd[f];
+                   valor=f; 
                     break;
                 }
                  if(CportC[c+1]==0b11011111){
                     CportC [c]=0b10111111; 
-                         bolitac[c+1]=CportC[c+1];
+                     posicionc=CportC[c];   
                     CportC [c+1]=0b11111111;
-                   valor=c+1;
-              bolitaf[f]=fportd[f];
+                   valorC=c+1;
+            posicionf=fportd[f];
+                   valor=f; 
+            
               //     bolitac[c+1]=0b11111111;
                     break;
                 }
                 if(CportC[c+1]==0b10111111){
                    CportC [c]=0b01111111; 
-                        bolitac[c+1]=CportC[c+1];
+                     posicionc=CportC[c];  
                  CportC [c+1]=0b11111111;
                    valor=c+1;
-              bolitaf[f]=fportd[f];
-           //        bolitac[c+1]=0b11111111;
+          valorC=c+1;
+            posicionf=fportd[f];
+                   valor=f; 
                    break;
                 }
                   if(CportC[c+1]==0b01111111){
@@ -887,39 +1035,43 @@ void main(void) {
               
                  if(CportC[c-1]==0b01111111){
                    CportC[c]=0b10111111;  
-                     bolitac[c-1]=CportC[c-1];
+                    posicionc=CportC[c];
                    CportC [c-1]=0b11111111;
-                   valor=c-1;
-            bolitaf[f]=fportd[f];
+                  valorC=c-1;
+           posicionf=fportd[f];
+                   valor=f; 
         //              bolitac[c-1]=0b11111111;
                    break;
                 }
               
                  if(CportC[c-1]==0b10111111){
                    CportC [c]=0b11011111;
-                       bolitac[c-1]=CportC[c-1];
-                 CportC[c-1]=0b11111111;
-                   valor=c-1;
-                 bolitaf[f]=fportd[f];
+                    posicionc=CportC[c];
+                         CportC[c-1]=0b11111111;
+               valorC=c-1;
+           posicionf=fportd[f];
+                   valor=f; 
        //              bolitac[c-1]=0b11111111;
                      
                    break;
                 }
                  if(CportC[c-1]==0b11011111){
                    CportC [c]=0b11101111; 
-                        bolitac[c-1]=CportC[c-1];
+                     posicionc=CportC[c];
                   CportC [c-1]=0b11111111;
-                   valor=c-1;
-                 bolitaf[f]=fportd[f];
+                  valorC=c-1;
+           posicionf=fportd[f];
+                   valor=f; 
          //               bolitac[c-1]=0b11111111;
                    break;
                 }
                  if(CportC[c-1]==0b11101111){
                    CportC [c]=0b11110111;  
-                      bolitac[c-1]=CportC[c-1];
+                     posicionc=CportC[c];
                   CportC [c-1]=0b11111111;
-                   valor=c-1;
-                  bolitaf[f]=fportd[f];
+                 valorC=c-1;
+           posicionf=fportd[f];
+                   valor=f; 
                    
           //             bolitac[c-1]=0b11111111;
                    break;
@@ -928,30 +1080,32 @@ void main(void) {
               
                 if(CportC[c-1]==0b11110111){
                     CportC [c]=0b11111011; 
-                       bolitac[c-1]=CportC[c-1];
+                   posicionc=CportC[c];    
                    CportC [c-1]=0b11111111;
-                   valor=c-1;
-                    bolitaf[f]=fportd[f];
+                   valorC=c-1;
+           posicionf=fportd[f];
+                   valor=f; 
               
            //         bolitac[c-1]=0b11111111;
                     break;
                 }
                  if(CportC[c-1]==0b11111011){
                     CportC [c]=0b11111101; 
-                     bolitac[c-1]=CportC[c-1];
+                  posicionc=CportC[c];
                     CportC [c-1]=0b11111111;
-                   valor=c-1;
-                    bolitaf[f]=fportd[f];
-                  
+                 valorC=c-1;
+           posicionf=fportd[f];
+                   valor=f; 
             //          bolitac[c-1]=0b11111111;
                     break;
                 }
                 if(CportC[c-1]==0b11111101){
                    CportC [c]=0b11111110; 
-                    bolitac[c-1]=CportC[c-1];
+                  posicionc=CportC[c]; 
                    CportC [c-1]=0b11111111;
-                   valor=c-1;
-                   bolitaf[f]=fportd[f];
+            valorC=c-1;
+           posicionf=fportd[f];
+                   valor=f; 
       //                 bolitac[c-1]=0b11111111;
                     
                    break;
@@ -973,12 +1127,12 @@ void main(void) {
                 f=f-1;       
                
             fportd[f] = fportd[f+1]<<1;
-               bolitaf[f+1]=fportd[f+1];
+             posicionf=fportd[f]; 
            // guardamos la posicion de cabeza 
             fportd[f+1] = 0b00000000;
          ///   bolitaf[f+2]=0b00000000;
-            bolitac[c]= CportC[c];
-         
+        posicionc=CportC[c];
+            valorC=c;
               if(f<0){
                 contador=0;
               }  
@@ -987,6 +1141,17 @@ void main(void) {
       
        
         }
+        
+        
+        //Para que se muera alv :v
+         for(x=0;x<cuerpo;x++){       
+         if ((fportd[f]==bolitaf[x])&&(CportC[c]==bolitac[x])){
+             contador=0;
+            }  
+       }
+        
+       
+       
         
      
       /*  if (boton !=2 || boton !=3 || boton !=1 ){

@@ -1749,59 +1749,65 @@ Version 4.0 HI-TECH Software Intermediate Code
 "31
 [p x CPD = OFF ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"20 Codebb.c
-[; ;Codebb.c: 20: void main(void) {
+"19 Codebb.c
+[; ;Codebb.c: 19: void main(void) {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"22
-[; ;Codebb.c: 22:    OSCFRQbits.HFFRQ = 0b110;
+"21
+[; ;Codebb.c: 21:    OSCFRQbits.HFFRQ = 0b110;
 [e = . . _OSCFRQbits 0 0 -> -> 6 `i `uc ]
-"23
-[; ;Codebb.c: 23:    ANSELD = 0b00000000;
+"22
+[; ;Codebb.c: 22:    ANSELD = 0b00000000;
 [e = _ANSELD -> -> 0 `i `uc ]
-"24
-[; ;Codebb.c: 24:    PORTD = 0b00000000;
+"23
+[; ;Codebb.c: 23:    PORTD = 0b00000000;
 [e = _PORTD -> -> 0 `i `uc ]
-"25
-[; ;Codebb.c: 25:    TRISD = 0b00000000;
+"24
+[; ;Codebb.c: 24:    TRISD = 0b00000000;
 [e = _TRISD -> -> 0 `i `uc ]
-"26
-[; ;Codebb.c: 26:    ANSELC = 0b00000000;
+"25
+[; ;Codebb.c: 25:    ANSELC = 0b00000000;
 [e = _ANSELC -> -> 0 `i `uc ]
-"27
-[; ;Codebb.c: 27:    PORTC = 0b00000000;
+"26
+[; ;Codebb.c: 26:    PORTC = 0b00000000;
 [e = _PORTC -> -> 0 `i `uc ]
-"28
-[; ;Codebb.c: 28:    TRISC = 0b00000000;
+"27
+[; ;Codebb.c: 27:    TRISC = 0b00000000;
 [e = _TRISC -> -> 0 `i `uc ]
-"29
-[; ;Codebb.c: 29:    ANSELA = 0b00000000;
+"28
+[; ;Codebb.c: 28:    ANSELA = 0b00000000;
 [e = _ANSELA -> -> 0 `i `uc ]
-"30
-[; ;Codebb.c: 30:    PORTA = 0b00000000;
+"29
+[; ;Codebb.c: 29:    PORTA = 0b00000000;
 [e = _PORTA -> -> 0 `i `uc ]
-"31
-[; ;Codebb.c: 31:    TRISA = 0b11111111;
+"30
+[; ;Codebb.c: 30:    TRISA = 0b11111111;
 [e = _TRISA -> -> 255 `i `uc ]
-"33
-[; ;Codebb.c: 33:    WPUA= 0b00001111;
+"32
+[; ;Codebb.c: 32:    WPUA= 0b00001111;
 [e = _WPUA -> -> 15 `i `uc ]
-"35
-[; ;Codebb.c: 35:      int valor=0;
+"34
+[; ;Codebb.c: 34:      int valor=0;
 [v _valor `i ~T0 @X0 1 a ]
 [e = _valor -> 0 `i ]
-"36
-[; ;Codebb.c: 36:    int caso2=0;
+"35
+[; ;Codebb.c: 35:    int caso2=0;
 [v _caso2 `i ~T0 @X0 1 a ]
 [e = _caso2 -> 0 `i ]
+"36
+[; ;Codebb.c: 36:    unsigned char posicionf;
+[v _posicionf `uc ~T0 @X0 1 a ]
+"37
+[; ;Codebb.c: 37:    unsigned char posicionc;
+[v _posicionc `uc ~T0 @X0 1 a ]
 "38
 [; ;Codebb.c: 38:     int caso3=0;
 [v _caso3 `i ~T0 @X0 1 a ]
 [e = _caso3 -> 0 `i ]
-[v F12621 `uc ~T0 @X0 -> 8 `i s ]
-[i F12621
+[v F12623 `uc ~T0 @X0 -> 8 `i s ]
+[i F12623
 :U ..
 "39
 [; ;Codebb.c: 39:     unsigned char CportC[] = {0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111};
@@ -1816,9 +1822,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 [v _CportC `uc ~T0 @X0 -> 8 `i a ]
-[e = _CportC F12621 ]
-[v F12623 `uc ~T0 @X0 -> 8 `i s ]
-[i F12623
+[e = _CportC F12623 ]
+[v F12625 `uc ~T0 @X0 -> 8 `i s ]
+[i F12625
 :U ..
 "40
 [; ;Codebb.c: 40:     unsigned char fportd[] = {0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000};
@@ -1833,114 +1839,158 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 [v _fportd `uc ~T0 @X0 -> 8 `i a ]
-[e = _fportd F12623 ]
-[v F12625 `uc ~T0 @X0 -> 8 `i s ]
-[i F12625
-:U ..
-"41
-[; ;Codebb.c: 41:     unsigned char bolitac[] = {0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111};
--> -> 255 `i `uc
--> -> 255 `i `uc
--> -> 255 `i `uc
--> -> 255 `i `uc
--> -> 255 `i `uc
--> -> 255 `i `uc
--> -> 255 `i `uc
--> -> 255 `i `uc
-..
-]
-[v _bolitac `uc ~T0 @X0 -> 8 `i a ]
-[e = _bolitac F12625 ]
-[v F12627 `uc ~T0 @X0 -> 8 `i s ]
+[e = _fportd F12625 ]
+[v F12627 `uc ~T0 @X0 -> 64 `i s ]
 [i F12627
 :U ..
-"42
-[; ;Codebb.c: 42:     unsigned char bolitaf[] = {0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000};
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
+"41
+[; ;Codebb.c: 41:     unsigned char bolitac[] = {0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
 ..
 ]
-[v _bolitaf `uc ~T0 @X0 -> 8 `i a ]
-[e = _bolitaf F12627 ]
-[v F12629 `uc ~T0 @X0 -> 8 `i s ]
+[v _bolitac `uc ~T0 @X0 -> 64 `i a ]
+[e = _bolitac F12627 ]
+[v F12629 `uc ~T0 @X0 -> 64 `i s ]
 [i F12629
 :U ..
-"43
-[; ;Codebb.c: 43:    unsigned char bolita2c[] = {0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111};
--> -> 255 `i `uc
--> -> 255 `i `uc
--> -> 255 `i `uc
--> -> 255 `i `uc
--> -> 255 `i `uc
--> -> 255 `i `uc
--> -> 255 `i `uc
--> -> 255 `i `uc
+"50
+[; ;Codebb.c: 50:     unsigned char bolitaf[] = {0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
 ..
 ]
-[v _bolita2c `uc ~T0 @X0 -> 8 `i a ]
-[e = _bolita2c F12629 ]
+[v _bolitaf `uc ~T0 @X0 -> 64 `i a ]
+[e = _bolitaf F12629 ]
 [v F12631 `uc ~T0 @X0 -> 8 `i s ]
 [i F12631
 :U ..
-"44
-[; ;Codebb.c: 44:     unsigned char bolita2f[] = {0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000};
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-..
-]
-[v _bolita2f `uc ~T0 @X0 -> 8 `i a ]
-[e = _bolita2f F12631 ]
-[v F12633 `uc ~T0 @X0 -> 8 `i s ]
-[i F12633
-:U ..
-"45
-[; ;Codebb.c: 45:     unsigned char bolita3c[] = {0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111};
--> -> 255 `i `uc
--> -> 255 `i `uc
--> -> 255 `i `uc
--> -> 255 `i `uc
--> -> 255 `i `uc
--> -> 255 `i `uc
--> -> 255 `i `uc
--> -> 255 `i `uc
-..
-]
-[v _bolita3c `uc ~T0 @X0 -> 8 `i a ]
-[e = _bolita3c F12633 ]
-[v F12635 `uc ~T0 @X0 -> 8 `i s ]
-[i F12635
-:U ..
-"46
-[; ;Codebb.c: 46:     unsigned char bolita3f[] = {0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000};
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-..
-]
-[v _bolita3f `uc ~T0 @X0 -> 8 `i a ]
-[e = _bolita3f F12635 ]
-[v F12637 `uc ~T0 @X0 -> 8 `i s ]
-[i F12637
-:U ..
-"47
-[; ;Codebb.c: 47:     unsigned char comidac[] = {0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111};
+"63
+[; ;Codebb.c: 63:     unsigned char comidac[] = {0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111};
 -> -> 255 `i `uc
 -> -> 255 `i `uc
 -> -> 255 `i `uc
@@ -1952,12 +2002,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 [v _comidac `uc ~T0 @X0 -> 8 `i a ]
-[e = _comidac F12637 ]
-[v F12639 `uc ~T0 @X0 -> 8 `i s ]
-[i F12639
+[e = _comidac F12631 ]
+[v F12633 `uc ~T0 @X0 -> 8 `i s ]
+[i F12633
 :U ..
-"48
-[; ;Codebb.c: 48:     unsigned char comidaf1[] = {0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000};
+"64
+[; ;Codebb.c: 64:     unsigned char comidaf1[] = {0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000};
 -> -> 0 `i `uc
 -> -> 0 `i `uc
 -> -> 0 `i `uc
@@ -1969,20 +2019,20 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 [v _comidaf1 `uc ~T0 @X0 -> 8 `i a ]
-[e = _comidaf1 F12639 ]
-"51
-[; ;Codebb.c: 51:     int c=2;
+[e = _comidaf1 F12633 ]
+"67
+[; ;Codebb.c: 67:     int c=2;
 [v _c `i ~T0 @X0 1 a ]
 [e = _c -> 2 `i ]
-"52
-[; ;Codebb.c: 52:     int f=5;
+"68
+[; ;Codebb.c: 68:     int f=5;
 [v _f `i ~T0 @X0 1 a ]
 [e = _f -> 5 `i ]
-[v F12643 `uc ~T0 @X0 -> 8 `i s ]
-[i F12643
+[v F12637 `uc ~T0 @X0 -> 8 `i s ]
+[i F12637
 :U ..
-"53
-[; ;Codebb.c: 53:     unsigned char columnaMsj[]={0b11111111,0b11111111,0b11111111,0b11101111,0b11110111,0b11111011,0b11111111,0b11111111};
+"69
+[; ;Codebb.c: 69:     unsigned char columnaMsj[]={0b11111111,0b11111111,0b11111111,0b11101111,0b11110111,0b11111011,0b11111111,0b11111111};
 -> -> 255 `i `uc
 -> -> 255 `i `uc
 -> -> 255 `i `uc
@@ -1994,12 +2044,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 [v _columnaMsj `uc ~T0 @X0 -> 8 `i a ]
-[e = _columnaMsj F12643 ]
-[v F12645 `uc ~T0 @X0 -> 8 `i s ]
-[i F12645
+[e = _columnaMsj F12637 ]
+[v F12639 `uc ~T0 @X0 -> 8 `i s ]
+[i F12639
 :U ..
-"54
-[; ;Codebb.c: 54:     unsigned char filaMsj[]={0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111};
+"70
+[; ;Codebb.c: 70:     unsigned char filaMsj[]={0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111,0b11111111};
 -> -> 255 `i `uc
 -> -> 255 `i `uc
 -> -> 255 `i `uc
@@ -2011,2701 +2061,3168 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 [v _filaMsj `uc ~T0 @X0 -> 8 `i a ]
-[e = _filaMsj F12645 ]
-"55
-[; ;Codebb.c: 55:     filaMsj[0]=0b00000001;
+[e = _filaMsj F12639 ]
+"71
+[; ;Codebb.c: 71:     filaMsj[0]=0b00000001;
 [e = *U + &U _filaMsj * -> -> -> 0 `i `ui `ux -> -> # *U &U _filaMsj `ui `ux -> -> 1 `i `uc ]
-"56
-[; ;Codebb.c: 56:     filaMsj[1]=0b00111001;
+"72
+[; ;Codebb.c: 72:     filaMsj[1]=0b00111001;
 [e = *U + &U _filaMsj * -> -> -> 1 `i `ui `ux -> -> # *U &U _filaMsj `ui `ux -> -> 57 `i `uc ]
-"57
-[; ;Codebb.c: 57:     filaMsj[2]=0b01000001;
-[e = *U + &U _filaMsj * -> -> -> 2 `i `ui `ux -> -> # *U &U _filaMsj `ui `ux -> -> 65 `i `uc ]
-"58
-[; ;Codebb.c: 58:     filaMsj[3]=0b00111001;
-[e = *U + &U _filaMsj * -> -> -> 3 `i `ui `ux -> -> # *U &U _filaMsj `ui `ux -> -> 57 `i `uc ]
-"59
-[; ;Codebb.c: 59:     filaMsj[4]=0b00000001;
-[e = *U + &U _filaMsj * -> -> -> 4 `i `ui `ux -> -> # *U &U _filaMsj `ui `ux -> -> 1 `i `uc ]
-"60
-[; ;Codebb.c: 60:     filaMsj[5]=0b01001001;
-[e = *U + &U _filaMsj * -> -> -> 5 `i `ui `ux -> -> # *U &U _filaMsj `ui `ux -> -> 73 `i `uc ]
-"61
-[; ;Codebb.c: 61:     filaMsj[6]=0b00000001;
-[e = *U + &U _filaMsj * -> -> -> 6 `i `ui `ux -> -> # *U &U _filaMsj `ui `ux -> -> 1 `i `uc ]
-"62
-[; ;Codebb.c: 62:     filaMsj[7]=0b11111111;
-[e = *U + &U _filaMsj * -> -> -> 7 `i `ui `ux -> -> # *U &U _filaMsj `ui `ux -> -> 255 `i `uc ]
-"63
-[; ;Codebb.c: 63:     columnaMsj[0]=0b01111111;
-[e = *U + &U _columnaMsj * -> -> -> 0 `i `ui `ux -> -> # *U &U _columnaMsj `ui `ux -> -> 127 `i `uc ]
-"64
-[; ;Codebb.c: 64:     columnaMsj[1]=0b10111111;
-[e = *U + &U _columnaMsj * -> -> -> 1 `i `ui `ux -> -> # *U &U _columnaMsj `ui `ux -> -> 191 `i `uc ]
-"65
-[; ;Codebb.c: 65:     columnaMsj[2]=0b11011111;
-[e = *U + &U _columnaMsj * -> -> -> 2 `i `ui `ux -> -> # *U &U _columnaMsj `ui `ux -> -> 223 `i `uc ]
-"66
-[; ;Codebb.c: 66:     columnaMsj[3]=0b11101111;
-[e = *U + &U _columnaMsj * -> -> -> 3 `i `ui `ux -> -> # *U &U _columnaMsj `ui `ux -> -> 239 `i `uc ]
-"67
-[; ;Codebb.c: 67:     columnaMsj[4]=0b11110111;
-[e = *U + &U _columnaMsj * -> -> -> 4 `i `ui `ux -> -> # *U &U _columnaMsj `ui `ux -> -> 247 `i `uc ]
-"68
-[; ;Codebb.c: 68:     columnaMsj[5]=0b11111011;
-[e = *U + &U _columnaMsj * -> -> -> 5 `i `ui `ux -> -> # *U &U _columnaMsj `ui `ux -> -> 251 `i `uc ]
-"69
-[; ;Codebb.c: 69:     columnaMsj[6]=0b11111101;
-[e = *U + &U _columnaMsj * -> -> -> 6 `i `ui `ux -> -> # *U &U _columnaMsj `ui `ux -> -> 253 `i `uc ]
-"70
-[; ;Codebb.c: 70:     columnaMsj[7]=0b11111110;
-[e = *U + &U _columnaMsj * -> -> -> 7 `i `ui `ux -> -> # *U &U _columnaMsj `ui `ux -> -> 254 `i `uc ]
-[v F12648 `uc ~T0 @X0 -> 8 `i t ]
 "73
-[; ;Codebb.c: 73:     unsigned char cabeza[8][8];
-[v _cabeza `F12648 ~T0 @X0 -> 8 `i a ]
+[; ;Codebb.c: 73:     filaMsj[2]=0b01000001;
+[e = *U + &U _filaMsj * -> -> -> 2 `i `ui `ux -> -> # *U &U _filaMsj `ui `ux -> -> 65 `i `uc ]
+"74
+[; ;Codebb.c: 74:     filaMsj[3]=0b00111001;
+[e = *U + &U _filaMsj * -> -> -> 3 `i `ui `ux -> -> # *U &U _filaMsj `ui `ux -> -> 57 `i `uc ]
 "75
-[; ;Codebb.c: 75:    int velocidad;
-[v _velocidad `i ~T0 @X0 1 a ]
+[; ;Codebb.c: 75:     filaMsj[4]=0b00000001;
+[e = *U + &U _filaMsj * -> -> -> 4 `i `ui `ux -> -> # *U &U _filaMsj `ui `ux -> -> 1 `i `uc ]
 "76
-[; ;Codebb.c: 76:    velocidad=100;
+[; ;Codebb.c: 76:     filaMsj[5]=0b01001001;
+[e = *U + &U _filaMsj * -> -> -> 5 `i `ui `ux -> -> # *U &U _filaMsj `ui `ux -> -> 73 `i `uc ]
+"77
+[; ;Codebb.c: 77:     filaMsj[6]=0b00000001;
+[e = *U + &U _filaMsj * -> -> -> 6 `i `ui `ux -> -> # *U &U _filaMsj `ui `ux -> -> 1 `i `uc ]
+"78
+[; ;Codebb.c: 78:     filaMsj[7]=0b11111111;
+[e = *U + &U _filaMsj * -> -> -> 7 `i `ui `ux -> -> # *U &U _filaMsj `ui `ux -> -> 255 `i `uc ]
+"79
+[; ;Codebb.c: 79:     columnaMsj[0]=0b01111111;
+[e = *U + &U _columnaMsj * -> -> -> 0 `i `ui `ux -> -> # *U &U _columnaMsj `ui `ux -> -> 127 `i `uc ]
+"80
+[; ;Codebb.c: 80:     columnaMsj[1]=0b10111111;
+[e = *U + &U _columnaMsj * -> -> -> 1 `i `ui `ux -> -> # *U &U _columnaMsj `ui `ux -> -> 191 `i `uc ]
+"81
+[; ;Codebb.c: 81:     columnaMsj[2]=0b11011111;
+[e = *U + &U _columnaMsj * -> -> -> 2 `i `ui `ux -> -> # *U &U _columnaMsj `ui `ux -> -> 223 `i `uc ]
+"82
+[; ;Codebb.c: 82:     columnaMsj[3]=0b11101111;
+[e = *U + &U _columnaMsj * -> -> -> 3 `i `ui `ux -> -> # *U &U _columnaMsj `ui `ux -> -> 239 `i `uc ]
+"83
+[; ;Codebb.c: 83:     columnaMsj[4]=0b11110111;
+[e = *U + &U _columnaMsj * -> -> -> 4 `i `ui `ux -> -> # *U &U _columnaMsj `ui `ux -> -> 247 `i `uc ]
+"84
+[; ;Codebb.c: 84:     columnaMsj[5]=0b11111011;
+[e = *U + &U _columnaMsj * -> -> -> 5 `i `ui `ux -> -> # *U &U _columnaMsj `ui `ux -> -> 251 `i `uc ]
+"85
+[; ;Codebb.c: 85:     columnaMsj[6]=0b11111101;
+[e = *U + &U _columnaMsj * -> -> -> 6 `i `ui `ux -> -> # *U &U _columnaMsj `ui `ux -> -> 253 `i `uc ]
+"86
+[; ;Codebb.c: 86:     columnaMsj[7]=0b11111110;
+[e = *U + &U _columnaMsj * -> -> -> 7 `i `ui `ux -> -> # *U &U _columnaMsj `ui `ux -> -> 254 `i `uc ]
+[v F12642 `uc ~T0 @X0 -> 8 `i t ]
+"89
+[; ;Codebb.c: 89:     unsigned char cabeza[8][8];
+[v _cabeza `F12642 ~T0 @X0 -> 8 `i a ]
+"91
+[; ;Codebb.c: 91:    int velocidad;
+[v _velocidad `i ~T0 @X0 1 a ]
+"92
+[; ;Codebb.c: 92:    velocidad=100;
 [e = _velocidad -> 100 `i ]
-"110
-[; ;Codebb.c: 110:     fportd[f]=0b00000100;
+"124
+[; ;Codebb.c: 124:    int cuerpo=1;
+[v _cuerpo `i ~T0 @X0 1 a ]
+[e = _cuerpo -> 1 `i ]
+"126
+[; ;Codebb.c: 126:     fportd[f]=0b00000100;
 [e = *U + &U _fportd * -> -> _f `ui `ux -> -> # *U &U _fportd `ui `ux -> -> 4 `i `uc ]
-"111
-[; ;Codebb.c: 111:     CportC[c]=0b11011111;
+"127
+[; ;Codebb.c: 127:     CportC[c]=0b11011111;
 [e = *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 223 `i `uc ]
-"114
-[; ;Codebb.c: 114:     int comidaf;
+"130
+[; ;Codebb.c: 130:     int comidaf;
 [v _comidaf `i ~T0 @X0 1 a ]
-"119
-[; ;Codebb.c: 119:     int boton = 0;
+"135
+[; ;Codebb.c: 135:     int boton = 0;
 [v _boton `i ~T0 @X0 1 a ]
 [e = _boton -> 0 `i ]
-"120
-[; ;Codebb.c: 120:     int contador=1;
+"136
+[; ;Codebb.c: 136:     int contador=1;
 [v _contador `i ~T0 @X0 1 a ]
 [e = _contador -> 1 `i ]
-"121
-[; ;Codebb.c: 121:     int i;
+"137
+[; ;Codebb.c: 137:     int i;
 [v _i `i ~T0 @X0 1 a ]
-"122
-[; ;Codebb.c: 122:     int x=1;
+"138
+[; ;Codebb.c: 138:     int x=1;
 [v _x `i ~T0 @X0 1 a ]
 [e = _x -> 1 `i ]
-"123
-[; ;Codebb.c: 123:     int y=0;
+"139
+[; ;Codebb.c: 139:     int y=0;
 [v _y `i ~T0 @X0 1 a ]
 [e = _y -> 0 `i ]
-"124
-[; ;Codebb.c: 124:     int j=3;
+"140
+[; ;Codebb.c: 140:     int j=3;
 [v _j `i ~T0 @X0 1 a ]
 [e = _j -> 3 `i ]
-"125
-[; ;Codebb.c: 125:     int a =0;
+"141
+[; ;Codebb.c: 141:     int a =0;
 [v _a `i ~T0 @X0 1 a ]
 [e = _a -> 0 `i ]
-"127
-[; ;Codebb.c: 127:    cabeza[i][x] = (LATC=CportC[i],LATD=fportd[x]);
+"143
+[; ;Codebb.c: 143:    cabeza[i][x] = (LATC=CportC[i],LATD=fportd[x]);
 [e = *U + &U *U + &U _cabeza * -> -> _i `ui `ux -> * -> # *U &U *U &U _cabeza `ui -> -> 8 `i `ui `ux * -> -> _x `ui `ux -> -> # *U &U *U + &U _cabeza * -> -> _i `ui `ux -> * -> # *U &U *U &U _cabeza `ui -> -> 8 `i `ui `ux `ui `ux ; = _LATC *U + &U _CportC * -> -> _i `ui `ux -> -> # *U &U _CportC `ui `ux = _LATD *U + &U _fportd * -> -> _x `ui `ux -> -> # *U &U _fportd `ui `ux ]
-"129
-[; ;Codebb.c: 129:    int numero1;
+"145
+[; ;Codebb.c: 145:    int numero1;
 [v _numero1 `i ~T0 @X0 1 a ]
-"130
-[; ;Codebb.c: 130:    unsigned char aaaa;
+"146
+[; ;Codebb.c: 146:    unsigned char aaaa;
 [v _aaaa `uc ~T0 @X0 1 a ]
-"131
-[; ;Codebb.c: 131:    aaaa=0;
+"147
+[; ;Codebb.c: 147:    aaaa=0;
 [e = _aaaa -> -> 0 `i `uc ]
-"134
-[; ;Codebb.c: 134:        int valor2=0;
-[v _valor2 `i ~T0 @X0 1 a ]
-[e = _valor2 -> 0 `i ]
-"135
-[; ;Codebb.c: 135:   comidaf= rand () % 7;
+"150
+[; ;Codebb.c: 150:        int valorC=0;
+[v _valorC `i ~T0 @X0 1 a ]
+[e = _valorC -> 0 `i ]
+"151
+[; ;Codebb.c: 151:   comidaf= rand () % 7;
 [e = _comidaf % ( _rand ..  -> 7 `i ]
-"137
-[; ;Codebb.c: 137:    comidaf1[comidaf]=1<<comidaf;
+"153
+[; ;Codebb.c: 153:    comidaf1[comidaf]=1<<comidaf;
 [e = *U + &U _comidaf1 * -> -> _comidaf `ui `ux -> -> # *U &U _comidaf1 `ui `ux -> << -> 1 `i _comidaf `uc ]
-"138
-[; ;Codebb.c: 138:    if (comidaf==0){
+"154
+[; ;Codebb.c: 154:    if (comidaf==0){
 [e $ ! == _comidaf -> 0 `i 1626  ]
 {
-"139
-[; ;Codebb.c: 139:    if (comidaf==7){
+"155
+[; ;Codebb.c: 155:    if (comidaf==7){
 [e $ ! == _comidaf -> 7 `i 1627  ]
 {
-"140
-[; ;Codebb.c: 140:             aaaa=0b01111111;
+"156
+[; ;Codebb.c: 156:             aaaa=0b01111111;
 [e = _aaaa -> -> 127 `i `uc ]
-"141
-[; ;Codebb.c: 141:         }
+"157
+[; ;Codebb.c: 157:         }
 }
 [e :U 1627 ]
-"142
-[; ;Codebb.c: 142:          if (comidaf==6){
+"158
+[; ;Codebb.c: 158:          if (comidaf==6){
 [e $ ! == _comidaf -> 6 `i 1628  ]
 {
-"143
-[; ;Codebb.c: 143:             aaaa=0b10111111;
+"159
+[; ;Codebb.c: 159:             aaaa=0b10111111;
 [e = _aaaa -> -> 191 `i `uc ]
-"144
-[; ;Codebb.c: 144:         }
+"160
+[; ;Codebb.c: 160:         }
 }
 [e :U 1628 ]
-"145
-[; ;Codebb.c: 145:         if (comidaf==5){
+"161
+[; ;Codebb.c: 161:         if (comidaf==5){
 [e $ ! == _comidaf -> 5 `i 1629  ]
 {
-"146
-[; ;Codebb.c: 146:             aaaa=0b11011111;
+"162
+[; ;Codebb.c: 162:             aaaa=0b11011111;
 [e = _aaaa -> -> 223 `i `uc ]
-"147
-[; ;Codebb.c: 147:         }
+"163
+[; ;Codebb.c: 163:         }
 }
 [e :U 1629 ]
-"148
-[; ;Codebb.c: 148:          if (comidaf==4){
+"164
+[; ;Codebb.c: 164:          if (comidaf==4){
 [e $ ! == _comidaf -> 4 `i 1630  ]
 {
-"149
-[; ;Codebb.c: 149:             aaaa=0b11101111;
+"165
+[; ;Codebb.c: 165:             aaaa=0b11101111;
 [e = _aaaa -> -> 239 `i `uc ]
-"150
-[; ;Codebb.c: 150:         }
+"166
+[; ;Codebb.c: 166:         }
 }
 [e :U 1630 ]
-"151
-[; ;Codebb.c: 151:          if (comidaf==3){
+"167
+[; ;Codebb.c: 167:          if (comidaf==3){
 [e $ ! == _comidaf -> 3 `i 1631  ]
 {
-"152
-[; ;Codebb.c: 152:             aaaa=0b11110111;
+"168
+[; ;Codebb.c: 168:             aaaa=0b11110111;
 [e = _aaaa -> -> 247 `i `uc ]
-"153
-[; ;Codebb.c: 153:         }
+"169
+[; ;Codebb.c: 169:         }
 }
 [e :U 1631 ]
-"154
-[; ;Codebb.c: 154:          if (comidaf==2){
+"170
+[; ;Codebb.c: 170:          if (comidaf==2){
 [e $ ! == _comidaf -> 2 `i 1632  ]
 {
-"155
-[; ;Codebb.c: 155:             aaaa=0b11111011;
+"171
+[; ;Codebb.c: 171:             aaaa=0b11111011;
 [e = _aaaa -> -> 251 `i `uc ]
-"156
-[; ;Codebb.c: 156:         }
+"172
+[; ;Codebb.c: 172:         }
 }
 [e :U 1632 ]
-"157
-[; ;Codebb.c: 157:          if (comidaf==1){
+"173
+[; ;Codebb.c: 173:          if (comidaf==1){
 [e $ ! == _comidaf -> 1 `i 1633  ]
 {
-"158
-[; ;Codebb.c: 158:             aaaa=0b11111101;
+"174
+[; ;Codebb.c: 174:             aaaa=0b11111101;
 [e = _aaaa -> -> 253 `i `uc ]
-"159
-[; ;Codebb.c: 159:         }
+"175
+[; ;Codebb.c: 175:         }
 }
 [e :U 1633 ]
-"160
-[; ;Codebb.c: 160:          if (comidaf==0){
+"176
+[; ;Codebb.c: 176:          if (comidaf==0){
 [e $ ! == _comidaf -> 0 `i 1634  ]
 {
-"161
-[; ;Codebb.c: 161:             aaaa=0b11111110;
+"177
+[; ;Codebb.c: 177:             aaaa=0b11111110;
 [e = _aaaa -> -> 254 `i `uc ]
-"162
-[; ;Codebb.c: 162:         }
+"178
+[; ;Codebb.c: 178:         }
 }
 [e :U 1634 ]
-"163
-[; ;Codebb.c: 163:   }
+"179
+[; ;Codebb.c: 179:   }
 }
 [e :U 1626 ]
-"164
-[; ;Codebb.c: 164:     if (comidaf==1){
+"180
+[; ;Codebb.c: 180:     if (comidaf==1){
 [e $ ! == _comidaf -> 1 `i 1635  ]
 {
-"165
-[; ;Codebb.c: 165:    if (comidaf==6){
+"181
+[; ;Codebb.c: 181:    if (comidaf==6){
 [e $ ! == _comidaf -> 6 `i 1636  ]
 {
-"166
-[; ;Codebb.c: 166:             aaaa=0b01111111;
+"182
+[; ;Codebb.c: 182:             aaaa=0b01111111;
 [e = _aaaa -> -> 127 `i `uc ]
-"167
-[; ;Codebb.c: 167:         }
+"183
+[; ;Codebb.c: 183:         }
 }
 [e :U 1636 ]
-"168
-[; ;Codebb.c: 168:          if (comidaf==5){
+"184
+[; ;Codebb.c: 184:          if (comidaf==5){
 [e $ ! == _comidaf -> 5 `i 1637  ]
 {
-"169
-[; ;Codebb.c: 169:             aaaa=0b10111111;
+"185
+[; ;Codebb.c: 185:             aaaa=0b10111111;
 [e = _aaaa -> -> 191 `i `uc ]
-"170
-[; ;Codebb.c: 170:         }
+"186
+[; ;Codebb.c: 186:         }
 }
 [e :U 1637 ]
-"171
-[; ;Codebb.c: 171:         if (comidaf==4){
+"187
+[; ;Codebb.c: 187:         if (comidaf==4){
 [e $ ! == _comidaf -> 4 `i 1638  ]
 {
-"172
-[; ;Codebb.c: 172:             aaaa=0b11011111;
+"188
+[; ;Codebb.c: 188:             aaaa=0b11011111;
 [e = _aaaa -> -> 223 `i `uc ]
-"173
-[; ;Codebb.c: 173:         }
+"189
+[; ;Codebb.c: 189:         }
 }
 [e :U 1638 ]
-"174
-[; ;Codebb.c: 174:          if (comidaf==3){
+"190
+[; ;Codebb.c: 190:          if (comidaf==3){
 [e $ ! == _comidaf -> 3 `i 1639  ]
 {
-"175
-[; ;Codebb.c: 175:             aaaa=0b11101111;
+"191
+[; ;Codebb.c: 191:             aaaa=0b11101111;
 [e = _aaaa -> -> 239 `i `uc ]
-"176
-[; ;Codebb.c: 176:         }
+"192
+[; ;Codebb.c: 192:         }
 }
 [e :U 1639 ]
-"177
-[; ;Codebb.c: 177:          if (comidaf==2){
+"193
+[; ;Codebb.c: 193:          if (comidaf==2){
 [e $ ! == _comidaf -> 2 `i 1640  ]
 {
-"178
-[; ;Codebb.c: 178:             aaaa=0b11110111;
+"194
+[; ;Codebb.c: 194:             aaaa=0b11110111;
 [e = _aaaa -> -> 247 `i `uc ]
-"179
-[; ;Codebb.c: 179:         }
+"195
+[; ;Codebb.c: 195:         }
 }
 [e :U 1640 ]
-"180
-[; ;Codebb.c: 180:          if (comidaf==1){
+"196
+[; ;Codebb.c: 196:          if (comidaf==1){
 [e $ ! == _comidaf -> 1 `i 1641  ]
 {
-"181
-[; ;Codebb.c: 181:             aaaa=0b11111011;
+"197
+[; ;Codebb.c: 197:             aaaa=0b11111011;
 [e = _aaaa -> -> 251 `i `uc ]
-"182
-[; ;Codebb.c: 182:         }
+"198
+[; ;Codebb.c: 198:         }
 }
 [e :U 1641 ]
-"183
-[; ;Codebb.c: 183:          if (comidaf==0){
+"199
+[; ;Codebb.c: 199:          if (comidaf==0){
 [e $ ! == _comidaf -> 0 `i 1642  ]
 {
-"184
-[; ;Codebb.c: 184:             aaaa=0b11111101;
+"200
+[; ;Codebb.c: 200:             aaaa=0b11111101;
 [e = _aaaa -> -> 253 `i `uc ]
-"185
-[; ;Codebb.c: 185:         }
+"201
+[; ;Codebb.c: 201:         }
 }
 [e :U 1642 ]
-"186
-[; ;Codebb.c: 186:          if (comidaf==7){
+"202
+[; ;Codebb.c: 202:          if (comidaf==7){
 [e $ ! == _comidaf -> 7 `i 1643  ]
 {
-"187
-[; ;Codebb.c: 187:             aaaa=0b11111110;
+"203
+[; ;Codebb.c: 203:             aaaa=0b11111110;
 [e = _aaaa -> -> 254 `i `uc ]
-"188
-[; ;Codebb.c: 188:         }
+"204
+[; ;Codebb.c: 204:         }
 }
 [e :U 1643 ]
-"189
-[; ;Codebb.c: 189:   }
+"205
+[; ;Codebb.c: 205:   }
 }
 [e :U 1635 ]
-"190
-[; ;Codebb.c: 190:     if (comidaf==2){
+"206
+[; ;Codebb.c: 206:     if (comidaf==2){
 [e $ ! == _comidaf -> 2 `i 1644  ]
 {
-"191
-[; ;Codebb.c: 191:    if (comidaf==5){
+"207
+[; ;Codebb.c: 207:    if (comidaf==5){
 [e $ ! == _comidaf -> 5 `i 1645  ]
 {
-"192
-[; ;Codebb.c: 192:             aaaa=0b01111111;
+"208
+[; ;Codebb.c: 208:             aaaa=0b01111111;
 [e = _aaaa -> -> 127 `i `uc ]
-"193
-[; ;Codebb.c: 193:         }
+"209
+[; ;Codebb.c: 209:         }
 }
 [e :U 1645 ]
-"194
-[; ;Codebb.c: 194:          if (comidaf==4){
+"210
+[; ;Codebb.c: 210:          if (comidaf==4){
 [e $ ! == _comidaf -> 4 `i 1646  ]
 {
-"195
-[; ;Codebb.c: 195:             aaaa=0b10111111;
+"211
+[; ;Codebb.c: 211:             aaaa=0b10111111;
 [e = _aaaa -> -> 191 `i `uc ]
-"196
-[; ;Codebb.c: 196:         }
+"212
+[; ;Codebb.c: 212:         }
 }
 [e :U 1646 ]
-"197
-[; ;Codebb.c: 197:         if (comidaf==3){
+"213
+[; ;Codebb.c: 213:         if (comidaf==3){
 [e $ ! == _comidaf -> 3 `i 1647  ]
 {
-"198
-[; ;Codebb.c: 198:             aaaa=0b11011111;
+"214
+[; ;Codebb.c: 214:             aaaa=0b11011111;
 [e = _aaaa -> -> 223 `i `uc ]
-"199
-[; ;Codebb.c: 199:         }
+"215
+[; ;Codebb.c: 215:         }
 }
 [e :U 1647 ]
-"200
-[; ;Codebb.c: 200:          if (comidaf==2){
+"216
+[; ;Codebb.c: 216:          if (comidaf==2){
 [e $ ! == _comidaf -> 2 `i 1648  ]
 {
-"201
-[; ;Codebb.c: 201:             aaaa=0b11101111;
+"217
+[; ;Codebb.c: 217:             aaaa=0b11101111;
 [e = _aaaa -> -> 239 `i `uc ]
-"202
-[; ;Codebb.c: 202:         }
+"218
+[; ;Codebb.c: 218:         }
 }
 [e :U 1648 ]
-"203
-[; ;Codebb.c: 203:          if (comidaf==1){
+"219
+[; ;Codebb.c: 219:          if (comidaf==1){
 [e $ ! == _comidaf -> 1 `i 1649  ]
 {
-"204
-[; ;Codebb.c: 204:             aaaa=0b11110111;
+"220
+[; ;Codebb.c: 220:             aaaa=0b11110111;
 [e = _aaaa -> -> 247 `i `uc ]
-"205
-[; ;Codebb.c: 205:         }
+"221
+[; ;Codebb.c: 221:         }
 }
 [e :U 1649 ]
-"206
-[; ;Codebb.c: 206:          if (comidaf==0){
+"222
+[; ;Codebb.c: 222:          if (comidaf==0){
 [e $ ! == _comidaf -> 0 `i 1650  ]
 {
-"207
-[; ;Codebb.c: 207:             aaaa=0b11111011;
+"223
+[; ;Codebb.c: 223:             aaaa=0b11111011;
 [e = _aaaa -> -> 251 `i `uc ]
-"208
-[; ;Codebb.c: 208:         }
+"224
+[; ;Codebb.c: 224:         }
 }
 [e :U 1650 ]
-"209
-[; ;Codebb.c: 209:          if (comidaf==7){
+"225
+[; ;Codebb.c: 225:          if (comidaf==7){
 [e $ ! == _comidaf -> 7 `i 1651  ]
 {
-"210
-[; ;Codebb.c: 210:             aaaa=0b11111101;
+"226
+[; ;Codebb.c: 226:             aaaa=0b11111101;
 [e = _aaaa -> -> 253 `i `uc ]
-"211
-[; ;Codebb.c: 211:         }
+"227
+[; ;Codebb.c: 227:         }
 }
 [e :U 1651 ]
-"212
-[; ;Codebb.c: 212:          if (comidaf==6){
+"228
+[; ;Codebb.c: 228:          if (comidaf==6){
 [e $ ! == _comidaf -> 6 `i 1652  ]
 {
-"213
-[; ;Codebb.c: 213:             aaaa=0b11111110;
+"229
+[; ;Codebb.c: 229:             aaaa=0b11111110;
 [e = _aaaa -> -> 254 `i `uc ]
-"214
-[; ;Codebb.c: 214:         }
+"230
+[; ;Codebb.c: 230:         }
 }
 [e :U 1652 ]
-"215
-[; ;Codebb.c: 215:   }
+"231
+[; ;Codebb.c: 231:   }
 }
 [e :U 1644 ]
-"216
-[; ;Codebb.c: 216:     if (comidaf==3){
+"232
+[; ;Codebb.c: 232:     if (comidaf==3){
 [e $ ! == _comidaf -> 3 `i 1653  ]
 {
-"217
-[; ;Codebb.c: 217:    if (comidaf==4){
+"233
+[; ;Codebb.c: 233:    if (comidaf==4){
 [e $ ! == _comidaf -> 4 `i 1654  ]
 {
-"218
-[; ;Codebb.c: 218:             aaaa=0b01111111;
+"234
+[; ;Codebb.c: 234:             aaaa=0b01111111;
 [e = _aaaa -> -> 127 `i `uc ]
-"219
-[; ;Codebb.c: 219:         }
+"235
+[; ;Codebb.c: 235:         }
 }
 [e :U 1654 ]
-"220
-[; ;Codebb.c: 220:          if (comidaf==3){
+"236
+[; ;Codebb.c: 236:          if (comidaf==3){
 [e $ ! == _comidaf -> 3 `i 1655  ]
 {
-"221
-[; ;Codebb.c: 221:             aaaa=0b10111111;
+"237
+[; ;Codebb.c: 237:             aaaa=0b10111111;
 [e = _aaaa -> -> 191 `i `uc ]
-"222
-[; ;Codebb.c: 222:         }
+"238
+[; ;Codebb.c: 238:         }
 }
 [e :U 1655 ]
-"223
-[; ;Codebb.c: 223:         if (comidaf==2){
+"239
+[; ;Codebb.c: 239:         if (comidaf==2){
 [e $ ! == _comidaf -> 2 `i 1656  ]
 {
-"224
-[; ;Codebb.c: 224:             aaaa=0b11011111;
+"240
+[; ;Codebb.c: 240:             aaaa=0b11011111;
 [e = _aaaa -> -> 223 `i `uc ]
-"225
-[; ;Codebb.c: 225:         }
+"241
+[; ;Codebb.c: 241:         }
 }
 [e :U 1656 ]
-"226
-[; ;Codebb.c: 226:          if (comidaf==1){
+"242
+[; ;Codebb.c: 242:          if (comidaf==1){
 [e $ ! == _comidaf -> 1 `i 1657  ]
 {
-"227
-[; ;Codebb.c: 227:             aaaa=0b11101111;
+"243
+[; ;Codebb.c: 243:             aaaa=0b11101111;
 [e = _aaaa -> -> 239 `i `uc ]
-"228
-[; ;Codebb.c: 228:         }
+"244
+[; ;Codebb.c: 244:         }
 }
 [e :U 1657 ]
-"229
-[; ;Codebb.c: 229:          if (comidaf==0){
+"245
+[; ;Codebb.c: 245:          if (comidaf==0){
 [e $ ! == _comidaf -> 0 `i 1658  ]
 {
-"230
-[; ;Codebb.c: 230:             aaaa=0b11110111;
+"246
+[; ;Codebb.c: 246:             aaaa=0b11110111;
 [e = _aaaa -> -> 247 `i `uc ]
-"231
-[; ;Codebb.c: 231:         }
+"247
+[; ;Codebb.c: 247:         }
 }
 [e :U 1658 ]
-"232
-[; ;Codebb.c: 232:          if (comidaf==7){
+"248
+[; ;Codebb.c: 248:          if (comidaf==7){
 [e $ ! == _comidaf -> 7 `i 1659  ]
 {
-"233
-[; ;Codebb.c: 233:             aaaa=0b11111011;
+"249
+[; ;Codebb.c: 249:             aaaa=0b11111011;
 [e = _aaaa -> -> 251 `i `uc ]
-"234
-[; ;Codebb.c: 234:         }
+"250
+[; ;Codebb.c: 250:         }
 }
 [e :U 1659 ]
-"235
-[; ;Codebb.c: 235:          if (comidaf==6){
+"251
+[; ;Codebb.c: 251:          if (comidaf==6){
 [e $ ! == _comidaf -> 6 `i 1660  ]
 {
-"236
-[; ;Codebb.c: 236:             aaaa=0b11111101;
+"252
+[; ;Codebb.c: 252:             aaaa=0b11111101;
 [e = _aaaa -> -> 253 `i `uc ]
-"237
-[; ;Codebb.c: 237:         }
+"253
+[; ;Codebb.c: 253:         }
 }
 [e :U 1660 ]
-"238
-[; ;Codebb.c: 238:          if (comidaf==5){
+"254
+[; ;Codebb.c: 254:          if (comidaf==5){
 [e $ ! == _comidaf -> 5 `i 1661  ]
 {
-"239
-[; ;Codebb.c: 239:             aaaa=0b11111110;
+"255
+[; ;Codebb.c: 255:             aaaa=0b11111110;
 [e = _aaaa -> -> 254 `i `uc ]
-"240
-[; ;Codebb.c: 240:         }
+"256
+[; ;Codebb.c: 256:         }
 }
 [e :U 1661 ]
-"241
-[; ;Codebb.c: 241:   }
+"257
+[; ;Codebb.c: 257:   }
 }
 [e :U 1653 ]
-"242
-[; ;Codebb.c: 242:     if (comidaf==4){
+"258
+[; ;Codebb.c: 258:     if (comidaf==4){
 [e $ ! == _comidaf -> 4 `i 1662  ]
 {
-"243
-[; ;Codebb.c: 243:    if (comidaf==3){
+"259
+[; ;Codebb.c: 259:    if (comidaf==3){
 [e $ ! == _comidaf -> 3 `i 1663  ]
 {
-"244
-[; ;Codebb.c: 244:             aaaa=0b01111111;
+"260
+[; ;Codebb.c: 260:             aaaa=0b01111111;
 [e = _aaaa -> -> 127 `i `uc ]
-"245
-[; ;Codebb.c: 245:         }
+"261
+[; ;Codebb.c: 261:         }
 }
 [e :U 1663 ]
-"246
-[; ;Codebb.c: 246:          if (comidaf==2){
+"262
+[; ;Codebb.c: 262:          if (comidaf==2){
 [e $ ! == _comidaf -> 2 `i 1664  ]
 {
-"247
-[; ;Codebb.c: 247:             aaaa=0b10111111;
+"263
+[; ;Codebb.c: 263:             aaaa=0b10111111;
 [e = _aaaa -> -> 191 `i `uc ]
-"248
-[; ;Codebb.c: 248:         }
+"264
+[; ;Codebb.c: 264:         }
 }
 [e :U 1664 ]
-"249
-[; ;Codebb.c: 249:         if (comidaf==1){
+"265
+[; ;Codebb.c: 265:         if (comidaf==1){
 [e $ ! == _comidaf -> 1 `i 1665  ]
 {
-"250
-[; ;Codebb.c: 250:             aaaa=0b11011111;
+"266
+[; ;Codebb.c: 266:             aaaa=0b11011111;
 [e = _aaaa -> -> 223 `i `uc ]
-"251
-[; ;Codebb.c: 251:         }
+"267
+[; ;Codebb.c: 267:         }
 }
 [e :U 1665 ]
-"252
-[; ;Codebb.c: 252:          if (comidaf==0){
+"268
+[; ;Codebb.c: 268:          if (comidaf==0){
 [e $ ! == _comidaf -> 0 `i 1666  ]
 {
-"253
-[; ;Codebb.c: 253:             aaaa=0b11101111;
+"269
+[; ;Codebb.c: 269:             aaaa=0b11101111;
 [e = _aaaa -> -> 239 `i `uc ]
-"254
-[; ;Codebb.c: 254:         }
+"270
+[; ;Codebb.c: 270:         }
 }
 [e :U 1666 ]
-"255
-[; ;Codebb.c: 255:          if (comidaf==7){
+"271
+[; ;Codebb.c: 271:          if (comidaf==7){
 [e $ ! == _comidaf -> 7 `i 1667  ]
 {
-"256
-[; ;Codebb.c: 256:             aaaa=0b11110111;
+"272
+[; ;Codebb.c: 272:             aaaa=0b11110111;
 [e = _aaaa -> -> 247 `i `uc ]
-"257
-[; ;Codebb.c: 257:         }
+"273
+[; ;Codebb.c: 273:         }
 }
 [e :U 1667 ]
-"258
-[; ;Codebb.c: 258:          if (comidaf==6){
+"274
+[; ;Codebb.c: 274:          if (comidaf==6){
 [e $ ! == _comidaf -> 6 `i 1668  ]
 {
-"259
-[; ;Codebb.c: 259:             aaaa=0b11111011;
+"275
+[; ;Codebb.c: 275:             aaaa=0b11111011;
 [e = _aaaa -> -> 251 `i `uc ]
-"260
-[; ;Codebb.c: 260:         }
+"276
+[; ;Codebb.c: 276:         }
 }
 [e :U 1668 ]
-"261
-[; ;Codebb.c: 261:          if (comidaf==5){
+"277
+[; ;Codebb.c: 277:          if (comidaf==5){
 [e $ ! == _comidaf -> 5 `i 1669  ]
 {
-"262
-[; ;Codebb.c: 262:             aaaa=0b11111101;
+"278
+[; ;Codebb.c: 278:             aaaa=0b11111101;
 [e = _aaaa -> -> 253 `i `uc ]
-"263
-[; ;Codebb.c: 263:         }
+"279
+[; ;Codebb.c: 279:         }
 }
 [e :U 1669 ]
-"264
-[; ;Codebb.c: 264:          if (comidaf==4){
+"280
+[; ;Codebb.c: 280:          if (comidaf==4){
 [e $ ! == _comidaf -> 4 `i 1670  ]
 {
-"265
-[; ;Codebb.c: 265:             aaaa=0b11111110;
+"281
+[; ;Codebb.c: 281:             aaaa=0b11111110;
 [e = _aaaa -> -> 254 `i `uc ]
-"266
-[; ;Codebb.c: 266:         }
+"282
+[; ;Codebb.c: 282:         }
 }
 [e :U 1670 ]
-"267
-[; ;Codebb.c: 267:   }
+"283
+[; ;Codebb.c: 283:   }
 }
 [e :U 1662 ]
-"268
-[; ;Codebb.c: 268:     if (comidaf==5){
+"284
+[; ;Codebb.c: 284:     if (comidaf==5){
 [e $ ! == _comidaf -> 5 `i 1671  ]
 {
-"269
-[; ;Codebb.c: 269:    if (comidaf==2){
+"285
+[; ;Codebb.c: 285:    if (comidaf==2){
 [e $ ! == _comidaf -> 2 `i 1672  ]
 {
-"270
-[; ;Codebb.c: 270:             aaaa=0b01111111;
+"286
+[; ;Codebb.c: 286:             aaaa=0b01111111;
 [e = _aaaa -> -> 127 `i `uc ]
-"271
-[; ;Codebb.c: 271:         }
+"287
+[; ;Codebb.c: 287:         }
 }
 [e :U 1672 ]
-"272
-[; ;Codebb.c: 272:          if (comidaf==1){
+"288
+[; ;Codebb.c: 288:          if (comidaf==1){
 [e $ ! == _comidaf -> 1 `i 1673  ]
 {
-"273
-[; ;Codebb.c: 273:             aaaa=0b10111111;
+"289
+[; ;Codebb.c: 289:             aaaa=0b10111111;
 [e = _aaaa -> -> 191 `i `uc ]
-"274
-[; ;Codebb.c: 274:         }
+"290
+[; ;Codebb.c: 290:         }
 }
 [e :U 1673 ]
-"275
-[; ;Codebb.c: 275:         if (comidaf==0){
+"291
+[; ;Codebb.c: 291:         if (comidaf==0){
 [e $ ! == _comidaf -> 0 `i 1674  ]
 {
-"276
-[; ;Codebb.c: 276:             aaaa=0b11011111;
+"292
+[; ;Codebb.c: 292:             aaaa=0b11011111;
 [e = _aaaa -> -> 223 `i `uc ]
-"277
-[; ;Codebb.c: 277:         }
+"293
+[; ;Codebb.c: 293:         }
 }
 [e :U 1674 ]
-"278
-[; ;Codebb.c: 278:          if (comidaf==7){
+"294
+[; ;Codebb.c: 294:          if (comidaf==7){
 [e $ ! == _comidaf -> 7 `i 1675  ]
 {
-"279
-[; ;Codebb.c: 279:             aaaa=0b11101111;
+"295
+[; ;Codebb.c: 295:             aaaa=0b11101111;
 [e = _aaaa -> -> 239 `i `uc ]
-"280
-[; ;Codebb.c: 280:         }
+"296
+[; ;Codebb.c: 296:         }
 }
 [e :U 1675 ]
-"281
-[; ;Codebb.c: 281:          if (comidaf==6){
+"297
+[; ;Codebb.c: 297:          if (comidaf==6){
 [e $ ! == _comidaf -> 6 `i 1676  ]
 {
-"282
-[; ;Codebb.c: 282:             aaaa=0b11110111;
+"298
+[; ;Codebb.c: 298:             aaaa=0b11110111;
 [e = _aaaa -> -> 247 `i `uc ]
-"283
-[; ;Codebb.c: 283:         }
+"299
+[; ;Codebb.c: 299:         }
 }
 [e :U 1676 ]
-"284
-[; ;Codebb.c: 284:          if (comidaf==5){
+"300
+[; ;Codebb.c: 300:          if (comidaf==5){
 [e $ ! == _comidaf -> 5 `i 1677  ]
 {
-"285
-[; ;Codebb.c: 285:             aaaa=0b11111011;
+"301
+[; ;Codebb.c: 301:             aaaa=0b11111011;
 [e = _aaaa -> -> 251 `i `uc ]
-"286
-[; ;Codebb.c: 286:         }
+"302
+[; ;Codebb.c: 302:         }
 }
 [e :U 1677 ]
-"287
-[; ;Codebb.c: 287:          if (comidaf==4){
+"303
+[; ;Codebb.c: 303:          if (comidaf==4){
 [e $ ! == _comidaf -> 4 `i 1678  ]
 {
-"288
-[; ;Codebb.c: 288:             aaaa=0b11111101;
+"304
+[; ;Codebb.c: 304:             aaaa=0b11111101;
 [e = _aaaa -> -> 253 `i `uc ]
-"289
-[; ;Codebb.c: 289:         }
+"305
+[; ;Codebb.c: 305:         }
 }
 [e :U 1678 ]
-"290
-[; ;Codebb.c: 290:          if (comidaf==3){
+"306
+[; ;Codebb.c: 306:          if (comidaf==3){
 [e $ ! == _comidaf -> 3 `i 1679  ]
 {
-"291
-[; ;Codebb.c: 291:             aaaa=0b11111110;
+"307
+[; ;Codebb.c: 307:             aaaa=0b11111110;
 [e = _aaaa -> -> 254 `i `uc ]
-"292
-[; ;Codebb.c: 292:         }
+"308
+[; ;Codebb.c: 308:         }
 }
 [e :U 1679 ]
-"293
-[; ;Codebb.c: 293:   }
+"309
+[; ;Codebb.c: 309:   }
 }
 [e :U 1671 ]
-"294
-[; ;Codebb.c: 294:     if (comidaf==6){
+"310
+[; ;Codebb.c: 310:     if (comidaf==6){
 [e $ ! == _comidaf -> 6 `i 1680  ]
 {
-"295
-[; ;Codebb.c: 295:    if (comidaf==1){
+"311
+[; ;Codebb.c: 311:    if (comidaf==1){
 [e $ ! == _comidaf -> 1 `i 1681  ]
 {
-"296
-[; ;Codebb.c: 296:             aaaa=0b01111111;
+"312
+[; ;Codebb.c: 312:             aaaa=0b01111111;
 [e = _aaaa -> -> 127 `i `uc ]
-"297
-[; ;Codebb.c: 297:         }
+"313
+[; ;Codebb.c: 313:         }
 }
 [e :U 1681 ]
-"298
-[; ;Codebb.c: 298:          if (comidaf==1){
+"314
+[; ;Codebb.c: 314:          if (comidaf==1){
 [e $ ! == _comidaf -> 1 `i 1682  ]
 {
-"299
-[; ;Codebb.c: 299:             aaaa=0b10111111;
+"315
+[; ;Codebb.c: 315:             aaaa=0b10111111;
 [e = _aaaa -> -> 191 `i `uc ]
-"300
-[; ;Codebb.c: 300:         }
+"316
+[; ;Codebb.c: 316:         }
 }
 [e :U 1682 ]
-"301
-[; ;Codebb.c: 301:         if (comidaf==0){
+"317
+[; ;Codebb.c: 317:         if (comidaf==0){
 [e $ ! == _comidaf -> 0 `i 1683  ]
 {
-"302
-[; ;Codebb.c: 302:             aaaa=0b11011111;
+"318
+[; ;Codebb.c: 318:             aaaa=0b11011111;
 [e = _aaaa -> -> 223 `i `uc ]
-"303
-[; ;Codebb.c: 303:         }
+"319
+[; ;Codebb.c: 319:         }
 }
 [e :U 1683 ]
-"304
-[; ;Codebb.c: 304:          if (comidaf==7){
+"320
+[; ;Codebb.c: 320:          if (comidaf==7){
 [e $ ! == _comidaf -> 7 `i 1684  ]
 {
-"305
-[; ;Codebb.c: 305:             aaaa=0b11101111;
+"321
+[; ;Codebb.c: 321:             aaaa=0b11101111;
 [e = _aaaa -> -> 239 `i `uc ]
-"306
-[; ;Codebb.c: 306:         }
+"322
+[; ;Codebb.c: 322:         }
 }
 [e :U 1684 ]
-"307
-[; ;Codebb.c: 307:          if (comidaf==6){
+"323
+[; ;Codebb.c: 323:          if (comidaf==6){
 [e $ ! == _comidaf -> 6 `i 1685  ]
 {
-"308
-[; ;Codebb.c: 308:             aaaa=0b11110111;
+"324
+[; ;Codebb.c: 324:             aaaa=0b11110111;
 [e = _aaaa -> -> 247 `i `uc ]
-"309
-[; ;Codebb.c: 309:         }
+"325
+[; ;Codebb.c: 325:         }
 }
 [e :U 1685 ]
-"310
-[; ;Codebb.c: 310:          if (comidaf==5){
+"326
+[; ;Codebb.c: 326:          if (comidaf==5){
 [e $ ! == _comidaf -> 5 `i 1686  ]
 {
-"311
-[; ;Codebb.c: 311:             aaaa=0b11111011;
+"327
+[; ;Codebb.c: 327:             aaaa=0b11111011;
 [e = _aaaa -> -> 251 `i `uc ]
-"312
-[; ;Codebb.c: 312:         }
+"328
+[; ;Codebb.c: 328:         }
 }
 [e :U 1686 ]
-"313
-[; ;Codebb.c: 313:          if (comidaf==4){
+"329
+[; ;Codebb.c: 329:          if (comidaf==4){
 [e $ ! == _comidaf -> 4 `i 1687  ]
 {
-"314
-[; ;Codebb.c: 314:             aaaa=0b11111101;
+"330
+[; ;Codebb.c: 330:             aaaa=0b11111101;
 [e = _aaaa -> -> 253 `i `uc ]
-"315
-[; ;Codebb.c: 315:         }
+"331
+[; ;Codebb.c: 331:         }
 }
 [e :U 1687 ]
-"316
-[; ;Codebb.c: 316:          if (comidaf==3){
+"332
+[; ;Codebb.c: 332:          if (comidaf==3){
 [e $ ! == _comidaf -> 3 `i 1688  ]
 {
-"317
-[; ;Codebb.c: 317:             aaaa=0b11111110;
+"333
+[; ;Codebb.c: 333:             aaaa=0b11111110;
 [e = _aaaa -> -> 254 `i `uc ]
-"318
-[; ;Codebb.c: 318:         }
+"334
+[; ;Codebb.c: 334:         }
 }
 [e :U 1688 ]
-"319
-[; ;Codebb.c: 319:   }
+"335
+[; ;Codebb.c: 335:   }
 }
 [e :U 1680 ]
-"320
-[; ;Codebb.c: 320:     if (comidaf==7){
+"336
+[; ;Codebb.c: 336:     if (comidaf==7){
 [e $ ! == _comidaf -> 7 `i 1689  ]
 {
-"321
-[; ;Codebb.c: 321:    if (comidaf==0){
+"337
+[; ;Codebb.c: 337:    if (comidaf==0){
 [e $ ! == _comidaf -> 0 `i 1690  ]
 {
-"322
-[; ;Codebb.c: 322:             aaaa=0b01111111;
+"338
+[; ;Codebb.c: 338:             aaaa=0b01111111;
 [e = _aaaa -> -> 127 `i `uc ]
-"323
-[; ;Codebb.c: 323:         }
+"339
+[; ;Codebb.c: 339:         }
 }
 [e :U 1690 ]
-"324
-[; ;Codebb.c: 324:          if (comidaf==7){
+"340
+[; ;Codebb.c: 340:          if (comidaf==7){
 [e $ ! == _comidaf -> 7 `i 1691  ]
 {
-"325
-[; ;Codebb.c: 325:             aaaa=0b10111111;
+"341
+[; ;Codebb.c: 341:             aaaa=0b10111111;
 [e = _aaaa -> -> 191 `i `uc ]
-"326
-[; ;Codebb.c: 326:         }
+"342
+[; ;Codebb.c: 342:         }
 }
 [e :U 1691 ]
-"327
-[; ;Codebb.c: 327:         if (comidaf==6){
+"343
+[; ;Codebb.c: 343:         if (comidaf==6){
 [e $ ! == _comidaf -> 6 `i 1692  ]
 {
-"328
-[; ;Codebb.c: 328:             aaaa=0b11011111;
+"344
+[; ;Codebb.c: 344:             aaaa=0b11011111;
 [e = _aaaa -> -> 223 `i `uc ]
-"329
-[; ;Codebb.c: 329:         }
+"345
+[; ;Codebb.c: 345:         }
 }
 [e :U 1692 ]
-"330
-[; ;Codebb.c: 330:          if (comidaf==5){
+"346
+[; ;Codebb.c: 346:          if (comidaf==5){
 [e $ ! == _comidaf -> 5 `i 1693  ]
 {
-"331
-[; ;Codebb.c: 331:             aaaa=0b11101111;
+"347
+[; ;Codebb.c: 347:             aaaa=0b11101111;
 [e = _aaaa -> -> 239 `i `uc ]
-"332
-[; ;Codebb.c: 332:         }
+"348
+[; ;Codebb.c: 348:         }
 }
 [e :U 1693 ]
-"333
-[; ;Codebb.c: 333:          if (comidaf==4){
+"349
+[; ;Codebb.c: 349:          if (comidaf==4){
 [e $ ! == _comidaf -> 4 `i 1694  ]
 {
-"334
-[; ;Codebb.c: 334:             aaaa=0b11110111;
+"350
+[; ;Codebb.c: 350:             aaaa=0b11110111;
 [e = _aaaa -> -> 247 `i `uc ]
-"335
-[; ;Codebb.c: 335:         }
+"351
+[; ;Codebb.c: 351:         }
 }
 [e :U 1694 ]
-"336
-[; ;Codebb.c: 336:          if (comidaf==3){
+"352
+[; ;Codebb.c: 352:          if (comidaf==3){
 [e $ ! == _comidaf -> 3 `i 1695  ]
 {
-"337
-[; ;Codebb.c: 337:             aaaa=0b11111011;
+"353
+[; ;Codebb.c: 353:             aaaa=0b11111011;
 [e = _aaaa -> -> 251 `i `uc ]
-"338
-[; ;Codebb.c: 338:         }
+"354
+[; ;Codebb.c: 354:         }
 }
 [e :U 1695 ]
-"339
-[; ;Codebb.c: 339:          if (comidaf==2){
+"355
+[; ;Codebb.c: 355:          if (comidaf==2){
 [e $ ! == _comidaf -> 2 `i 1696  ]
 {
-"340
-[; ;Codebb.c: 340:             aaaa=0b11111101;
+"356
+[; ;Codebb.c: 356:             aaaa=0b11111101;
 [e = _aaaa -> -> 253 `i `uc ]
-"341
-[; ;Codebb.c: 341:         }
+"357
+[; ;Codebb.c: 357:         }
 }
 [e :U 1696 ]
-"342
-[; ;Codebb.c: 342:          if (comidaf==1){
+"358
+[; ;Codebb.c: 358:          if (comidaf==1){
 [e $ ! == _comidaf -> 1 `i 1697  ]
 {
-"343
-[; ;Codebb.c: 343:             aaaa=0b11111110;
+"359
+[; ;Codebb.c: 359:             aaaa=0b11111110;
 [e = _aaaa -> -> 254 `i `uc ]
-"344
-[; ;Codebb.c: 344:         }
+"360
+[; ;Codebb.c: 360:         }
 }
 [e :U 1697 ]
-"345
-[; ;Codebb.c: 345:   }
+"361
+[; ;Codebb.c: 361:   }
 }
 [e :U 1689 ]
-"347
-[; ;Codebb.c: 347:    comidac[comidaf]=aaaa;
+"363
+[; ;Codebb.c: 363:    comidac[comidaf]=aaaa;
 [e = *U + &U _comidac * -> -> _comidaf `ui `ux -> -> # *U &U _comidac `ui `ux _aaaa ]
-"348
-[; ;Codebb.c: 348:    while(contador){
+"364
+[; ;Codebb.c: 364:    while(contador){
 [e $U 1698  ]
 [e :U 1699 ]
 {
-"367
-[; ;Codebb.c: 367:        for(y=0;y<velocidad;y++){
+"383
+[; ;Codebb.c: 383:        for(y=0;y<velocidad;y++){
 {
 [e = _y -> 0 `i ]
 [e $U 1704  ]
 [e :U 1701 ]
 {
-"368
-[; ;Codebb.c: 368:            y;
-[e _y ]
-"369
-[; ;Codebb.c: 369:        for(i = 0; i<8; i++){
-{
-[e = _i -> 0 `i ]
-[e $ < _i -> 8 `i 1705  ]
-[e $U 1706  ]
-[e :U 1705 ]
-{
-"370
-[; ;Codebb.c: 370:            for(x =0; x<8; x++){
+"387
+[; ;Codebb.c: 387:             for (x=0;x<cuerpo;x++){
 {
 [e = _x -> 0 `i ]
-[e $ < _x -> 8 `i 1708  ]
-[e $U 1709  ]
-[e :U 1708 ]
+[e $U 1708  ]
+[e :U 1705 ]
 {
-"371
-[; ;Codebb.c: 371:         LATC=CportC[i];
-[e = _LATC *U + &U _CportC * -> -> _i `ui `ux -> -> # *U &U _CportC `ui `ux ]
-"372
-[; ;Codebb.c: 372:         LATD=fportd[x];
-[e = _LATD *U + &U _fportd * -> -> _x `ui `ux -> -> # *U &U _fportd `ui `ux ]
-"373
-[; ;Codebb.c: 373:         _delay((unsigned long)((25)*(32000000/4000000.0)));
-[e ( __delay (1 -> * -> -> 25 `i `d / -> -> 32000000 `l `d .4000000.0 `ul ]
-"374
-[; ;Codebb.c: 374:                  LATC=bolitac[i];
-[e = _LATC *U + &U _bolitac * -> -> _i `ui `ux -> -> # *U &U _bolitac `ui `ux ]
-"375
-[; ;Codebb.c: 375:                  LATD=bolitaf[x];
-[e = _LATD *U + &U _bolitaf * -> -> _x `ui `ux -> -> # *U &U _bolitaf `ui `ux ]
-"376
-[; ;Codebb.c: 376:             _delay((unsigned long)((25)*(32000000/4000000.0)));
-[e ( __delay (1 -> * -> -> 25 `i `d / -> -> 32000000 `l `d .4000000.0 `ul ]
-"377
-[; ;Codebb.c: 377:              LATC= bolita2c[i];
-[e = _LATC *U + &U _bolita2c * -> -> _i `ui `ux -> -> # *U &U _bolita2c `ui `ux ]
-"378
-[; ;Codebb.c: 378:             LATD=bolita2f[x];
-[e = _LATD *U + &U _bolita2f * -> -> _x `ui `ux -> -> # *U &U _bolita2f `ui `ux ]
-"379
-[; ;Codebb.c: 379:          _delay((unsigned long)((25)*(32000000/4000000.0)));
-[e ( __delay (1 -> * -> -> 25 `i `d / -> -> 32000000 `l `d .4000000.0 `ul ]
-"380
-[; ;Codebb.c: 380:            LATC= bolita3c[i];
-[e = _LATC *U + &U _bolita3c * -> -> _i `ui `ux -> -> # *U &U _bolita3c `ui `ux ]
-"381
-[; ;Codebb.c: 381:             LATD=bolita3f[x];
-[e = _LATD *U + &U _bolita3f * -> -> _x `ui `ux -> -> # *U &U _bolita3f `ui `ux ]
-"382
-[; ;Codebb.c: 382:          _delay((unsigned long)((25)*(32000000/4000000.0)));
-[e ( __delay (1 -> * -> -> 25 `i `d / -> -> 32000000 `l `d .4000000.0 `ul ]
-"383
-[; ;Codebb.c: 383:           LATD=comidaf1[i];
-[e = _LATD *U + &U _comidaf1 * -> -> _i `ui `ux -> -> # *U &U _comidaf1 `ui `ux ]
-"384
-[; ;Codebb.c: 384:             LATC=comidac[x];
-[e = _LATC *U + &U _comidac * -> -> _x `ui `ux -> -> # *U &U _comidac `ui `ux ]
-"385
-[; ;Codebb.c: 385:               _delay((unsigned long)((25)*(32000000/4000000.0)));
-[e ( __delay (1 -> * -> -> 25 `i `d / -> -> 32000000 `l `d .4000000.0 `ul ]
-"387
-[; ;Codebb.c: 387:       if(PORTAbits.RA0 == 0 && boton!=4){
-[e $ ! && == -> . . _PORTAbits 0 0 `i -> 0 `i != _boton -> 4 `i 1711  ]
-{
+"388
+[; ;Codebb.c: 388:                  LATC=bolitac[x];
+[e = _LATC *U + &U _bolitac * -> -> _x `ui `ux -> -> # *U &U _bolitac `ui `ux ]
 "389
-[; ;Codebb.c: 389:           boton = 1;
-[e = _boton -> 1 `i ]
+[; ;Codebb.c: 389:                  LATD=bolitaf[x];
+[e = _LATD *U + &U _bolitaf * -> -> _x `ui `ux -> -> # *U &U _bolitaf `ui `ux ]
 "390
-[; ;Codebb.c: 390:        }
-}
-[e :U 1711 ]
-"392
-[; ;Codebb.c: 392:        if(PORTAbits.RA1 == 0 && boton !=3){
-[e $ ! && == -> . . _PORTAbits 0 1 `i -> 0 `i != _boton -> 3 `i 1712  ]
-{
-"394
-[; ;Codebb.c: 394:            boton = 2;
-[e = _boton -> 2 `i ]
-"395
-[; ;Codebb.c: 395:        }
-}
-[e :U 1712 ]
-"397
-[; ;Codebb.c: 397:       if(PORTAbits.RA2 == 0 && boton !=2){
-[e $ ! && == -> . . _PORTAbits 0 2 `i -> 0 `i != _boton -> 2 `i 1713  ]
-{
-"399
-[; ;Codebb.c: 399:           boton = 3;
-[e = _boton -> 3 `i ]
-"400
-[; ;Codebb.c: 400:       }
-}
-[e :U 1713 ]
-"402
-[; ;Codebb.c: 402:      if(PORTAbits.RA3 == 0 && boton !=1){
-[e $ ! && == -> . . _PORTAbits 0 3 `i -> 0 `i != _boton -> 1 `i 1714  ]
-{
-"404
-[; ;Codebb.c: 404:          boton = 4;
-[e = _boton -> 4 `i ]
-"405
-[; ;Codebb.c: 405:       }
-}
-[e :U 1714 ]
-"406
-[; ;Codebb.c: 406:            }
+[; ;Codebb.c: 390:             _delay((unsigned long)((15)*(32000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 15 `i `d / -> -> 32000000 `l `d .4000000.0 `ul ]
+"391
+[; ;Codebb.c: 391:             }
 }
 [e ++ _x -> 1 `i ]
-[e $ < _x -> 8 `i 1708  ]
-[e :U 1709 ]
-}
-"409
-[; ;Codebb.c: 409:             _delay((unsigned long)((50)*(32000000/4000000.0)));
-[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 32000000 `l `d .4000000.0 `ul ]
-"410
-[; ;Codebb.c: 410:         }
-}
-[e ++ _i -> 1 `i ]
-[e $ < _i -> 8 `i 1705  ]
+[e :U 1708 ]
+[e $ < _x _cuerpo 1705  ]
 [e :U 1706 ]
 }
+"393
+[; ;Codebb.c: 393:        for(i = 0; i<8; i++){
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 8 `i 1709  ]
+[e $U 1710  ]
+[e :U 1709 ]
+{
+"394
+[; ;Codebb.c: 394:            for(x =0; x<8; x++){
+{
+[e = _x -> 0 `i ]
+[e $ < _x -> 8 `i 1712  ]
+[e $U 1713  ]
+[e :U 1712 ]
+{
+"395
+[; ;Codebb.c: 395:         LATC=CportC[i];
+[e = _LATC *U + &U _CportC * -> -> _i `ui `ux -> -> # *U &U _CportC `ui `ux ]
+"396
+[; ;Codebb.c: 396:         LATD=fportd[x];
+[e = _LATD *U + &U _fportd * -> -> _x `ui `ux -> -> # *U &U _fportd `ui `ux ]
+"397
+[; ;Codebb.c: 397:         _delay((unsigned long)((15)*(32000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 15 `i `d / -> -> 32000000 `l `d .4000000.0 `ul ]
+"400
+[; ;Codebb.c: 400:           LATD=comidaf1[i];
+[e = _LATD *U + &U _comidaf1 * -> -> _i `ui `ux -> -> # *U &U _comidaf1 `ui `ux ]
+"401
+[; ;Codebb.c: 401:             LATC=comidac[x];
+[e = _LATC *U + &U _comidac * -> -> _x `ui `ux -> -> # *U &U _comidac `ui `ux ]
+"402
+[; ;Codebb.c: 402:               _delay((unsigned long)((15)*(32000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 15 `i `d / -> -> 32000000 `l `d .4000000.0 `ul ]
+"404
+[; ;Codebb.c: 404:       if(PORTAbits.RA0 == 0 && boton!=4){
+[e $ ! && == -> . . _PORTAbits 0 0 `i -> 0 `i != _boton -> 4 `i 1715  ]
+{
+"406
+[; ;Codebb.c: 406:           boton = 1;
+[e = _boton -> 1 `i ]
+"407
+[; ;Codebb.c: 407:        }
+}
+[e :U 1715 ]
+"409
+[; ;Codebb.c: 409:        if(PORTAbits.RA1 == 0 && boton !=3){
+[e $ ! && == -> . . _PORTAbits 0 1 `i -> 0 `i != _boton -> 3 `i 1716  ]
+{
 "411
-[; ;Codebb.c: 411:        }
+[; ;Codebb.c: 411:            boton = 2;
+[e = _boton -> 2 `i ]
+"412
+[; ;Codebb.c: 412:        }
+}
+[e :U 1716 ]
+"414
+[; ;Codebb.c: 414:       if(PORTAbits.RA2 == 0 && boton !=2){
+[e $ ! && == -> . . _PORTAbits 0 2 `i -> 0 `i != _boton -> 2 `i 1717  ]
+{
+"416
+[; ;Codebb.c: 416:           boton = 3;
+[e = _boton -> 3 `i ]
+"417
+[; ;Codebb.c: 417:       }
+}
+[e :U 1717 ]
+"419
+[; ;Codebb.c: 419:      if(PORTAbits.RA3 == 0 && boton !=1){
+[e $ ! && == -> . . _PORTAbits 0 3 `i -> 0 `i != _boton -> 1 `i 1718  ]
+{
+"421
+[; ;Codebb.c: 421:          boton = 4;
+[e = _boton -> 4 `i ]
+"422
+[; ;Codebb.c: 422:       }
+}
+[e :U 1718 ]
+"423
+[; ;Codebb.c: 423:            }
+}
+[e ++ _x -> 1 `i ]
+[e $ < _x -> 8 `i 1712  ]
+[e :U 1713 ]
+}
+"427
+[; ;Codebb.c: 427:         }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 8 `i 1709  ]
+[e :U 1710 ]
+}
+"428
+[; ;Codebb.c: 428:        }
 }
 [e ++ _y -> 1 `i ]
 [e :U 1704 ]
 [e $ < _y _velocidad 1701  ]
 [e :U 1702 ]
 }
-"413
-[; ;Codebb.c: 413:         if ((fportd[f]==comidaf1[comidaf])&&(CportC[c]==comidac[comidaf])){
-[e $ ! && == -> *U + &U _fportd * -> -> _f `ui `ux -> -> # *U &U _fportd `ui `ux `i -> *U + &U _comidaf1 * -> -> _comidaf `ui `ux -> -> # *U &U _comidaf1 `ui `ux `i == -> *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux `i -> *U + &U _comidac * -> -> _comidaf `ui `ux -> -> # *U &U _comidac `ui `ux `i 1715  ]
-{
-"414
-[; ;Codebb.c: 414:              comidaf1[comidaf]=0;
-[e = *U + &U _comidaf1 * -> -> _comidaf `ui `ux -> -> # *U &U _comidaf1 `ui `ux -> -> 0 `i `uc ]
-"415
-[; ;Codebb.c: 415:              comidac[comidaf]=0b11111111;
-[e = *U + &U _comidac * -> -> _comidaf `ui `ux -> -> # *U &U _comidac `ui `ux -> -> 255 `i `uc ]
-"417
-[; ;Codebb.c: 417:              if (velocidad<21){
-[e $ ! < _velocidad -> 21 `i 1716  ]
-{
-"419
-[; ;Codebb.c: 419:                  velocidad=20+10;
-[e = _velocidad + -> 20 `i -> 10 `i ]
-"421
-[; ;Codebb.c: 421:              }
-}
-[e :U 1716 ]
-"422
-[; ;Codebb.c: 422:            velocidad=velocidad-20;
-[e = _velocidad - _velocidad -> 20 `i ]
-"423
-[; ;Codebb.c: 423:        }
-}
-[e :U 1715 ]
-"425
-[; ;Codebb.c: 425:      if ((comidaf1[comidaf]==0)){
-[e $ ! == -> *U + &U _comidaf1 * -> -> _comidaf `ui `ux -> -> # *U &U _comidaf1 `ui `ux `i -> 0 `i 1717  ]
-{
-"426
-[; ;Codebb.c: 426:                  comidaf= rand () % 8;
-[e = _comidaf % ( _rand ..  -> 8 `i ]
-"428
-[; ;Codebb.c: 428:     comidaf1[comidaf]=1<<comidaf;
-[e = *U + &U _comidaf1 * -> -> _comidaf `ui `ux -> -> # *U &U _comidaf1 `ui `ux -> << -> 1 `i _comidaf `uc ]
-"430
-[; ;Codebb.c: 430:     if (comidaf==0){
-[e $ ! == _comidaf -> 0 `i 1718  ]
-{
-"431
-[; ;Codebb.c: 431:    if (comidaf==7){
-[e $ ! == _comidaf -> 7 `i 1719  ]
-{
-"432
-[; ;Codebb.c: 432:             aaaa=0b01111111;
-[e = _aaaa -> -> 127 `i `uc ]
-"433
-[; ;Codebb.c: 433:         }
-}
-[e :U 1719 ]
-"434
-[; ;Codebb.c: 434:          if (comidaf==6){
-[e $ ! == _comidaf -> 6 `i 1720  ]
-{
-"435
-[; ;Codebb.c: 435:             aaaa=0b10111111;
-[e = _aaaa -> -> 191 `i `uc ]
 "436
-[; ;Codebb.c: 436:         }
+[; ;Codebb.c: 436:         if ((fportd[f]==comidaf1[comidaf])&&(CportC[c]==comidac[comidaf])){
+[e $ ! && == -> *U + &U _fportd * -> -> _f `ui `ux -> -> # *U &U _fportd `ui `ux `i -> *U + &U _comidaf1 * -> -> _comidaf `ui `ux -> -> # *U &U _comidaf1 `ui `ux `i == -> *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux `i -> *U + &U _comidac * -> -> _comidaf `ui `ux -> -> # *U &U _comidac `ui `ux `i 1719  ]
+{
+"437
+[; ;Codebb.c: 437:              comidaf1[comidaf]=0;
+[e = *U + &U _comidaf1 * -> -> _comidaf `ui `ux -> -> # *U &U _comidaf1 `ui `ux -> -> 0 `i `uc ]
+"438
+[; ;Codebb.c: 438:              comidac[comidaf]=0b11111111;
+[e = *U + &U _comidac * -> -> _comidaf `ui `ux -> -> # *U &U _comidac `ui `ux -> -> 255 `i `uc ]
+"439
+[; ;Codebb.c: 439:              cuerpo= cuerpo+1;
+[e = _cuerpo + _cuerpo -> 1 `i ]
+"441
+[; ;Codebb.c: 441:              if (velocidad<21){
+[e $ ! < _velocidad -> 21 `i 1720  ]
+{
+"443
+[; ;Codebb.c: 443:                  velocidad=20+30;
+[e = _velocidad + -> 20 `i -> 30 `i ]
+"445
+[; ;Codebb.c: 445:              }
 }
 [e :U 1720 ]
-"437
-[; ;Codebb.c: 437:         if (comidaf==5){
-[e $ ! == _comidaf -> 5 `i 1721  ]
-{
-"438
-[; ;Codebb.c: 438:             aaaa=0b11011111;
-[e = _aaaa -> -> 223 `i `uc ]
-"439
-[; ;Codebb.c: 439:         }
-}
-[e :U 1721 ]
-"440
-[; ;Codebb.c: 440:          if (comidaf==4){
-[e $ ! == _comidaf -> 4 `i 1722  ]
-{
-"441
-[; ;Codebb.c: 441:             aaaa=0b11101111;
-[e = _aaaa -> -> 239 `i `uc ]
-"442
-[; ;Codebb.c: 442:         }
-}
-[e :U 1722 ]
-"443
-[; ;Codebb.c: 443:          if (comidaf==3){
-[e $ ! == _comidaf -> 3 `i 1723  ]
-{
-"444
-[; ;Codebb.c: 444:             aaaa=0b11110111;
-[e = _aaaa -> -> 247 `i `uc ]
-"445
-[; ;Codebb.c: 445:         }
-}
-[e :U 1723 ]
 "446
-[; ;Codebb.c: 446:          if (comidaf==2){
-[e $ ! == _comidaf -> 2 `i 1724  ]
-{
+[; ;Codebb.c: 446:            velocidad=velocidad-10;
+[e = _velocidad - _velocidad -> 10 `i ]
 "447
-[; ;Codebb.c: 447:             aaaa=0b11111011;
-[e = _aaaa -> -> 251 `i `uc ]
-"448
-[; ;Codebb.c: 448:         }
+[; ;Codebb.c: 447:        }
 }
-[e :U 1724 ]
+[e :U 1719 ]
 "449
-[; ;Codebb.c: 449:          if (comidaf==1){
-[e $ ! == _comidaf -> 1 `i 1725  ]
+[; ;Codebb.c: 449:    if ((comidaf1[comidaf]==0)){
+[e $ ! == -> *U + &U _comidaf1 * -> -> _comidaf `ui `ux -> -> # *U &U _comidaf1 `ui `ux `i -> 0 `i 1721  ]
 {
 "450
-[; ;Codebb.c: 450:             aaaa=0b11111101;
-[e = _aaaa -> -> 253 `i `uc ]
-"451
-[; ;Codebb.c: 451:         }
+[; ;Codebb.c: 450:                  comidaf= rand () % 8;
+[e = _comidaf % ( _rand ..  -> 8 `i ]
+"452
+[; ;Codebb.c: 452:     comidaf1[comidaf]=1<<comidaf;
+[e = *U + &U _comidaf1 * -> -> _comidaf `ui `ux -> -> # *U &U _comidaf1 `ui `ux -> << -> 1 `i _comidaf `uc ]
+"454
+[; ;Codebb.c: 454:     if (comidaf==0){
+[e $ ! == _comidaf -> 0 `i 1722  ]
+{
+"455
+[; ;Codebb.c: 455:    if (comidaf==7){
+[e $ ! == _comidaf -> 7 `i 1723  ]
+{
+"456
+[; ;Codebb.c: 456:             aaaa=0b01111111;
+[e = _aaaa -> -> 127 `i `uc ]
+"457
+[; ;Codebb.c: 457:         }
+}
+[e :U 1723 ]
+"458
+[; ;Codebb.c: 458:          if (comidaf==6){
+[e $ ! == _comidaf -> 6 `i 1724  ]
+{
+"459
+[; ;Codebb.c: 459:             aaaa=0b10111111;
+[e = _aaaa -> -> 191 `i `uc ]
+"460
+[; ;Codebb.c: 460:         }
+}
+[e :U 1724 ]
+"461
+[; ;Codebb.c: 461:         if (comidaf==5){
+[e $ ! == _comidaf -> 5 `i 1725  ]
+{
+"462
+[; ;Codebb.c: 462:             aaaa=0b11011111;
+[e = _aaaa -> -> 223 `i `uc ]
+"463
+[; ;Codebb.c: 463:         }
 }
 [e :U 1725 ]
-"452
-[; ;Codebb.c: 452:          if (comidaf==0){
-[e $ ! == _comidaf -> 0 `i 1726  ]
+"464
+[; ;Codebb.c: 464:          if (comidaf==4){
+[e $ ! == _comidaf -> 4 `i 1726  ]
 {
-"453
-[; ;Codebb.c: 453:             aaaa=0b11111110;
-[e = _aaaa -> -> 254 `i `uc ]
-"454
-[; ;Codebb.c: 454:         }
+"465
+[; ;Codebb.c: 465:             aaaa=0b11101111;
+[e = _aaaa -> -> 239 `i `uc ]
+"466
+[; ;Codebb.c: 466:         }
 }
 [e :U 1726 ]
-"455
-[; ;Codebb.c: 455:   }
-}
-[e :U 1718 ]
-"456
-[; ;Codebb.c: 456:     if (comidaf==1){
-[e $ ! == _comidaf -> 1 `i 1727  ]
-{
-"457
-[; ;Codebb.c: 457:    if (comidaf==6){
-[e $ ! == _comidaf -> 6 `i 1728  ]
-{
-"458
-[; ;Codebb.c: 458:             aaaa=0b01111111;
-[e = _aaaa -> -> 127 `i `uc ]
-"459
-[; ;Codebb.c: 459:         }
-}
-[e :U 1728 ]
-"460
-[; ;Codebb.c: 460:          if (comidaf==5){
-[e $ ! == _comidaf -> 5 `i 1729  ]
-{
-"461
-[; ;Codebb.c: 461:             aaaa=0b10111111;
-[e = _aaaa -> -> 191 `i `uc ]
-"462
-[; ;Codebb.c: 462:         }
-}
-[e :U 1729 ]
-"463
-[; ;Codebb.c: 463:         if (comidaf==4){
-[e $ ! == _comidaf -> 4 `i 1730  ]
-{
-"464
-[; ;Codebb.c: 464:             aaaa=0b11011111;
-[e = _aaaa -> -> 223 `i `uc ]
-"465
-[; ;Codebb.c: 465:         }
-}
-[e :U 1730 ]
-"466
-[; ;Codebb.c: 466:          if (comidaf==3){
-[e $ ! == _comidaf -> 3 `i 1731  ]
-{
 "467
-[; ;Codebb.c: 467:             aaaa=0b11101111;
-[e = _aaaa -> -> 239 `i `uc ]
+[; ;Codebb.c: 467:          if (comidaf==3){
+[e $ ! == _comidaf -> 3 `i 1727  ]
+{
 "468
-[; ;Codebb.c: 468:         }
-}
-[e :U 1731 ]
-"469
-[; ;Codebb.c: 469:          if (comidaf==2){
-[e $ ! == _comidaf -> 2 `i 1732  ]
-{
-"470
-[; ;Codebb.c: 470:             aaaa=0b11110111;
+[; ;Codebb.c: 468:             aaaa=0b11110111;
 [e = _aaaa -> -> 247 `i `uc ]
-"471
-[; ;Codebb.c: 471:         }
-}
-[e :U 1732 ]
-"472
-[; ;Codebb.c: 472:          if (comidaf==1){
-[e $ ! == _comidaf -> 1 `i 1733  ]
-{
-"473
-[; ;Codebb.c: 473:             aaaa=0b11111011;
-[e = _aaaa -> -> 251 `i `uc ]
-"474
-[; ;Codebb.c: 474:         }
-}
-[e :U 1733 ]
-"475
-[; ;Codebb.c: 475:          if (comidaf==0){
-[e $ ! == _comidaf -> 0 `i 1734  ]
-{
-"476
-[; ;Codebb.c: 476:             aaaa=0b11111101;
-[e = _aaaa -> -> 253 `i `uc ]
-"477
-[; ;Codebb.c: 477:         }
-}
-[e :U 1734 ]
-"478
-[; ;Codebb.c: 478:          if (comidaf==7){
-[e $ ! == _comidaf -> 7 `i 1735  ]
-{
-"479
-[; ;Codebb.c: 479:             aaaa=0b11111110;
-[e = _aaaa -> -> 254 `i `uc ]
-"480
-[; ;Codebb.c: 480:         }
-}
-[e :U 1735 ]
-"481
-[; ;Codebb.c: 481:   }
+"469
+[; ;Codebb.c: 469:         }
 }
 [e :U 1727 ]
+"470
+[; ;Codebb.c: 470:          if (comidaf==2){
+[e $ ! == _comidaf -> 2 `i 1728  ]
+{
+"471
+[; ;Codebb.c: 471:             aaaa=0b11111011;
+[e = _aaaa -> -> 251 `i `uc ]
+"472
+[; ;Codebb.c: 472:         }
+}
+[e :U 1728 ]
+"473
+[; ;Codebb.c: 473:          if (comidaf==1){
+[e $ ! == _comidaf -> 1 `i 1729  ]
+{
+"474
+[; ;Codebb.c: 474:             aaaa=0b11111101;
+[e = _aaaa -> -> 253 `i `uc ]
+"475
+[; ;Codebb.c: 475:         }
+}
+[e :U 1729 ]
+"476
+[; ;Codebb.c: 476:          if (comidaf==0){
+[e $ ! == _comidaf -> 0 `i 1730  ]
+{
+"477
+[; ;Codebb.c: 477:             aaaa=0b11111110;
+[e = _aaaa -> -> 254 `i `uc ]
+"478
+[; ;Codebb.c: 478:         }
+}
+[e :U 1730 ]
+"479
+[; ;Codebb.c: 479:   }
+}
+[e :U 1722 ]
+"480
+[; ;Codebb.c: 480:     if (comidaf==1){
+[e $ ! == _comidaf -> 1 `i 1731  ]
+{
+"481
+[; ;Codebb.c: 481:    if (comidaf==6){
+[e $ ! == _comidaf -> 6 `i 1732  ]
+{
 "482
-[; ;Codebb.c: 482:     if (comidaf==2){
+[; ;Codebb.c: 482:             aaaa=0b01111111;
+[e = _aaaa -> -> 127 `i `uc ]
+"483
+[; ;Codebb.c: 483:         }
+}
+[e :U 1732 ]
+"484
+[; ;Codebb.c: 484:          if (comidaf==5){
+[e $ ! == _comidaf -> 5 `i 1733  ]
+{
+"485
+[; ;Codebb.c: 485:             aaaa=0b10111111;
+[e = _aaaa -> -> 191 `i `uc ]
+"486
+[; ;Codebb.c: 486:         }
+}
+[e :U 1733 ]
+"487
+[; ;Codebb.c: 487:         if (comidaf==4){
+[e $ ! == _comidaf -> 4 `i 1734  ]
+{
+"488
+[; ;Codebb.c: 488:             aaaa=0b11011111;
+[e = _aaaa -> -> 223 `i `uc ]
+"489
+[; ;Codebb.c: 489:         }
+}
+[e :U 1734 ]
+"490
+[; ;Codebb.c: 490:          if (comidaf==3){
+[e $ ! == _comidaf -> 3 `i 1735  ]
+{
+"491
+[; ;Codebb.c: 491:             aaaa=0b11101111;
+[e = _aaaa -> -> 239 `i `uc ]
+"492
+[; ;Codebb.c: 492:         }
+}
+[e :U 1735 ]
+"493
+[; ;Codebb.c: 493:          if (comidaf==2){
 [e $ ! == _comidaf -> 2 `i 1736  ]
 {
-"483
-[; ;Codebb.c: 483:    if (comidaf==5){
-[e $ ! == _comidaf -> 5 `i 1737  ]
-{
-"484
-[; ;Codebb.c: 484:             aaaa=0b01111111;
-[e = _aaaa -> -> 127 `i `uc ]
-"485
-[; ;Codebb.c: 485:         }
-}
-[e :U 1737 ]
-"486
-[; ;Codebb.c: 486:          if (comidaf==4){
-[e $ ! == _comidaf -> 4 `i 1738  ]
-{
-"487
-[; ;Codebb.c: 487:             aaaa=0b10111111;
-[e = _aaaa -> -> 191 `i `uc ]
-"488
-[; ;Codebb.c: 488:         }
-}
-[e :U 1738 ]
-"489
-[; ;Codebb.c: 489:         if (comidaf==3){
-[e $ ! == _comidaf -> 3 `i 1739  ]
-{
-"490
-[; ;Codebb.c: 490:             aaaa=0b11011111;
-[e = _aaaa -> -> 223 `i `uc ]
-"491
-[; ;Codebb.c: 491:         }
-}
-[e :U 1739 ]
-"492
-[; ;Codebb.c: 492:          if (comidaf==2){
-[e $ ! == _comidaf -> 2 `i 1740  ]
-{
-"493
-[; ;Codebb.c: 493:             aaaa=0b11101111;
-[e = _aaaa -> -> 239 `i `uc ]
 "494
-[; ;Codebb.c: 494:         }
-}
-[e :U 1740 ]
-"495
-[; ;Codebb.c: 495:          if (comidaf==1){
-[e $ ! == _comidaf -> 1 `i 1741  ]
-{
-"496
-[; ;Codebb.c: 496:             aaaa=0b11110111;
+[; ;Codebb.c: 494:             aaaa=0b11110111;
 [e = _aaaa -> -> 247 `i `uc ]
-"497
-[; ;Codebb.c: 497:         }
-}
-[e :U 1741 ]
-"498
-[; ;Codebb.c: 498:          if (comidaf==0){
-[e $ ! == _comidaf -> 0 `i 1742  ]
-{
-"499
-[; ;Codebb.c: 499:             aaaa=0b11111011;
-[e = _aaaa -> -> 251 `i `uc ]
-"500
-[; ;Codebb.c: 500:         }
-}
-[e :U 1742 ]
-"501
-[; ;Codebb.c: 501:          if (comidaf==7){
-[e $ ! == _comidaf -> 7 `i 1743  ]
-{
-"502
-[; ;Codebb.c: 502:             aaaa=0b11111101;
-[e = _aaaa -> -> 253 `i `uc ]
-"503
-[; ;Codebb.c: 503:         }
-}
-[e :U 1743 ]
-"504
-[; ;Codebb.c: 504:          if (comidaf==6){
-[e $ ! == _comidaf -> 6 `i 1744  ]
-{
-"505
-[; ;Codebb.c: 505:             aaaa=0b11111110;
-[e = _aaaa -> -> 254 `i `uc ]
-"506
-[; ;Codebb.c: 506:         }
-}
-[e :U 1744 ]
-"507
-[; ;Codebb.c: 507:   }
+"495
+[; ;Codebb.c: 495:         }
 }
 [e :U 1736 ]
-"508
-[; ;Codebb.c: 508:     if (comidaf==3){
-[e $ ! == _comidaf -> 3 `i 1745  ]
+"496
+[; ;Codebb.c: 496:          if (comidaf==1){
+[e $ ! == _comidaf -> 1 `i 1737  ]
 {
-"509
-[; ;Codebb.c: 509:    if (comidaf==4){
-[e $ ! == _comidaf -> 4 `i 1746  ]
-{
-"510
-[; ;Codebb.c: 510:             aaaa=0b01111111;
-[e = _aaaa -> -> 127 `i `uc ]
-"511
-[; ;Codebb.c: 511:         }
-}
-[e :U 1746 ]
-"512
-[; ;Codebb.c: 512:          if (comidaf==3){
-[e $ ! == _comidaf -> 3 `i 1747  ]
-{
-"513
-[; ;Codebb.c: 513:             aaaa=0b10111111;
-[e = _aaaa -> -> 191 `i `uc ]
-"514
-[; ;Codebb.c: 514:         }
-}
-[e :U 1747 ]
-"515
-[; ;Codebb.c: 515:         if (comidaf==2){
-[e $ ! == _comidaf -> 2 `i 1748  ]
-{
-"516
-[; ;Codebb.c: 516:             aaaa=0b11011111;
-[e = _aaaa -> -> 223 `i `uc ]
-"517
-[; ;Codebb.c: 517:         }
-}
-[e :U 1748 ]
-"518
-[; ;Codebb.c: 518:          if (comidaf==1){
-[e $ ! == _comidaf -> 1 `i 1749  ]
-{
-"519
-[; ;Codebb.c: 519:             aaaa=0b11101111;
-[e = _aaaa -> -> 239 `i `uc ]
-"520
-[; ;Codebb.c: 520:         }
-}
-[e :U 1749 ]
-"521
-[; ;Codebb.c: 521:          if (comidaf==0){
-[e $ ! == _comidaf -> 0 `i 1750  ]
-{
-"522
-[; ;Codebb.c: 522:             aaaa=0b11110111;
-[e = _aaaa -> -> 247 `i `uc ]
-"523
-[; ;Codebb.c: 523:         }
-}
-[e :U 1750 ]
-"524
-[; ;Codebb.c: 524:          if (comidaf==7){
-[e $ ! == _comidaf -> 7 `i 1751  ]
-{
-"525
-[; ;Codebb.c: 525:             aaaa=0b11111011;
+"497
+[; ;Codebb.c: 497:             aaaa=0b11111011;
 [e = _aaaa -> -> 251 `i `uc ]
-"526
-[; ;Codebb.c: 526:         }
+"498
+[; ;Codebb.c: 498:         }
 }
-[e :U 1751 ]
-"527
-[; ;Codebb.c: 527:          if (comidaf==6){
-[e $ ! == _comidaf -> 6 `i 1752  ]
+[e :U 1737 ]
+"499
+[; ;Codebb.c: 499:          if (comidaf==0){
+[e $ ! == _comidaf -> 0 `i 1738  ]
 {
-"528
-[; ;Codebb.c: 528:             aaaa=0b11111101;
+"500
+[; ;Codebb.c: 500:             aaaa=0b11111101;
 [e = _aaaa -> -> 253 `i `uc ]
-"529
-[; ;Codebb.c: 529:         }
+"501
+[; ;Codebb.c: 501:         }
 }
-[e :U 1752 ]
-"530
-[; ;Codebb.c: 530:          if (comidaf==5){
-[e $ ! == _comidaf -> 5 `i 1753  ]
+[e :U 1738 ]
+"502
+[; ;Codebb.c: 502:          if (comidaf==7){
+[e $ ! == _comidaf -> 7 `i 1739  ]
 {
-"531
-[; ;Codebb.c: 531:             aaaa=0b11111110;
+"503
+[; ;Codebb.c: 503:             aaaa=0b11111110;
 [e = _aaaa -> -> 254 `i `uc ]
-"532
-[; ;Codebb.c: 532:         }
+"504
+[; ;Codebb.c: 504:         }
 }
-[e :U 1753 ]
-"533
-[; ;Codebb.c: 533:   }
+[e :U 1739 ]
+"505
+[; ;Codebb.c: 505:   }
+}
+[e :U 1731 ]
+"506
+[; ;Codebb.c: 506:     if (comidaf==2){
+[e $ ! == _comidaf -> 2 `i 1740  ]
+{
+"507
+[; ;Codebb.c: 507:    if (comidaf==5){
+[e $ ! == _comidaf -> 5 `i 1741  ]
+{
+"508
+[; ;Codebb.c: 508:             aaaa=0b01111111;
+[e = _aaaa -> -> 127 `i `uc ]
+"509
+[; ;Codebb.c: 509:         }
+}
+[e :U 1741 ]
+"510
+[; ;Codebb.c: 510:          if (comidaf==4){
+[e $ ! == _comidaf -> 4 `i 1742  ]
+{
+"511
+[; ;Codebb.c: 511:             aaaa=0b10111111;
+[e = _aaaa -> -> 191 `i `uc ]
+"512
+[; ;Codebb.c: 512:         }
+}
+[e :U 1742 ]
+"513
+[; ;Codebb.c: 513:         if (comidaf==3){
+[e $ ! == _comidaf -> 3 `i 1743  ]
+{
+"514
+[; ;Codebb.c: 514:             aaaa=0b11011111;
+[e = _aaaa -> -> 223 `i `uc ]
+"515
+[; ;Codebb.c: 515:         }
+}
+[e :U 1743 ]
+"516
+[; ;Codebb.c: 516:          if (comidaf==2){
+[e $ ! == _comidaf -> 2 `i 1744  ]
+{
+"517
+[; ;Codebb.c: 517:             aaaa=0b11101111;
+[e = _aaaa -> -> 239 `i `uc ]
+"518
+[; ;Codebb.c: 518:         }
+}
+[e :U 1744 ]
+"519
+[; ;Codebb.c: 519:          if (comidaf==1){
+[e $ ! == _comidaf -> 1 `i 1745  ]
+{
+"520
+[; ;Codebb.c: 520:             aaaa=0b11110111;
+[e = _aaaa -> -> 247 `i `uc ]
+"521
+[; ;Codebb.c: 521:         }
 }
 [e :U 1745 ]
-"534
-[; ;Codebb.c: 534:     if (comidaf==4){
-[e $ ! == _comidaf -> 4 `i 1754  ]
+"522
+[; ;Codebb.c: 522:          if (comidaf==0){
+[e $ ! == _comidaf -> 0 `i 1746  ]
 {
-"535
-[; ;Codebb.c: 535:    if (comidaf==3){
-[e $ ! == _comidaf -> 3 `i 1755  ]
-{
-"536
-[; ;Codebb.c: 536:             aaaa=0b01111111;
-[e = _aaaa -> -> 127 `i `uc ]
-"537
-[; ;Codebb.c: 537:         }
-}
-[e :U 1755 ]
-"538
-[; ;Codebb.c: 538:          if (comidaf==2){
-[e $ ! == _comidaf -> 2 `i 1756  ]
-{
-"539
-[; ;Codebb.c: 539:             aaaa=0b10111111;
-[e = _aaaa -> -> 191 `i `uc ]
-"540
-[; ;Codebb.c: 540:         }
-}
-[e :U 1756 ]
-"541
-[; ;Codebb.c: 541:         if (comidaf==1){
-[e $ ! == _comidaf -> 1 `i 1757  ]
-{
-"542
-[; ;Codebb.c: 542:             aaaa=0b11011111;
-[e = _aaaa -> -> 223 `i `uc ]
-"543
-[; ;Codebb.c: 543:         }
-}
-[e :U 1757 ]
-"544
-[; ;Codebb.c: 544:          if (comidaf==0){
-[e $ ! == _comidaf -> 0 `i 1758  ]
-{
-"545
-[; ;Codebb.c: 545:             aaaa=0b11101111;
-[e = _aaaa -> -> 239 `i `uc ]
-"546
-[; ;Codebb.c: 546:         }
-}
-[e :U 1758 ]
-"547
-[; ;Codebb.c: 547:          if (comidaf==7){
-[e $ ! == _comidaf -> 7 `i 1759  ]
-{
-"548
-[; ;Codebb.c: 548:             aaaa=0b11110111;
-[e = _aaaa -> -> 247 `i `uc ]
-"549
-[; ;Codebb.c: 549:         }
-}
-[e :U 1759 ]
-"550
-[; ;Codebb.c: 550:          if (comidaf==6){
-[e $ ! == _comidaf -> 6 `i 1760  ]
-{
-"551
-[; ;Codebb.c: 551:             aaaa=0b11111011;
+"523
+[; ;Codebb.c: 523:             aaaa=0b11111011;
 [e = _aaaa -> -> 251 `i `uc ]
-"552
-[; ;Codebb.c: 552:         }
+"524
+[; ;Codebb.c: 524:         }
 }
-[e :U 1760 ]
-"553
-[; ;Codebb.c: 553:          if (comidaf==5){
-[e $ ! == _comidaf -> 5 `i 1761  ]
+[e :U 1746 ]
+"525
+[; ;Codebb.c: 525:          if (comidaf==7){
+[e $ ! == _comidaf -> 7 `i 1747  ]
 {
-"554
-[; ;Codebb.c: 554:             aaaa=0b11111101;
+"526
+[; ;Codebb.c: 526:             aaaa=0b11111101;
 [e = _aaaa -> -> 253 `i `uc ]
-"555
-[; ;Codebb.c: 555:         }
+"527
+[; ;Codebb.c: 527:         }
 }
-[e :U 1761 ]
-"556
-[; ;Codebb.c: 556:          if (comidaf==4){
-[e $ ! == _comidaf -> 4 `i 1762  ]
+[e :U 1747 ]
+"528
+[; ;Codebb.c: 528:          if (comidaf==6){
+[e $ ! == _comidaf -> 6 `i 1748  ]
 {
-"557
-[; ;Codebb.c: 557:             aaaa=0b11111110;
+"529
+[; ;Codebb.c: 529:             aaaa=0b11111110;
 [e = _aaaa -> -> 254 `i `uc ]
-"558
-[; ;Codebb.c: 558:         }
+"530
+[; ;Codebb.c: 530:         }
 }
-[e :U 1762 ]
-"559
-[; ;Codebb.c: 559:   }
+[e :U 1748 ]
+"531
+[; ;Codebb.c: 531:   }
+}
+[e :U 1740 ]
+"532
+[; ;Codebb.c: 532:     if (comidaf==3){
+[e $ ! == _comidaf -> 3 `i 1749  ]
+{
+"533
+[; ;Codebb.c: 533:    if (comidaf==4){
+[e $ ! == _comidaf -> 4 `i 1750  ]
+{
+"534
+[; ;Codebb.c: 534:             aaaa=0b01111111;
+[e = _aaaa -> -> 127 `i `uc ]
+"535
+[; ;Codebb.c: 535:         }
+}
+[e :U 1750 ]
+"536
+[; ;Codebb.c: 536:          if (comidaf==3){
+[e $ ! == _comidaf -> 3 `i 1751  ]
+{
+"537
+[; ;Codebb.c: 537:             aaaa=0b10111111;
+[e = _aaaa -> -> 191 `i `uc ]
+"538
+[; ;Codebb.c: 538:         }
+}
+[e :U 1751 ]
+"539
+[; ;Codebb.c: 539:         if (comidaf==2){
+[e $ ! == _comidaf -> 2 `i 1752  ]
+{
+"540
+[; ;Codebb.c: 540:             aaaa=0b11011111;
+[e = _aaaa -> -> 223 `i `uc ]
+"541
+[; ;Codebb.c: 541:         }
+}
+[e :U 1752 ]
+"542
+[; ;Codebb.c: 542:          if (comidaf==1){
+[e $ ! == _comidaf -> 1 `i 1753  ]
+{
+"543
+[; ;Codebb.c: 543:             aaaa=0b11101111;
+[e = _aaaa -> -> 239 `i `uc ]
+"544
+[; ;Codebb.c: 544:         }
+}
+[e :U 1753 ]
+"545
+[; ;Codebb.c: 545:          if (comidaf==0){
+[e $ ! == _comidaf -> 0 `i 1754  ]
+{
+"546
+[; ;Codebb.c: 546:             aaaa=0b11110111;
+[e = _aaaa -> -> 247 `i `uc ]
+"547
+[; ;Codebb.c: 547:         }
 }
 [e :U 1754 ]
-"560
-[; ;Codebb.c: 560:     if (comidaf==5){
-[e $ ! == _comidaf -> 5 `i 1763  ]
+"548
+[; ;Codebb.c: 548:          if (comidaf==7){
+[e $ ! == _comidaf -> 7 `i 1755  ]
 {
-"561
-[; ;Codebb.c: 561:    if (comidaf==2){
-[e $ ! == _comidaf -> 2 `i 1764  ]
-{
-"562
-[; ;Codebb.c: 562:             aaaa=0b01111111;
-[e = _aaaa -> -> 127 `i `uc ]
-"563
-[; ;Codebb.c: 563:         }
-}
-[e :U 1764 ]
-"564
-[; ;Codebb.c: 564:          if (comidaf==1){
-[e $ ! == _comidaf -> 1 `i 1765  ]
-{
-"565
-[; ;Codebb.c: 565:             aaaa=0b10111111;
-[e = _aaaa -> -> 191 `i `uc ]
-"566
-[; ;Codebb.c: 566:         }
-}
-[e :U 1765 ]
-"567
-[; ;Codebb.c: 567:         if (comidaf==0){
-[e $ ! == _comidaf -> 0 `i 1766  ]
-{
-"568
-[; ;Codebb.c: 568:             aaaa=0b11011111;
-[e = _aaaa -> -> 223 `i `uc ]
-"569
-[; ;Codebb.c: 569:         }
-}
-[e :U 1766 ]
-"570
-[; ;Codebb.c: 570:          if (comidaf==7){
-[e $ ! == _comidaf -> 7 `i 1767  ]
-{
-"571
-[; ;Codebb.c: 571:             aaaa=0b11101111;
-[e = _aaaa -> -> 239 `i `uc ]
-"572
-[; ;Codebb.c: 572:         }
-}
-[e :U 1767 ]
-"573
-[; ;Codebb.c: 573:          if (comidaf==6){
-[e $ ! == _comidaf -> 6 `i 1768  ]
-{
-"574
-[; ;Codebb.c: 574:             aaaa=0b11110111;
-[e = _aaaa -> -> 247 `i `uc ]
-"575
-[; ;Codebb.c: 575:         }
-}
-[e :U 1768 ]
-"576
-[; ;Codebb.c: 576:          if (comidaf==5){
-[e $ ! == _comidaf -> 5 `i 1769  ]
-{
-"577
-[; ;Codebb.c: 577:             aaaa=0b11111011;
+"549
+[; ;Codebb.c: 549:             aaaa=0b11111011;
 [e = _aaaa -> -> 251 `i `uc ]
-"578
-[; ;Codebb.c: 578:         }
+"550
+[; ;Codebb.c: 550:         }
 }
-[e :U 1769 ]
-"579
-[; ;Codebb.c: 579:          if (comidaf==4){
-[e $ ! == _comidaf -> 4 `i 1770  ]
+[e :U 1755 ]
+"551
+[; ;Codebb.c: 551:          if (comidaf==6){
+[e $ ! == _comidaf -> 6 `i 1756  ]
 {
-"580
-[; ;Codebb.c: 580:             aaaa=0b11111101;
+"552
+[; ;Codebb.c: 552:             aaaa=0b11111101;
 [e = _aaaa -> -> 253 `i `uc ]
-"581
-[; ;Codebb.c: 581:         }
+"553
+[; ;Codebb.c: 553:         }
 }
-[e :U 1770 ]
-"582
-[; ;Codebb.c: 582:          if (comidaf==3){
-[e $ ! == _comidaf -> 3 `i 1771  ]
+[e :U 1756 ]
+"554
+[; ;Codebb.c: 554:          if (comidaf==5){
+[e $ ! == _comidaf -> 5 `i 1757  ]
 {
-"583
-[; ;Codebb.c: 583:             aaaa=0b11111110;
+"555
+[; ;Codebb.c: 555:             aaaa=0b11111110;
 [e = _aaaa -> -> 254 `i `uc ]
-"584
-[; ;Codebb.c: 584:         }
+"556
+[; ;Codebb.c: 556:         }
 }
-[e :U 1771 ]
-"585
-[; ;Codebb.c: 585:   }
+[e :U 1757 ]
+"557
+[; ;Codebb.c: 557:   }
+}
+[e :U 1749 ]
+"558
+[; ;Codebb.c: 558:     if (comidaf==4){
+[e $ ! == _comidaf -> 4 `i 1758  ]
+{
+"559
+[; ;Codebb.c: 559:    if (comidaf==3){
+[e $ ! == _comidaf -> 3 `i 1759  ]
+{
+"560
+[; ;Codebb.c: 560:             aaaa=0b01111111;
+[e = _aaaa -> -> 127 `i `uc ]
+"561
+[; ;Codebb.c: 561:         }
+}
+[e :U 1759 ]
+"562
+[; ;Codebb.c: 562:          if (comidaf==2){
+[e $ ! == _comidaf -> 2 `i 1760  ]
+{
+"563
+[; ;Codebb.c: 563:             aaaa=0b10111111;
+[e = _aaaa -> -> 191 `i `uc ]
+"564
+[; ;Codebb.c: 564:         }
+}
+[e :U 1760 ]
+"565
+[; ;Codebb.c: 565:         if (comidaf==1){
+[e $ ! == _comidaf -> 1 `i 1761  ]
+{
+"566
+[; ;Codebb.c: 566:             aaaa=0b11011111;
+[e = _aaaa -> -> 223 `i `uc ]
+"567
+[; ;Codebb.c: 567:         }
+}
+[e :U 1761 ]
+"568
+[; ;Codebb.c: 568:          if (comidaf==0){
+[e $ ! == _comidaf -> 0 `i 1762  ]
+{
+"569
+[; ;Codebb.c: 569:             aaaa=0b11101111;
+[e = _aaaa -> -> 239 `i `uc ]
+"570
+[; ;Codebb.c: 570:         }
+}
+[e :U 1762 ]
+"571
+[; ;Codebb.c: 571:          if (comidaf==7){
+[e $ ! == _comidaf -> 7 `i 1763  ]
+{
+"572
+[; ;Codebb.c: 572:             aaaa=0b11110111;
+[e = _aaaa -> -> 247 `i `uc ]
+"573
+[; ;Codebb.c: 573:         }
 }
 [e :U 1763 ]
+"574
+[; ;Codebb.c: 574:          if (comidaf==6){
+[e $ ! == _comidaf -> 6 `i 1764  ]
+{
+"575
+[; ;Codebb.c: 575:             aaaa=0b11111011;
+[e = _aaaa -> -> 251 `i `uc ]
+"576
+[; ;Codebb.c: 576:         }
+}
+[e :U 1764 ]
+"577
+[; ;Codebb.c: 577:          if (comidaf==5){
+[e $ ! == _comidaf -> 5 `i 1765  ]
+{
+"578
+[; ;Codebb.c: 578:             aaaa=0b11111101;
+[e = _aaaa -> -> 253 `i `uc ]
+"579
+[; ;Codebb.c: 579:         }
+}
+[e :U 1765 ]
+"580
+[; ;Codebb.c: 580:          if (comidaf==4){
+[e $ ! == _comidaf -> 4 `i 1766  ]
+{
+"581
+[; ;Codebb.c: 581:             aaaa=0b11111110;
+[e = _aaaa -> -> 254 `i `uc ]
+"582
+[; ;Codebb.c: 582:         }
+}
+[e :U 1766 ]
+"583
+[; ;Codebb.c: 583:   }
+}
+[e :U 1758 ]
+"584
+[; ;Codebb.c: 584:     if (comidaf==5){
+[e $ ! == _comidaf -> 5 `i 1767  ]
+{
+"585
+[; ;Codebb.c: 585:    if (comidaf==2){
+[e $ ! == _comidaf -> 2 `i 1768  ]
+{
 "586
-[; ;Codebb.c: 586:     if (comidaf==6){
+[; ;Codebb.c: 586:             aaaa=0b01111111;
+[e = _aaaa -> -> 127 `i `uc ]
+"587
+[; ;Codebb.c: 587:         }
+}
+[e :U 1768 ]
+"588
+[; ;Codebb.c: 588:          if (comidaf==1){
+[e $ ! == _comidaf -> 1 `i 1769  ]
+{
+"589
+[; ;Codebb.c: 589:             aaaa=0b10111111;
+[e = _aaaa -> -> 191 `i `uc ]
+"591
+[; ;Codebb.c: 591:          }
+}
+[e :U 1769 ]
+"592
+[; ;Codebb.c: 592:         if (comidaf==0){
+[e $ ! == _comidaf -> 0 `i 1770  ]
+{
+"593
+[; ;Codebb.c: 593:             aaaa=0b11011111;
+[e = _aaaa -> -> 223 `i `uc ]
+"594
+[; ;Codebb.c: 594:         }
+}
+[e :U 1770 ]
+"595
+[; ;Codebb.c: 595:          if (comidaf==7){
+[e $ ! == _comidaf -> 7 `i 1771  ]
+{
+"596
+[; ;Codebb.c: 596:             aaaa=0b11101111;
+[e = _aaaa -> -> 239 `i `uc ]
+"597
+[; ;Codebb.c: 597:         }
+}
+[e :U 1771 ]
+"598
+[; ;Codebb.c: 598:          if (comidaf==6){
 [e $ ! == _comidaf -> 6 `i 1772  ]
 {
-"587
-[; ;Codebb.c: 587:    if (comidaf==1){
-[e $ ! == _comidaf -> 1 `i 1773  ]
-{
-"588
-[; ;Codebb.c: 588:             aaaa=0b01111111;
-[e = _aaaa -> -> 127 `i `uc ]
-"589
-[; ;Codebb.c: 589:         }
-}
-[e :U 1773 ]
-"590
-[; ;Codebb.c: 590:          if (comidaf==1){
-[e $ ! == _comidaf -> 1 `i 1774  ]
-{
-"591
-[; ;Codebb.c: 591:             aaaa=0b10111111;
-[e = _aaaa -> -> 191 `i `uc ]
-"592
-[; ;Codebb.c: 592:         }
-}
-[e :U 1774 ]
-"593
-[; ;Codebb.c: 593:         if (comidaf==0){
-[e $ ! == _comidaf -> 0 `i 1775  ]
-{
-"594
-[; ;Codebb.c: 594:             aaaa=0b11011111;
-[e = _aaaa -> -> 223 `i `uc ]
-"595
-[; ;Codebb.c: 595:         }
-}
-[e :U 1775 ]
-"596
-[; ;Codebb.c: 596:          if (comidaf==7){
-[e $ ! == _comidaf -> 7 `i 1776  ]
-{
-"597
-[; ;Codebb.c: 597:             aaaa=0b11101111;
-[e = _aaaa -> -> 239 `i `uc ]
-"598
-[; ;Codebb.c: 598:         }
-}
-[e :U 1776 ]
 "599
-[; ;Codebb.c: 599:          if (comidaf==6){
-[e $ ! == _comidaf -> 6 `i 1777  ]
-{
-"600
-[; ;Codebb.c: 600:             aaaa=0b11110111;
+[; ;Codebb.c: 599:             aaaa=0b11110111;
 [e = _aaaa -> -> 247 `i `uc ]
-"601
-[; ;Codebb.c: 601:         }
-}
-[e :U 1777 ]
-"602
-[; ;Codebb.c: 602:          if (comidaf==5){
-[e $ ! == _comidaf -> 5 `i 1778  ]
-{
-"603
-[; ;Codebb.c: 603:             aaaa=0b11111011;
-[e = _aaaa -> -> 251 `i `uc ]
-"604
-[; ;Codebb.c: 604:         }
-}
-[e :U 1778 ]
-"605
-[; ;Codebb.c: 605:          if (comidaf==4){
-[e $ ! == _comidaf -> 4 `i 1779  ]
-{
-"606
-[; ;Codebb.c: 606:             aaaa=0b11111101;
-[e = _aaaa -> -> 253 `i `uc ]
-"607
-[; ;Codebb.c: 607:         }
-}
-[e :U 1779 ]
-"608
-[; ;Codebb.c: 608:          if (comidaf==3){
-[e $ ! == _comidaf -> 3 `i 1780  ]
-{
-"609
-[; ;Codebb.c: 609:             aaaa=0b11111110;
-[e = _aaaa -> -> 254 `i `uc ]
-"610
-[; ;Codebb.c: 610:         }
-}
-[e :U 1780 ]
-"611
-[; ;Codebb.c: 611:   }
+"600
+[; ;Codebb.c: 600:         }
 }
 [e :U 1772 ]
+"601
+[; ;Codebb.c: 601:          if (comidaf==5){
+[e $ ! == _comidaf -> 5 `i 1773  ]
+{
+"602
+[; ;Codebb.c: 602:             aaaa=0b11111011;
+[e = _aaaa -> -> 251 `i `uc ]
+"603
+[; ;Codebb.c: 603:         }
+}
+[e :U 1773 ]
+"604
+[; ;Codebb.c: 604:          if (comidaf==4){
+[e $ ! == _comidaf -> 4 `i 1774  ]
+{
+"605
+[; ;Codebb.c: 605:             aaaa=0b11111101;
+[e = _aaaa -> -> 253 `i `uc ]
+"606
+[; ;Codebb.c: 606:         }
+}
+[e :U 1774 ]
+"607
+[; ;Codebb.c: 607:          if (comidaf==3){
+[e $ ! == _comidaf -> 3 `i 1775  ]
+{
+"608
+[; ;Codebb.c: 608:             aaaa=0b11111110;
+[e = _aaaa -> -> 254 `i `uc ]
+"609
+[; ;Codebb.c: 609:         }
+}
+[e :U 1775 ]
+"610
+[; ;Codebb.c: 610:   }
+}
+[e :U 1767 ]
+"611
+[; ;Codebb.c: 611:     if (comidaf==6){
+[e $ ! == _comidaf -> 6 `i 1776  ]
+{
 "612
-[; ;Codebb.c: 612:     if (comidaf==7){
-[e $ ! == _comidaf -> 7 `i 1781  ]
+[; ;Codebb.c: 612:    if (comidaf==1){
+[e $ ! == _comidaf -> 1 `i 1777  ]
 {
 "613
-[; ;Codebb.c: 613:    if (comidaf==0){
-[e $ ! == _comidaf -> 0 `i 1782  ]
-{
-"614
-[; ;Codebb.c: 614:             aaaa=0b01111111;
+[; ;Codebb.c: 613:             aaaa=0b01111111;
 [e = _aaaa -> -> 127 `i `uc ]
+"614
+[; ;Codebb.c: 614:         }
+}
+[e :U 1777 ]
 "615
-[; ;Codebb.c: 615:         }
-}
-[e :U 1782 ]
+[; ;Codebb.c: 615:          if (comidaf==1){
+[e $ ! == _comidaf -> 1 `i 1778  ]
+{
 "616
-[; ;Codebb.c: 616:          if (comidaf==7){
-[e $ ! == _comidaf -> 7 `i 1783  ]
-{
-"617
-[; ;Codebb.c: 617:             aaaa=0b10111111;
+[; ;Codebb.c: 616:             aaaa=0b10111111;
 [e = _aaaa -> -> 191 `i `uc ]
+"617
+[; ;Codebb.c: 617:         }
+}
+[e :U 1778 ]
 "618
-[; ;Codebb.c: 618:         }
-}
-[e :U 1783 ]
+[; ;Codebb.c: 618:         if (comidaf==0){
+[e $ ! == _comidaf -> 0 `i 1779  ]
+{
 "619
-[; ;Codebb.c: 619:         if (comidaf==6){
-[e $ ! == _comidaf -> 6 `i 1784  ]
-{
-"620
-[; ;Codebb.c: 620:             aaaa=0b11011111;
+[; ;Codebb.c: 619:             aaaa=0b11011111;
 [e = _aaaa -> -> 223 `i `uc ]
+"620
+[; ;Codebb.c: 620:         }
+}
+[e :U 1779 ]
 "621
-[; ;Codebb.c: 621:         }
-}
-[e :U 1784 ]
+[; ;Codebb.c: 621:          if (comidaf==7){
+[e $ ! == _comidaf -> 7 `i 1780  ]
+{
 "622
-[; ;Codebb.c: 622:          if (comidaf==5){
-[e $ ! == _comidaf -> 5 `i 1785  ]
-{
-"623
-[; ;Codebb.c: 623:             aaaa=0b11101111;
+[; ;Codebb.c: 622:             aaaa=0b11101111;
 [e = _aaaa -> -> 239 `i `uc ]
+"623
+[; ;Codebb.c: 623:         }
+}
+[e :U 1780 ]
 "624
-[; ;Codebb.c: 624:         }
-}
-[e :U 1785 ]
+[; ;Codebb.c: 624:          if (comidaf==6){
+[e $ ! == _comidaf -> 6 `i 1781  ]
+{
 "625
-[; ;Codebb.c: 625:          if (comidaf==4){
-[e $ ! == _comidaf -> 4 `i 1786  ]
-{
-"626
-[; ;Codebb.c: 626:             aaaa=0b11110111;
+[; ;Codebb.c: 625:             aaaa=0b11110111;
 [e = _aaaa -> -> 247 `i `uc ]
-"627
-[; ;Codebb.c: 627:         }
-}
-[e :U 1786 ]
-"628
-[; ;Codebb.c: 628:          if (comidaf==3){
-[e $ ! == _comidaf -> 3 `i 1787  ]
-{
-"629
-[; ;Codebb.c: 629:             aaaa=0b11111011;
-[e = _aaaa -> -> 251 `i `uc ]
-"630
-[; ;Codebb.c: 630:         }
-}
-[e :U 1787 ]
-"631
-[; ;Codebb.c: 631:          if (comidaf==2){
-[e $ ! == _comidaf -> 2 `i 1788  ]
-{
-"632
-[; ;Codebb.c: 632:             aaaa=0b11111101;
-[e = _aaaa -> -> 253 `i `uc ]
-"633
-[; ;Codebb.c: 633:         }
-}
-[e :U 1788 ]
-"634
-[; ;Codebb.c: 634:          if (comidaf==1){
-[e $ ! == _comidaf -> 1 `i 1789  ]
-{
-"635
-[; ;Codebb.c: 635:             aaaa=0b11111110;
-[e = _aaaa -> -> 254 `i `uc ]
-"636
-[; ;Codebb.c: 636:         }
-}
-[e :U 1789 ]
-"637
-[; ;Codebb.c: 637:   }
+"626
+[; ;Codebb.c: 626:         }
 }
 [e :U 1781 ]
-"640
-[; ;Codebb.c: 640:    comidac[comidaf]=aaaa;
-[e = *U + &U _comidac * -> -> _comidaf `ui `ux -> -> # *U &U _comidac `ui `ux _aaaa ]
-"642
-[; ;Codebb.c: 642:              }
+"627
+[; ;Codebb.c: 627:          if (comidaf==5){
+[e $ ! == _comidaf -> 5 `i 1782  ]
+{
+"628
+[; ;Codebb.c: 628:             aaaa=0b11111011;
+[e = _aaaa -> -> 251 `i `uc ]
+"629
+[; ;Codebb.c: 629:         }
 }
-[e :U 1717 ]
-"655
-[; ;Codebb.c: 655:            for(i = 0; i<8; i++){
+[e :U 1782 ]
+"630
+[; ;Codebb.c: 630:          if (comidaf==4){
+[e $ ! == _comidaf -> 4 `i 1783  ]
 {
-[e = _i -> 0 `i ]
-[e $ < _i -> 8 `i 1790  ]
-[e $U 1791  ]
+"631
+[; ;Codebb.c: 631:             aaaa=0b11111101;
+[e = _aaaa -> -> 253 `i `uc ]
+"632
+[; ;Codebb.c: 632:         }
+}
+[e :U 1783 ]
+"633
+[; ;Codebb.c: 633:          if (comidaf==3){
+[e $ ! == _comidaf -> 3 `i 1784  ]
+{
+"634
+[; ;Codebb.c: 634:             aaaa=0b11111110;
+[e = _aaaa -> -> 254 `i `uc ]
+"635
+[; ;Codebb.c: 635:         }
+}
+[e :U 1784 ]
+"636
+[; ;Codebb.c: 636:   }
+}
+[e :U 1776 ]
+"637
+[; ;Codebb.c: 637:     if (comidaf==7){
+[e $ ! == _comidaf -> 7 `i 1785  ]
+{
+"638
+[; ;Codebb.c: 638:    if (comidaf==0){
+[e $ ! == _comidaf -> 0 `i 1786  ]
+{
+"639
+[; ;Codebb.c: 639:             aaaa=0b01111111;
+[e = _aaaa -> -> 127 `i `uc ]
+"640
+[; ;Codebb.c: 640:         }
+}
+[e :U 1786 ]
+"641
+[; ;Codebb.c: 641:          if (comidaf==7){
+[e $ ! == _comidaf -> 7 `i 1787  ]
+{
+"642
+[; ;Codebb.c: 642:             aaaa=0b10111111;
+[e = _aaaa -> -> 191 `i `uc ]
+"643
+[; ;Codebb.c: 643:         }
+}
+[e :U 1787 ]
+"644
+[; ;Codebb.c: 644:         if (comidaf==6){
+[e $ ! == _comidaf -> 6 `i 1788  ]
+{
+"645
+[; ;Codebb.c: 645:             aaaa=0b11011111;
+[e = _aaaa -> -> 223 `i `uc ]
+"646
+[; ;Codebb.c: 646:         }
+}
+[e :U 1788 ]
+"647
+[; ;Codebb.c: 647:          if (comidaf==5){
+[e $ ! == _comidaf -> 5 `i 1789  ]
+{
+"648
+[; ;Codebb.c: 648:             aaaa=0b11101111;
+[e = _aaaa -> -> 239 `i `uc ]
+"649
+[; ;Codebb.c: 649:         }
+}
+[e :U 1789 ]
+"650
+[; ;Codebb.c: 650:          if (comidaf==4){
+[e $ ! == _comidaf -> 4 `i 1790  ]
+{
+"651
+[; ;Codebb.c: 651:             aaaa=0b11110111;
+[e = _aaaa -> -> 247 `i `uc ]
+"652
+[; ;Codebb.c: 652:         }
+}
 [e :U 1790 ]
+"653
+[; ;Codebb.c: 653:          if (comidaf==3){
+[e $ ! == _comidaf -> 3 `i 1791  ]
 {
+"654
+[; ;Codebb.c: 654:             aaaa=0b11111011;
+[e = _aaaa -> -> 251 `i `uc ]
+"655
+[; ;Codebb.c: 655:         }
+}
+[e :U 1791 ]
 "656
-[; ;Codebb.c: 656:            for(x =0; x<8; x++){
-{
-[e = _x -> 0 `i ]
-[e $ < _x -> 8 `i 1793  ]
-[e $U 1794  ]
-[e :U 1793 ]
+[; ;Codebb.c: 656:          if (comidaf==2){
+[e $ ! == _comidaf -> 2 `i 1792  ]
 {
 "657
-[; ;Codebb.c: 657:       bolita3c[i]=0b11111111;
-[e = *U + &U _bolita3c * -> -> _i `ui `ux -> -> # *U &U _bolita3c `ui `ux -> -> 255 `i `uc ]
+[; ;Codebb.c: 657:             aaaa=0b11111101;
+[e = _aaaa -> -> 253 `i `uc ]
 "658
-[; ;Codebb.c: 658:      bolita3f[x]=0b00000000;
-[e = *U + &U _bolita3f * -> -> _x `ui `ux -> -> # *U &U _bolita3f `ui `ux -> -> 0 `i `uc ]
+[; ;Codebb.c: 658:         }
+}
+[e :U 1792 ]
 "659
-[; ;Codebb.c: 659:            }
-}
-[e ++ _x -> 1 `i ]
-[e $ < _x -> 8 `i 1793  ]
-[e :U 1794 ]
-}
+[; ;Codebb.c: 659:          if (comidaf==1){
+[e $ ! == _comidaf -> 1 `i 1793  ]
+{
 "660
-[; ;Codebb.c: 660:         }
+[; ;Codebb.c: 660:             aaaa=0b11111110;
+[e = _aaaa -> -> 254 `i `uc ]
+"661
+[; ;Codebb.c: 661:         }
 }
-[e ++ _i -> 1 `i ]
-[e $ < _i -> 8 `i 1790  ]
-[e :U 1791 ]
-}
+[e :U 1793 ]
 "662
-[; ;Codebb.c: 662:          if(caso3==4){
-[e $ ! == _caso3 -> 4 `i 1796  ]
-{
-"663
-[; ;Codebb.c: 663:        bolita3f[valor]=bolita2f[valor+1];
-[e = *U + &U _bolita3f * -> -> _valor `ui `ux -> -> # *U &U _bolita3f `ui `ux *U + &U _bolita2f * -> -> + _valor -> 1 `i `ui `ux -> -> # *U &U _bolita2f `ui `ux ]
-"664
-[; ;Codebb.c: 664:       bolita3c[c]=bolita2c[c];
-[e = *U + &U _bolita3c * -> -> _c `ui `ux -> -> # *U &U _bolita3c `ui `ux *U + &U _bolita2c * -> -> _c `ui `ux -> -> # *U &U _bolita2c `ui `ux ]
+[; ;Codebb.c: 662:   }
+}
+[e :U 1785 ]
 "665
-[; ;Codebb.c: 665:        }
-}
-[e :U 1796 ]
-"666
-[; ;Codebb.c: 666:         if(caso3==1){
-[e $ ! == _caso3 -> 1 `i 1797  ]
-{
+[; ;Codebb.c: 665:    comidac[comidaf]=aaaa;
+[e = *U + &U _comidac * -> -> _comidaf `ui `ux -> -> # *U &U _comidac `ui `ux _aaaa ]
 "667
-[; ;Codebb.c: 667:        bolita3f[valor]=bolita2f[valor-1];
-[e = *U + &U _bolita3f * -> -> _valor `ui `ux -> -> # *U &U _bolita3f `ui `ux *U + &U _bolita2f * -> -> - _valor -> 1 `i `ui `ux -> -> # *U &U _bolita2f `ui `ux ]
-"668
-[; ;Codebb.c: 668:       bolita3c[c]=bolita2c[c];
-[e = *U + &U _bolita3c * -> -> _c `ui `ux -> -> # *U &U _bolita3c `ui `ux *U + &U _bolita2c * -> -> _c `ui `ux -> -> # *U &U _bolita2c `ui `ux ]
-"669
-[; ;Codebb.c: 669:        }
+[; ;Codebb.c: 667:              }
 }
-[e :U 1797 ]
-"670
-[; ;Codebb.c: 670:         if(caso3==2){
-[e $ ! == _caso3 -> 2 `i 1798  ]
+[e :U 1721 ]
+"691
+[; ;Codebb.c: 691:       if(PORTAbits.RA0 == 0 && boton!=4){
+[e $ ! && == -> . . _PORTAbits 0 0 `i -> 0 `i != _boton -> 4 `i 1794  ]
 {
-"672
-[; ;Codebb.c: 672:       bolita3c[valor]=bolita2c[valor+1];
-[e = *U + &U _bolita3c * -> -> _valor `ui `ux -> -> # *U &U _bolita3c `ui `ux *U + &U _bolita2c * -> -> + _valor -> 1 `i `ui `ux -> -> # *U &U _bolita2c `ui `ux ]
-"673
-[; ;Codebb.c: 673:        bolita3f[f]=bolita2f[f];
-[e = *U + &U _bolita3f * -> -> _f `ui `ux -> -> # *U &U _bolita3f `ui `ux *U + &U _bolita2f * -> -> _f `ui `ux -> -> # *U &U _bolita2f `ui `ux ]
-"674
-[; ;Codebb.c: 674:        }
-}
-[e :U 1798 ]
-"675
-[; ;Codebb.c: 675:         if(caso3==3){
-[e $ ! == _caso3 -> 3 `i 1799  ]
-{
-"676
-[; ;Codebb.c: 676:        bolita3c[valor]=bolita2c[valor-1];
-[e = *U + &U _bolita3c * -> -> _valor `ui `ux -> -> # *U &U _bolita3c `ui `ux *U + &U _bolita2c * -> -> - _valor -> 1 `i `ui `ux -> -> # *U &U _bolita2c `ui `ux ]
-"677
-[; ;Codebb.c: 677:        bolita3f[f]=bolita2f[f];
-[e = *U + &U _bolita3f * -> -> _f `ui `ux -> -> # *U &U _bolita3f `ui `ux *U + &U _bolita2f * -> -> _f `ui `ux -> -> # *U &U _bolita2f `ui `ux ]
-"678
-[; ;Codebb.c: 678:        }
-}
-[e :U 1799 ]
-"683
-[; ;Codebb.c: 683:        for(i=0;i<8;i++){
-{
-[e = _i -> 0 `i ]
-[e $ < _i -> 8 `i 1800  ]
-[e $U 1801  ]
-[e :U 1800 ]
-{
-"684
-[; ;Codebb.c: 684:            for(x=0;x<8;x++){
-{
-[e = _x -> 0 `i ]
-[e $ < _x -> 8 `i 1803  ]
-[e $U 1804  ]
-[e :U 1803 ]
-{
-"685
-[; ;Codebb.c: 685:            bolita2c[i]=0b11111111;
-[e = *U + &U _bolita2c * -> -> _i `ui `ux -> -> # *U &U _bolita2c `ui `ux -> -> 255 `i `uc ]
-"686
-[; ;Codebb.c: 686:        bolita2f[x]=0b00000000;
-[e = *U + &U _bolita2f * -> -> _x `ui `ux -> -> # *U &U _bolita2f `ui `ux -> -> 0 `i `uc ]
-"687
-[; ;Codebb.c: 687:        }
-}
-[e ++ _x -> 1 `i ]
-[e $ < _x -> 8 `i 1803  ]
-[e :U 1804 ]
-}
-"688
-[; ;Codebb.c: 688:        }
-}
-[e ++ _i -> 1 `i ]
-[e $ < _i -> 8 `i 1800  ]
-[e :U 1801 ]
-}
+"693
+[; ;Codebb.c: 693:           boton = 1;
+[e = _boton -> 1 `i ]
 "694
-[; ;Codebb.c: 694:        if(caso2==1){
-[e $ ! == _caso2 -> 1 `i 1806  ]
-{
-"695
-[; ;Codebb.c: 695:                 caso3=1;
-[e = _caso3 -> 1 `i ]
+[; ;Codebb.c: 694:        }
+}
+[e :U 1794 ]
 "696
-[; ;Codebb.c: 696:        bolita2f[valor]=bolitaf[valor];
-[e = *U + &U _bolita2f * -> -> _valor `ui `ux -> -> # *U &U _bolita2f `ui `ux *U + &U _bolitaf * -> -> _valor `ui `ux -> -> # *U &U _bolitaf `ui `ux ]
-"697
-[; ;Codebb.c: 697:       bolita2c[c]=bolitac[c];
-[e = *U + &U _bolita2c * -> -> _c `ui `ux -> -> # *U &U _bolita2c `ui `ux *U + &U _bolitac * -> -> _c `ui `ux -> -> # *U &U _bolitac `ui `ux ]
+[; ;Codebb.c: 696:        if(PORTAbits.RA1 == 0 && boton !=3){
+[e $ ! && == -> . . _PORTAbits 0 1 `i -> 0 `i != _boton -> 3 `i 1795  ]
+{
 "698
-[; ;Codebb.c: 698:       valor2=c;
-[e = _valor2 _c ]
+[; ;Codebb.c: 698:            boton = 2;
+[e = _boton -> 2 `i ]
 "699
 [; ;Codebb.c: 699:        }
 }
-[e :U 1806 ]
-"700
-[; ;Codebb.c: 700:         if(caso2==4){
-[e $ ! == _caso2 -> 4 `i 1807  ]
-{
+[e :U 1795 ]
 "701
-[; ;Codebb.c: 701:                  caso3=4;
-[e = _caso3 -> 4 `i ]
-"702
-[; ;Codebb.c: 702:        bolita2f[valor]=bolitaf[valor];
-[e = *U + &U _bolita2f * -> -> _valor `ui `ux -> -> # *U &U _bolita2f `ui `ux *U + &U _bolitaf * -> -> _valor `ui `ux -> -> # *U &U _bolitaf `ui `ux ]
+[; ;Codebb.c: 701:       if(PORTAbits.RA2 == 0 && boton !=2){
+[e $ ! && == -> . . _PORTAbits 0 2 `i -> 0 `i != _boton -> 2 `i 1796  ]
+{
 "703
-[; ;Codebb.c: 703:       bolita2c[c]=bolitac[c];
-[e = *U + &U _bolita2c * -> -> _c `ui `ux -> -> # *U &U _bolita2c `ui `ux *U + &U _bolitac * -> -> _c `ui `ux -> -> # *U &U _bolitac `ui `ux ]
-"704
-[; ;Codebb.c: 704:         valor2=c;
-[e = _valor2 _c ]
-"705
-[; ;Codebb.c: 705:        }
-}
-[e :U 1807 ]
-"706
-[; ;Codebb.c: 706:         if(caso2==2){
-[e $ ! == _caso2 -> 2 `i 1808  ]
-{
-"707
-[; ;Codebb.c: 707:            caso3=2;
-[e = _caso3 -> 2 `i ]
-"708
-[; ;Codebb.c: 708:       bolita2c[valor]=bolitac[valor];
-[e = *U + &U _bolita2c * -> -> _valor `ui `ux -> -> # *U &U _bolita2c `ui `ux *U + &U _bolitac * -> -> _valor `ui `ux -> -> # *U &U _bolitac `ui `ux ]
-"709
-[; ;Codebb.c: 709:        bolita2f[f]=bolitaf[f];
-[e = *U + &U _bolita2f * -> -> _f `ui `ux -> -> # *U &U _bolita2f `ui `ux *U + &U _bolitaf * -> -> _f `ui `ux -> -> # *U &U _bolitaf `ui `ux ]
-"710
-[; ;Codebb.c: 710:          valor2=c;
-[e = _valor2 _c ]
-"711
-[; ;Codebb.c: 711:        }
-}
-[e :U 1808 ]
-"712
-[; ;Codebb.c: 712:         if(caso2==3){
-[e $ ! == _caso2 -> 3 `i 1809  ]
-{
-"713
-[; ;Codebb.c: 713:             caso3=3;
-[e = _caso3 -> 3 `i ]
-"714
-[; ;Codebb.c: 714:        bolita2c[valor]=bolitac[valor];
-[e = *U + &U _bolita2c * -> -> _valor `ui `ux -> -> # *U &U _bolita2c `ui `ux *U + &U _bolitac * -> -> _valor `ui `ux -> -> # *U &U _bolitac `ui `ux ]
-"715
-[; ;Codebb.c: 715:        bolita2f[f]=bolitaf[f];
-[e = *U + &U _bolita2f * -> -> _f `ui `ux -> -> # *U &U _bolita2f `ui `ux *U + &U _bolitaf * -> -> _f `ui `ux -> -> # *U &U _bolitaf `ui `ux ]
-"716
-[; ;Codebb.c: 716:          valor2=c;
-[e = _valor2 _c ]
-"718
-[; ;Codebb.c: 718:        }
-}
-[e :U 1809 ]
-"736
-[; ;Codebb.c: 736:       if(PORTAbits.RA0 == 0 && boton!=4){
-[e $ ! && == -> . . _PORTAbits 0 0 `i -> 0 `i != _boton -> 4 `i 1810  ]
-{
-"738
-[; ;Codebb.c: 738:           boton = 1;
-[e = _boton -> 1 `i ]
-"739
-[; ;Codebb.c: 739:        }
-}
-[e :U 1810 ]
-"741
-[; ;Codebb.c: 741:        if(PORTAbits.RA1 == 0 && boton !=3){
-[e $ ! && == -> . . _PORTAbits 0 1 `i -> 0 `i != _boton -> 3 `i 1811  ]
-{
-"743
-[; ;Codebb.c: 743:            boton = 2;
-[e = _boton -> 2 `i ]
-"744
-[; ;Codebb.c: 744:        }
-}
-[e :U 1811 ]
-"746
-[; ;Codebb.c: 746:       if(PORTAbits.RA2 == 0 && boton !=2){
-[e $ ! && == -> . . _PORTAbits 0 2 `i -> 0 `i != _boton -> 2 `i 1812  ]
-{
-"748
-[; ;Codebb.c: 748:           boton = 3;
+[; ;Codebb.c: 703:           boton = 3;
 [e = _boton -> 3 `i ]
-"749
-[; ;Codebb.c: 749:       }
+"704
+[; ;Codebb.c: 704:       }
 }
-[e :U 1812 ]
-"751
-[; ;Codebb.c: 751:      if(PORTAbits.RA3 == 0 && boton !=1){
-[e $ ! && == -> . . _PORTAbits 0 3 `i -> 0 `i != _boton -> 1 `i 1813  ]
+[e :U 1796 ]
+"706
+[; ;Codebb.c: 706:      if(PORTAbits.RA3 == 0 && boton !=1){
+[e $ ! && == -> . . _PORTAbits 0 3 `i -> 0 `i != _boton -> 1 `i 1797  ]
 {
-"753
-[; ;Codebb.c: 753:          boton = 4;
+"708
+[; ;Codebb.c: 708:          boton = 4;
 [e = _boton -> 4 `i ]
-"754
-[; ;Codebb.c: 754:       }
+"709
+[; ;Codebb.c: 709:       }
 }
-[e :U 1813 ]
-"756
-[; ;Codebb.c: 756:           for(i = 0; i<8; i++){
+[e :U 1797 ]
+"719
+[; ;Codebb.c: 719:         switch(cuerpo){
+[e $U 1799  ]
 {
-[e = _i -> 0 `i ]
-[e $ < _i -> 8 `i 1814  ]
+"720
+[; ;Codebb.c: 720:                case 2:
+[e :U 1800 ]
+"721
+[; ;Codebb.c: 721:                    bolitaf[0]=posicionf;
+[e = *U + &U _bolitaf * -> -> -> 0 `i `ui `ux -> -> # *U &U _bolitaf `ui `ux _posicionf ]
+"722
+[; ;Codebb.c: 722:                    bolitac[0]=posicionc;
+[e = *U + &U _bolitac * -> -> -> 0 `i `ui `ux -> -> # *U &U _bolitac `ui `ux _posicionc ]
+"723
+[; ;Codebb.c: 723:                break;
+[e $U 1798  ]
+"724
+[; ;Codebb.c: 724:                case 3:
+[e :U 1801 ]
+"725
+[; ;Codebb.c: 725:                    for(x=1;x>0;x--){
+{
+[e = _x -> 1 `i ]
+[e $ > _x -> 0 `i 1802  ]
+[e $U 1803  ]
+[e :U 1802 ]
+{
+"726
+[; ;Codebb.c: 726:                        bolitaf[x]=bolitaf[x-1];
+[e = *U + &U _bolitaf * -> -> _x `ui `ux -> -> # *U &U _bolitaf `ui `ux *U + &U _bolitaf * -> -> - _x -> 1 `i `ui `ux -> -> # *U &U _bolitaf `ui `ux ]
+"727
+[; ;Codebb.c: 727:                         bolitac[x]=bolitac[x-1];
+[e = *U + &U _bolitac * -> -> _x `ui `ux -> -> # *U &U _bolitac `ui `ux *U + &U _bolitac * -> -> - _x -> 1 `i `ui `ux -> -> # *U &U _bolitac `ui `ux ]
+"728
+[; ;Codebb.c: 728:                    }
+}
+[e -- _x -> 1 `i ]
+[e $ > _x -> 0 `i 1802  ]
+[e :U 1803 ]
+}
+"729
+[; ;Codebb.c: 729:                    bolitaf[0]=posicionf;
+[e = *U + &U _bolitaf * -> -> -> 0 `i `ui `ux -> -> # *U &U _bolitaf `ui `ux _posicionf ]
+"730
+[; ;Codebb.c: 730:                    bolitac[0]=posicionc;
+[e = *U + &U _bolitac * -> -> -> 0 `i `ui `ux -> -> # *U &U _bolitac `ui `ux _posicionc ]
+"732
+[; ;Codebb.c: 732:                break;
+[e $U 1798  ]
+"733
+[; ;Codebb.c: 733:                case 4:
+[e :U 1805 ]
+"734
+[; ;Codebb.c: 734:                      for(x=2;x>0;x--){
+{
+[e = _x -> 2 `i ]
+[e $ > _x -> 0 `i 1806  ]
+[e $U 1807  ]
+[e :U 1806 ]
+{
+"735
+[; ;Codebb.c: 735:                        bolitaf[x]=bolitaf[x-1];
+[e = *U + &U _bolitaf * -> -> _x `ui `ux -> -> # *U &U _bolitaf `ui `ux *U + &U _bolitaf * -> -> - _x -> 1 `i `ui `ux -> -> # *U &U _bolitaf `ui `ux ]
+"736
+[; ;Codebb.c: 736:                         bolitac[x]=bolitac[x-1];
+[e = *U + &U _bolitac * -> -> _x `ui `ux -> -> # *U &U _bolitac `ui `ux *U + &U _bolitac * -> -> - _x -> 1 `i `ui `ux -> -> # *U &U _bolitac `ui `ux ]
+"737
+[; ;Codebb.c: 737:                    }
+}
+[e -- _x -> 1 `i ]
+[e $ > _x -> 0 `i 1806  ]
+[e :U 1807 ]
+}
+"738
+[; ;Codebb.c: 738:                    bolitaf[0]=posicionf;
+[e = *U + &U _bolitaf * -> -> -> 0 `i `ui `ux -> -> # *U &U _bolitaf `ui `ux _posicionf ]
+"739
+[; ;Codebb.c: 739:                    bolitac[0]=posicionc;
+[e = *U + &U _bolitac * -> -> -> 0 `i `ui `ux -> -> # *U &U _bolitac `ui `ux _posicionc ]
+"741
+[; ;Codebb.c: 741:                break;
+[e $U 1798  ]
+"742
+[; ;Codebb.c: 742:                case 5:
+[e :U 1809 ]
+"744
+[; ;Codebb.c: 744:                     for(x=3;x>0;x--){
+{
+[e = _x -> 3 `i ]
+[e $ > _x -> 0 `i 1810  ]
+[e $U 1811  ]
+[e :U 1810 ]
+{
+"745
+[; ;Codebb.c: 745:                        bolitaf[x]=bolitaf[x-1];
+[e = *U + &U _bolitaf * -> -> _x `ui `ux -> -> # *U &U _bolitaf `ui `ux *U + &U _bolitaf * -> -> - _x -> 1 `i `ui `ux -> -> # *U &U _bolitaf `ui `ux ]
+"746
+[; ;Codebb.c: 746:                         bolitac[x]=bolitac[x-1];
+[e = *U + &U _bolitac * -> -> _x `ui `ux -> -> # *U &U _bolitac `ui `ux *U + &U _bolitac * -> -> - _x -> 1 `i `ui `ux -> -> # *U &U _bolitac `ui `ux ]
+"747
+[; ;Codebb.c: 747:                    }
+}
+[e -- _x -> 1 `i ]
+[e $ > _x -> 0 `i 1810  ]
+[e :U 1811 ]
+}
+"748
+[; ;Codebb.c: 748:                    bolitaf[0]=posicionf;
+[e = *U + &U _bolitaf * -> -> -> 0 `i `ui `ux -> -> # *U &U _bolitaf `ui `ux _posicionf ]
+"749
+[; ;Codebb.c: 749:                    bolitac[0]=posicionc;
+[e = *U + &U _bolitac * -> -> -> 0 `i `ui `ux -> -> # *U &U _bolitac `ui `ux _posicionc ]
+"750
+[; ;Codebb.c: 750:                break;
+[e $U 1798  ]
+"751
+[; ;Codebb.c: 751:                case 6:
+[e :U 1813 ]
+"752
+[; ;Codebb.c: 752:                    for(x=4;x>0;x--){
+{
+[e = _x -> 4 `i ]
+[e $ > _x -> 0 `i 1814  ]
 [e $U 1815  ]
 [e :U 1814 ]
 {
-"757
-[; ;Codebb.c: 757:            for(x =0; x<8; x++){
-{
-[e = _x -> 0 `i ]
-[e $ < _x -> 8 `i 1817  ]
-[e $U 1818  ]
-[e :U 1817 ]
-{
-"758
-[; ;Codebb.c: 758:     bolitac[i]=0b11111111;
-[e = *U + &U _bolitac * -> -> _i `ui `ux -> -> # *U &U _bolitac `ui `ux -> -> 255 `i `uc ]
-"759
-[; ;Codebb.c: 759:      bolitaf[x]=0b00000000;
-[e = *U + &U _bolitaf * -> -> _x `ui `ux -> -> # *U &U _bolitaf `ui `ux -> -> 0 `i `uc ]
-"761
-[; ;Codebb.c: 761:            }
+"753
+[; ;Codebb.c: 753:                        bolitaf[x]=bolitaf[x-1];
+[e = *U + &U _bolitaf * -> -> _x `ui `ux -> -> # *U &U _bolitaf `ui `ux *U + &U _bolitaf * -> -> - _x -> 1 `i `ui `ux -> -> # *U &U _bolitaf `ui `ux ]
+"754
+[; ;Codebb.c: 754:                         bolitac[x]=bolitac[x-1];
+[e = *U + &U _bolitac * -> -> _x `ui `ux -> -> # *U &U _bolitac `ui `ux *U + &U _bolitac * -> -> - _x -> 1 `i `ui `ux -> -> # *U &U _bolitac `ui `ux ]
+"755
+[; ;Codebb.c: 755:                    }
 }
-[e ++ _x -> 1 `i ]
-[e $ < _x -> 8 `i 1817  ]
-[e :U 1818 ]
-}
-"762
-[; ;Codebb.c: 762:         }
-}
-[e ++ _i -> 1 `i ]
-[e $ < _i -> 8 `i 1814  ]
+[e -- _x -> 1 `i ]
+[e $ > _x -> 0 `i 1814  ]
 [e :U 1815 ]
 }
+"756
+[; ;Codebb.c: 756:                    bolitaf[0]=posicionf;
+[e = *U + &U _bolitaf * -> -> -> 0 `i `ui `ux -> -> # *U &U _bolitaf `ui `ux _posicionf ]
+"757
+[; ;Codebb.c: 757:                    bolitac[0]=posicionc;
+[e = *U + &U _bolitac * -> -> -> 0 `i `ui `ux -> -> # *U &U _bolitac `ui `ux _posicionc ]
+"759
+[; ;Codebb.c: 759:                break;
+[e $U 1798  ]
+"760
+[; ;Codebb.c: 760:                case 7:
+[e :U 1817 ]
+"763
+[; ;Codebb.c: 763:                    for(x=5;x>0;x--){
+{
+[e = _x -> 5 `i ]
+[e $ > _x -> 0 `i 1818  ]
+[e $U 1819  ]
+[e :U 1818 ]
+{
+"764
+[; ;Codebb.c: 764:                        bolitaf[x]=bolitaf[x-1];
+[e = *U + &U _bolitaf * -> -> _x `ui `ux -> -> # *U &U _bolitaf `ui `ux *U + &U _bolitaf * -> -> - _x -> 1 `i `ui `ux -> -> # *U &U _bolitaf `ui `ux ]
+"765
+[; ;Codebb.c: 765:                         bolitac[x]=bolitac[x-1];
+[e = *U + &U _bolitac * -> -> _x `ui `ux -> -> # *U &U _bolitac `ui `ux *U + &U _bolitac * -> -> - _x -> 1 `i `ui `ux -> -> # *U &U _bolitac `ui `ux ]
+"766
+[; ;Codebb.c: 766:                    }
+}
+[e -- _x -> 1 `i ]
+[e $ > _x -> 0 `i 1818  ]
+[e :U 1819 ]
+}
 "767
-[; ;Codebb.c: 767:         switch(boton){
-[e $U 1821  ]
-{
+[; ;Codebb.c: 767:                    bolitaf[0]=posicionf;
+[e = *U + &U _bolitaf * -> -> -> 0 `i `ui `ux -> -> # *U &U _bolitaf `ui `ux _posicionf ]
 "768
-[; ;Codebb.c: 768:             case 1:
-[e :U 1822 ]
+[; ;Codebb.c: 768:                    bolitac[0]=posicionc;
+[e = *U + &U _bolitac * -> -> -> 0 `i `ui `ux -> -> # *U &U _bolitac `ui `ux _posicionc ]
 "770
-[; ;Codebb.c: 770:                 caso2=1;
-[e = _caso2 -> 1 `i ]
-"772
-[; ;Codebb.c: 772:             f=f+1;
-[e = _f + _f -> 1 `i ]
+[; ;Codebb.c: 770:                break;
+[e $U 1798  ]
+"771
+[; ;Codebb.c: 771:                case 8:
+[e :U 1821 ]
+"773
+[; ;Codebb.c: 773:                    for(x=6;x>0;x--){
+{
+[e = _x -> 6 `i ]
+[e $ > _x -> 0 `i 1822  ]
+[e $U 1823  ]
+[e :U 1822 ]
+{
 "774
-[; ;Codebb.c: 774:             fportd[f] = fportd[f-1]>>1;
-[e = *U + &U _fportd * -> -> _f `ui `ux -> -> # *U &U _fportd `ui `ux -> >> -> *U + &U _fportd * -> -> - _f -> 1 `i `ui `ux -> -> # *U &U _fportd `ui `ux `i -> 1 `i `uc ]
+[; ;Codebb.c: 774:                        bolitaf[x]=bolitaf[x-1];
+[e = *U + &U _bolitaf * -> -> _x `ui `ux -> -> # *U &U _bolitaf `ui `ux *U + &U _bolitaf * -> -> - _x -> 1 `i `ui `ux -> -> # *U &U _bolitaf `ui `ux ]
 "775
-[; ;Codebb.c: 775:             bolitaf[f-1]=fportd[f-1];
-[e = *U + &U _bolitaf * -> -> - _f -> 1 `i `ui `ux -> -> # *U &U _bolitaf `ui `ux *U + &U _fportd * -> -> - _f -> 1 `i `ui `ux -> -> # *U &U _fportd `ui `ux ]
-"777
-[; ;Codebb.c: 777:              fportd[f-1] = 0b00000000;
-[e = *U + &U _fportd * -> -> - _f -> 1 `i `ui `ux -> -> # *U &U _fportd `ui `ux -> -> 0 `i `uc ]
-"778
-[; ;Codebb.c: 778:                  valor=f-1;
-[e = _valor - _f -> 1 `i ]
-"781
-[; ;Codebb.c: 781:             bolitac[c]=CportC[c];
-[e = *U + &U _bolitac * -> -> _c `ui `ux -> -> # *U &U _bolitac `ui `ux *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux ]
-"799
-[; ;Codebb.c: 799:             if(f>7){
-[e $ ! > _f -> 7 `i 1823  ]
-{
-"800
-[; ;Codebb.c: 800:                    f=0;
-[e = _f -> 0 `i ]
-"801
-[; ;Codebb.c: 801:                    contador=0;
-[e = _contador -> 0 `i ]
-"802
-[; ;Codebb.c: 802:                }
+[; ;Codebb.c: 775:                         bolitac[x]=bolitac[x-1];
+[e = *U + &U _bolitac * -> -> _x `ui `ux -> -> # *U &U _bolitac `ui `ux *U + &U _bolitac * -> -> - _x -> 1 `i `ui `ux -> -> # *U &U _bolitac `ui `ux ]
+"776
+[; ;Codebb.c: 776:                    }
 }
+[e -- _x -> 1 `i ]
+[e $ > _x -> 0 `i 1822  ]
 [e :U 1823 ]
-"804
-[; ;Codebb.c: 804:             break;
-[e $U 1820  ]
-"805
-[; ;Codebb.c: 805:             case 2:
-[e :U 1824 ]
-"807
-[; ;Codebb.c: 807:                 caso2=2;
-[e = _caso2 -> 2 `i ]
-"809
-[; ;Codebb.c: 809:                  c=c-1;
-[e = _c - _c -> 1 `i ]
-"811
-[; ;Codebb.c: 811:                  if(CportC[c+1]==0b11111110){
-[e $ ! == -> *U + &U _CportC * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux `i -> 254 `i 1825  ]
-{
-"812
-[; ;Codebb.c: 812:                    CportC[c]=0b11111101;
-[e = *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 253 `i `uc ]
-"813
-[; ;Codebb.c: 813:                      bolitac[c+1]=CportC[c+1];
-[e = *U + &U _bolitac * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _bolitac `ui `ux *U + &U _CportC * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux ]
-"814
-[; ;Codebb.c: 814:                    CportC [c+1]=0b11111111;
-[e = *U + &U _CportC * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 255 `i `uc ]
-"815
-[; ;Codebb.c: 815:                    valor=c+1;
-[e = _valor + _c -> 1 `i ]
-"816
-[; ;Codebb.c: 816:             bolitaf[f]=fportd[f];
-[e = *U + &U _bolitaf * -> -> _f `ui `ux -> -> # *U &U _bolitaf `ui `ux *U + &U _fportd * -> -> _f `ui `ux -> -> # *U &U _fportd `ui `ux ]
-"818
-[; ;Codebb.c: 818:                    break;
-[e $U 1820  ]
-"819
-[; ;Codebb.c: 819:                 }
 }
+"777
+[; ;Codebb.c: 777:                   bolitaf[0]=posicionf;
+[e = *U + &U _bolitaf * -> -> -> 0 `i `ui `ux -> -> # *U &U _bolitaf `ui `ux _posicionf ]
+"778
+[; ;Codebb.c: 778:                    bolitac[0]=posicionc;
+[e = *U + &U _bolitac * -> -> -> 0 `i `ui `ux -> -> # *U &U _bolitac `ui `ux _posicionc ]
+"780
+[; ;Codebb.c: 780:                break;
+[e $U 1798  ]
+"781
+[; ;Codebb.c: 781:             case 9:
 [e :U 1825 ]
-"820
-[; ;Codebb.c: 820:                  if(CportC[c+1]==0b11111101){
-[e $ ! == -> *U + &U _CportC * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux `i -> 253 `i 1826  ]
+"783
+[; ;Codebb.c: 783:                    for(x=7;x>0;x--){
 {
-"821
-[; ;Codebb.c: 821:                    CportC [c]=0b11111011;
-[e = *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 251 `i `uc ]
-"822
-[; ;Codebb.c: 822:                     bolitac[c+1]=CportC[c+1];
-[e = *U + &U _bolitac * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _bolitac `ui `ux *U + &U _CportC * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux ]
-"823
-[; ;Codebb.c: 823:                    CportC [c+1]=0b11111111;
-[e = *U + &U _CportC * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 255 `i `uc ]
-"824
-[; ;Codebb.c: 824:                    valor=c+1;
-[e = _valor + _c -> 1 `i ]
-"825
-[; ;Codebb.c: 825:                   bolitaf[f]=fportd[f];
-[e = *U + &U _bolitaf * -> -> _f `ui `ux -> -> # *U &U _bolitaf `ui `ux *U + &U _fportd * -> -> _f `ui `ux -> -> # *U &U _fportd `ui `ux ]
-"827
-[; ;Codebb.c: 827:                    break;
-[e $U 1820  ]
-"828
-[; ;Codebb.c: 828:                 }
-}
+[e = _x -> 7 `i ]
+[e $ > _x -> 0 `i 1826  ]
+[e $U 1827  ]
 [e :U 1826 ]
-"829
-[; ;Codebb.c: 829:                  if(CportC[c+1]==0b11111011){
-[e $ ! == -> *U + &U _CportC * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux `i -> 251 `i 1827  ]
 {
-"830
-[; ;Codebb.c: 830:                    CportC [c]=0b11110111;
-[e = *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 247 `i `uc ]
-"831
-[; ;Codebb.c: 831:                     bolitac[c+1]=CportC[c+1];
-[e = *U + &U _bolitac * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _bolitac `ui `ux *U + &U _CportC * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux ]
-"832
-[; ;Codebb.c: 832:                    CportC [c+1]=0b11111111;
-[e = *U + &U _CportC * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 255 `i `uc ]
-"833
-[; ;Codebb.c: 833:                    valor=c+1;
-[e = _valor + _c -> 1 `i ]
-"834
-[; ;Codebb.c: 834:                  bolitaf[f]=fportd[f];
-[e = *U + &U _bolitaf * -> -> _f `ui `ux -> -> # *U &U _bolitaf `ui `ux *U + &U _fportd * -> -> _f `ui `ux -> -> # *U &U _fportd `ui `ux ]
-"836
-[; ;Codebb.c: 836:                    break;
-[e $U 1820  ]
-"837
-[; ;Codebb.c: 837:                 }
+"784
+[; ;Codebb.c: 784:                        bolitaf[x]=bolitaf[x-1];
+[e = *U + &U _bolitaf * -> -> _x `ui `ux -> -> # *U &U _bolitaf `ui `ux *U + &U _bolitaf * -> -> - _x -> 1 `i `ui `ux -> -> # *U &U _bolitaf `ui `ux ]
+"785
+[; ;Codebb.c: 785:                         bolitac[x]=bolitac[x-1];
+[e = *U + &U _bolitac * -> -> _x `ui `ux -> -> # *U &U _bolitac `ui `ux *U + &U _bolitac * -> -> - _x -> 1 `i `ui `ux -> -> # *U &U _bolitac `ui `ux ]
+"786
+[; ;Codebb.c: 786:                    }
 }
+[e -- _x -> 1 `i ]
+[e $ > _x -> 0 `i 1826  ]
 [e :U 1827 ]
-"838
-[; ;Codebb.c: 838:                  if(CportC[c+1]==0b11110111){
-[e $ ! == -> *U + &U _CportC * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux `i -> 247 `i 1828  ]
-{
-"839
-[; ;Codebb.c: 839:                    CportC [c]=0b11101111;
-[e = *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 239 `i `uc ]
-"840
-[; ;Codebb.c: 840:                     bolitac[c+1]=CportC[c+1];
-[e = *U + &U _bolitac * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _bolitac `ui `ux *U + &U _CportC * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux ]
-"841
-[; ;Codebb.c: 841:                    CportC [c+1]=0b11111111;
-[e = *U + &U _CportC * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 255 `i `uc ]
-"842
-[; ;Codebb.c: 842:                    valor=c+1;
-[e = _valor + _c -> 1 `i ]
-"843
-[; ;Codebb.c: 843:                    bolitaf[f]=fportd[f];
-[e = *U + &U _bolitaf * -> -> _f `ui `ux -> -> # *U &U _bolitaf `ui `ux *U + &U _fportd * -> -> _f `ui `ux -> -> # *U &U _fportd `ui `ux ]
-"846
-[; ;Codebb.c: 846:                    break;
-[e $U 1820  ]
-"847
-[; ;Codebb.c: 847:                 }
 }
-[e :U 1828 ]
-"848
-[; ;Codebb.c: 848:                 if(CportC[c+1]==0b11101111){
-[e $ ! == -> *U + &U _CportC * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux `i -> 239 `i 1829  ]
-{
-"849
-[; ;Codebb.c: 849:                     CportC [c]=0b11011111;
-[e = *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 223 `i `uc ]
-"850
-[; ;Codebb.c: 850:                       bolitac[c+1]=CportC[c+1];
-[e = *U + &U _bolitac * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _bolitac `ui `ux *U + &U _CportC * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux ]
-"851
-[; ;Codebb.c: 851:                     CportC [c+1]=0b11111111;
-[e = *U + &U _CportC * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 255 `i `uc ]
-"852
-[; ;Codebb.c: 852:                    valor=c+1;
-[e = _valor + _c -> 1 `i ]
-"854
-[; ;Codebb.c: 854:                     bolitaf[f]=fportd[f];
-[e = *U + &U _bolitaf * -> -> _f `ui `ux -> -> # *U &U _bolitaf `ui `ux *U + &U _fportd * -> -> _f `ui `ux -> -> # *U &U _fportd `ui `ux ]
-"856
-[; ;Codebb.c: 856:                     break;
-[e $U 1820  ]
-"857
-[; ;Codebb.c: 857:                 }
-}
+"787
+[; ;Codebb.c: 787:                   bolitaf[0]=posicionf;
+[e = *U + &U _bolitaf * -> -> -> 0 `i `ui `ux -> -> # *U &U _bolitaf `ui `ux _posicionf ]
+"788
+[; ;Codebb.c: 788:                    bolitac[0]=posicionc;
+[e = *U + &U _bolitac * -> -> -> 0 `i `ui `ux -> -> # *U &U _bolitac `ui `ux _posicionc ]
+"790
+[; ;Codebb.c: 790:                 break;
+[e $U 1798  ]
+"791
+[; ;Codebb.c: 791:             case 10:
 [e :U 1829 ]
-"858
-[; ;Codebb.c: 858:                  if(CportC[c+1]==0b11011111){
-[e $ ! == -> *U + &U _CportC * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux `i -> 223 `i 1830  ]
+"793
+[; ;Codebb.c: 793:                    for(x=8;x>0;x--){
 {
-"859
-[; ;Codebb.c: 859:                     CportC [c]=0b10111111;
-[e = *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 191 `i `uc ]
-"860
-[; ;Codebb.c: 860:                          bolitac[c+1]=CportC[c+1];
-[e = *U + &U _bolitac * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _bolitac `ui `ux *U + &U _CportC * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux ]
-"861
-[; ;Codebb.c: 861:                     CportC [c+1]=0b11111111;
-[e = *U + &U _CportC * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 255 `i `uc ]
-"862
-[; ;Codebb.c: 862:                    valor=c+1;
-[e = _valor + _c -> 1 `i ]
-"863
-[; ;Codebb.c: 863:               bolitaf[f]=fportd[f];
-[e = *U + &U _bolitaf * -> -> _f `ui `ux -> -> # *U &U _bolitaf `ui `ux *U + &U _fportd * -> -> _f `ui `ux -> -> # *U &U _fportd `ui `ux ]
-"865
-[; ;Codebb.c: 865:                     break;
-[e $U 1820  ]
-"866
-[; ;Codebb.c: 866:                 }
-}
+[e = _x -> 8 `i ]
+[e $ > _x -> 0 `i 1830  ]
+[e $U 1831  ]
 [e :U 1830 ]
-"867
-[; ;Codebb.c: 867:                 if(CportC[c+1]==0b10111111){
-[e $ ! == -> *U + &U _CportC * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux `i -> 191 `i 1831  ]
 {
-"868
-[; ;Codebb.c: 868:                    CportC [c]=0b01111111;
-[e = *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 127 `i `uc ]
-"869
-[; ;Codebb.c: 869:                         bolitac[c+1]=CportC[c+1];
-[e = *U + &U _bolitac * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _bolitac `ui `ux *U + &U _CportC * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux ]
-"870
-[; ;Codebb.c: 870:                  CportC [c+1]=0b11111111;
-[e = *U + &U _CportC * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 255 `i `uc ]
-"871
-[; ;Codebb.c: 871:                    valor=c+1;
-[e = _valor + _c -> 1 `i ]
-"872
-[; ;Codebb.c: 872:               bolitaf[f]=fportd[f];
-[e = *U + &U _bolitaf * -> -> _f `ui `ux -> -> # *U &U _bolitaf `ui `ux *U + &U _fportd * -> -> _f `ui `ux -> -> # *U &U _fportd `ui `ux ]
-"874
-[; ;Codebb.c: 874:                    break;
-[e $U 1820  ]
-"875
-[; ;Codebb.c: 875:                 }
+"794
+[; ;Codebb.c: 794:                        bolitaf[x]=bolitaf[x-1];
+[e = *U + &U _bolitaf * -> -> _x `ui `ux -> -> # *U &U _bolitaf `ui `ux *U + &U _bolitaf * -> -> - _x -> 1 `i `ui `ux -> -> # *U &U _bolitaf `ui `ux ]
+"795
+[; ;Codebb.c: 795:                         bolitac[x]=bolitac[x-1];
+[e = *U + &U _bolitac * -> -> _x `ui `ux -> -> # *U &U _bolitac `ui `ux *U + &U _bolitac * -> -> - _x -> 1 `i `ui `ux -> -> # *U &U _bolitac `ui `ux ]
+"796
+[; ;Codebb.c: 796:                    }
 }
+[e -- _x -> 1 `i ]
+[e $ > _x -> 0 `i 1830  ]
 [e :U 1831 ]
-"876
-[; ;Codebb.c: 876:                   if(CportC[c+1]==0b01111111){
-[e $ ! == -> *U + &U _CportC * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux `i -> 127 `i 1832  ]
-{
-"878
-[; ;Codebb.c: 878:                    contador=0;
-[e = _contador -> 0 `i ]
-"879
-[; ;Codebb.c: 879:                }
 }
-[e :U 1832 ]
-"880
-[; ;Codebb.c: 880:             break;
-[e $U 1820  ]
-"881
-[; ;Codebb.c: 881:             case 3:
+"797
+[; ;Codebb.c: 797:                   bolitaf[0]=posicionf;
+[e = *U + &U _bolitaf * -> -> -> 0 `i `ui `ux -> -> # *U &U _bolitaf `ui `ux _posicionf ]
+"798
+[; ;Codebb.c: 798:                    bolitac[0]=posicionc;
+[e = *U + &U _bolitac * -> -> -> 0 `i `ui `ux -> -> # *U &U _bolitac `ui `ux _posicionc ]
+"800
+[; ;Codebb.c: 800:                 break;
+[e $U 1798  ]
+"802
+[; ;Codebb.c: 802:                  case 11:
 [e :U 1833 ]
-"884
-[; ;Codebb.c: 884:                 caso2=3;
-[e = _caso2 -> 3 `i ]
-"885
-[; ;Codebb.c: 885:               c=c+1;
-[e = _c + _c -> 1 `i ]
-"887
-[; ;Codebb.c: 887:                  if(CportC[c-1]==0b01111111){
-[e $ ! == -> *U + &U _CportC * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux `i -> 127 `i 1834  ]
+"804
+[; ;Codebb.c: 804:                    for(x=9;x>0;x--){
 {
-"888
-[; ;Codebb.c: 888:                    CportC[c]=0b10111111;
-[e = *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 191 `i `uc ]
-"889
-[; ;Codebb.c: 889:                      bolitac[c-1]=CportC[c-1];
-[e = *U + &U _bolitac * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _bolitac `ui `ux *U + &U _CportC * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux ]
-"890
-[; ;Codebb.c: 890:                    CportC [c-1]=0b11111111;
-[e = *U + &U _CportC * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 255 `i `uc ]
-"891
-[; ;Codebb.c: 891:                    valor=c-1;
-[e = _valor - _c -> 1 `i ]
-"892
-[; ;Codebb.c: 892:             bolitaf[f]=fportd[f];
-[e = *U + &U _bolitaf * -> -> _f `ui `ux -> -> # *U &U _bolitaf `ui `ux *U + &U _fportd * -> -> _f `ui `ux -> -> # *U &U _fportd `ui `ux ]
-"894
-[; ;Codebb.c: 894:                    break;
-[e $U 1820  ]
-"895
-[; ;Codebb.c: 895:                 }
-}
+[e = _x -> 9 `i ]
+[e $ > _x -> 0 `i 1834  ]
+[e $U 1835  ]
 [e :U 1834 ]
-"897
-[; ;Codebb.c: 897:                  if(CportC[c-1]==0b10111111){
-[e $ ! == -> *U + &U _CportC * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux `i -> 191 `i 1835  ]
 {
-"898
-[; ;Codebb.c: 898:                    CportC [c]=0b11011111;
-[e = *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 223 `i `uc ]
-"899
-[; ;Codebb.c: 899:                        bolitac[c-1]=CportC[c-1];
-[e = *U + &U _bolitac * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _bolitac `ui `ux *U + &U _CportC * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux ]
-"900
-[; ;Codebb.c: 900:                  CportC[c-1]=0b11111111;
-[e = *U + &U _CportC * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 255 `i `uc ]
-"901
-[; ;Codebb.c: 901:                    valor=c-1;
-[e = _valor - _c -> 1 `i ]
-"902
-[; ;Codebb.c: 902:                  bolitaf[f]=fportd[f];
-[e = *U + &U _bolitaf * -> -> _f `ui `ux -> -> # *U &U _bolitaf `ui `ux *U + &U _fportd * -> -> _f `ui `ux -> -> # *U &U _fportd `ui `ux ]
-"905
-[; ;Codebb.c: 905:                    break;
-[e $U 1820  ]
-"906
-[; ;Codebb.c: 906:                 }
+"805
+[; ;Codebb.c: 805:                        bolitaf[x]=bolitaf[x-1];
+[e = *U + &U _bolitaf * -> -> _x `ui `ux -> -> # *U &U _bolitaf `ui `ux *U + &U _bolitaf * -> -> - _x -> 1 `i `ui `ux -> -> # *U &U _bolitaf `ui `ux ]
+"806
+[; ;Codebb.c: 806:                         bolitac[x]=bolitac[x-1];
+[e = *U + &U _bolitac * -> -> _x `ui `ux -> -> # *U &U _bolitac `ui `ux *U + &U _bolitac * -> -> - _x -> 1 `i `ui `ux -> -> # *U &U _bolitac `ui `ux ]
+"807
+[; ;Codebb.c: 807:                    }
 }
+[e -- _x -> 1 `i ]
+[e $ > _x -> 0 `i 1834  ]
 [e :U 1835 ]
+}
+"808
+[; ;Codebb.c: 808:                   bolitaf[0]=posicionf;
+[e = *U + &U _bolitaf * -> -> -> 0 `i `ui `ux -> -> # *U &U _bolitaf `ui `ux _posicionf ]
+"809
+[; ;Codebb.c: 809:                    bolitac[0]=posicionc;
+[e = *U + &U _bolitac * -> -> -> 0 `i `ui `ux -> -> # *U &U _bolitac `ui `ux _posicionc ]
+"811
+[; ;Codebb.c: 811:                 break;
+[e $U 1798  ]
+"812
+[; ;Codebb.c: 812:                  case 12:
+[e :U 1837 ]
+"814
+[; ;Codebb.c: 814:                    for(x=10;x>0;x--){
+{
+[e = _x -> 10 `i ]
+[e $ > _x -> 0 `i 1838  ]
+[e $U 1839  ]
+[e :U 1838 ]
+{
+"815
+[; ;Codebb.c: 815:                        bolitaf[x]=bolitaf[x-1];
+[e = *U + &U _bolitaf * -> -> _x `ui `ux -> -> # *U &U _bolitaf `ui `ux *U + &U _bolitaf * -> -> - _x -> 1 `i `ui `ux -> -> # *U &U _bolitaf `ui `ux ]
+"816
+[; ;Codebb.c: 816:                         bolitac[x]=bolitac[x-1];
+[e = *U + &U _bolitac * -> -> _x `ui `ux -> -> # *U &U _bolitac `ui `ux *U + &U _bolitac * -> -> - _x -> 1 `i `ui `ux -> -> # *U &U _bolitac `ui `ux ]
+"817
+[; ;Codebb.c: 817:                    }
+}
+[e -- _x -> 1 `i ]
+[e $ > _x -> 0 `i 1838  ]
+[e :U 1839 ]
+}
+"818
+[; ;Codebb.c: 818:                   bolitaf[0]=posicionf;
+[e = *U + &U _bolitaf * -> -> -> 0 `i `ui `ux -> -> # *U &U _bolitaf `ui `ux _posicionf ]
+"819
+[; ;Codebb.c: 819:                    bolitac[0]=posicionc;
+[e = *U + &U _bolitac * -> -> -> 0 `i `ui `ux -> -> # *U &U _bolitac `ui `ux _posicionc ]
+"821
+[; ;Codebb.c: 821:                 break;
+[e $U 1798  ]
+"822
+[; ;Codebb.c: 822:                  case 13:
+[e :U 1841 ]
+"824
+[; ;Codebb.c: 824:                    for(x=11;x>0;x--){
+{
+[e = _x -> 11 `i ]
+[e $ > _x -> 0 `i 1842  ]
+[e $U 1843  ]
+[e :U 1842 ]
+{
+"825
+[; ;Codebb.c: 825:                        bolitaf[x]=bolitaf[x-1];
+[e = *U + &U _bolitaf * -> -> _x `ui `ux -> -> # *U &U _bolitaf `ui `ux *U + &U _bolitaf * -> -> - _x -> 1 `i `ui `ux -> -> # *U &U _bolitaf `ui `ux ]
+"826
+[; ;Codebb.c: 826:                         bolitac[x]=bolitac[x-1];
+[e = *U + &U _bolitac * -> -> _x `ui `ux -> -> # *U &U _bolitac `ui `ux *U + &U _bolitac * -> -> - _x -> 1 `i `ui `ux -> -> # *U &U _bolitac `ui `ux ]
+"827
+[; ;Codebb.c: 827:                    }
+}
+[e -- _x -> 1 `i ]
+[e $ > _x -> 0 `i 1842  ]
+[e :U 1843 ]
+}
+"828
+[; ;Codebb.c: 828:                   bolitaf[0]=posicionf;
+[e = *U + &U _bolitaf * -> -> -> 0 `i `ui `ux -> -> # *U &U _bolitaf `ui `ux _posicionf ]
+"829
+[; ;Codebb.c: 829:                    bolitac[0]=posicionc;
+[e = *U + &U _bolitac * -> -> -> 0 `i `ui `ux -> -> # *U &U _bolitac `ui `ux _posicionc ]
+"831
+[; ;Codebb.c: 831:                 break;
+[e $U 1798  ]
+"832
+[; ;Codebb.c: 832:                  case 14:
+[e :U 1845 ]
+"834
+[; ;Codebb.c: 834:                    for(x=12;x>0;x--){
+{
+[e = _x -> 12 `i ]
+[e $ > _x -> 0 `i 1846  ]
+[e $U 1847  ]
+[e :U 1846 ]
+{
+"835
+[; ;Codebb.c: 835:                        bolitaf[x]=bolitaf[x-1];
+[e = *U + &U _bolitaf * -> -> _x `ui `ux -> -> # *U &U _bolitaf `ui `ux *U + &U _bolitaf * -> -> - _x -> 1 `i `ui `ux -> -> # *U &U _bolitaf `ui `ux ]
+"836
+[; ;Codebb.c: 836:                         bolitac[x]=bolitac[x-1];
+[e = *U + &U _bolitac * -> -> _x `ui `ux -> -> # *U &U _bolitac `ui `ux *U + &U _bolitac * -> -> - _x -> 1 `i `ui `ux -> -> # *U &U _bolitac `ui `ux ]
+"837
+[; ;Codebb.c: 837:                    }
+}
+[e -- _x -> 1 `i ]
+[e $ > _x -> 0 `i 1846  ]
+[e :U 1847 ]
+}
+"838
+[; ;Codebb.c: 838:                   bolitaf[0]=posicionf;
+[e = *U + &U _bolitaf * -> -> -> 0 `i `ui `ux -> -> # *U &U _bolitaf `ui `ux _posicionf ]
+"839
+[; ;Codebb.c: 839:                    bolitac[0]=posicionc;
+[e = *U + &U _bolitac * -> -> -> 0 `i `ui `ux -> -> # *U &U _bolitac `ui `ux _posicionc ]
+"841
+[; ;Codebb.c: 841:                 break;
+[e $U 1798  ]
+"842
+[; ;Codebb.c: 842:                  case 15:
+[e :U 1849 ]
+"844
+[; ;Codebb.c: 844:                    for(x=13;x>0;x--){
+{
+[e = _x -> 13 `i ]
+[e $ > _x -> 0 `i 1850  ]
+[e $U 1851  ]
+[e :U 1850 ]
+{
+"845
+[; ;Codebb.c: 845:                        bolitaf[x]=bolitaf[x-1];
+[e = *U + &U _bolitaf * -> -> _x `ui `ux -> -> # *U &U _bolitaf `ui `ux *U + &U _bolitaf * -> -> - _x -> 1 `i `ui `ux -> -> # *U &U _bolitaf `ui `ux ]
+"846
+[; ;Codebb.c: 846:                         bolitac[x]=bolitac[x-1];
+[e = *U + &U _bolitac * -> -> _x `ui `ux -> -> # *U &U _bolitac `ui `ux *U + &U _bolitac * -> -> - _x -> 1 `i `ui `ux -> -> # *U &U _bolitac `ui `ux ]
+"847
+[; ;Codebb.c: 847:                    }
+}
+[e -- _x -> 1 `i ]
+[e $ > _x -> 0 `i 1850  ]
+[e :U 1851 ]
+}
+"848
+[; ;Codebb.c: 848:                   bolitaf[0]=posicionf;
+[e = *U + &U _bolitaf * -> -> -> 0 `i `ui `ux -> -> # *U &U _bolitaf `ui `ux _posicionf ]
+"849
+[; ;Codebb.c: 849:                    bolitac[0]=posicionc;
+[e = *U + &U _bolitac * -> -> -> 0 `i `ui `ux -> -> # *U &U _bolitac `ui `ux _posicionc ]
+"851
+[; ;Codebb.c: 851:                 break;
+[e $U 1798  ]
+"852
+[; ;Codebb.c: 852:                  case 16:
+[e :U 1853 ]
+"854
+[; ;Codebb.c: 854:                    for(x=14;x>0;x--){
+{
+[e = _x -> 14 `i ]
+[e $ > _x -> 0 `i 1854  ]
+[e $U 1855  ]
+[e :U 1854 ]
+{
+"855
+[; ;Codebb.c: 855:                        bolitaf[x]=bolitaf[x-1];
+[e = *U + &U _bolitaf * -> -> _x `ui `ux -> -> # *U &U _bolitaf `ui `ux *U + &U _bolitaf * -> -> - _x -> 1 `i `ui `ux -> -> # *U &U _bolitaf `ui `ux ]
+"856
+[; ;Codebb.c: 856:                         bolitac[x]=bolitac[x-1];
+[e = *U + &U _bolitac * -> -> _x `ui `ux -> -> # *U &U _bolitac `ui `ux *U + &U _bolitac * -> -> - _x -> 1 `i `ui `ux -> -> # *U &U _bolitac `ui `ux ]
+"857
+[; ;Codebb.c: 857:                    }
+}
+[e -- _x -> 1 `i ]
+[e $ > _x -> 0 `i 1854  ]
+[e :U 1855 ]
+}
+"858
+[; ;Codebb.c: 858:                   bolitaf[0]=posicionf;
+[e = *U + &U _bolitaf * -> -> -> 0 `i `ui `ux -> -> # *U &U _bolitaf `ui `ux _posicionf ]
+"859
+[; ;Codebb.c: 859:                    bolitac[0]=posicionc;
+[e = *U + &U _bolitac * -> -> -> 0 `i `ui `ux -> -> # *U &U _bolitac `ui `ux _posicionc ]
+"861
+[; ;Codebb.c: 861:                 break;
+[e $U 1798  ]
+"862
+[; ;Codebb.c: 862:                  case 17:
+[e :U 1857 ]
+"864
+[; ;Codebb.c: 864:                    for(x=15;x>0;x--){
+{
+[e = _x -> 15 `i ]
+[e $ > _x -> 0 `i 1858  ]
+[e $U 1859  ]
+[e :U 1858 ]
+{
+"865
+[; ;Codebb.c: 865:                        bolitaf[x]=bolitaf[x-1];
+[e = *U + &U _bolitaf * -> -> _x `ui `ux -> -> # *U &U _bolitaf `ui `ux *U + &U _bolitaf * -> -> - _x -> 1 `i `ui `ux -> -> # *U &U _bolitaf `ui `ux ]
+"866
+[; ;Codebb.c: 866:                         bolitac[x]=bolitac[x-1];
+[e = *U + &U _bolitac * -> -> _x `ui `ux -> -> # *U &U _bolitac `ui `ux *U + &U _bolitac * -> -> - _x -> 1 `i `ui `ux -> -> # *U &U _bolitac `ui `ux ]
+"867
+[; ;Codebb.c: 867:                    }
+}
+[e -- _x -> 1 `i ]
+[e $ > _x -> 0 `i 1858  ]
+[e :U 1859 ]
+}
+"868
+[; ;Codebb.c: 868:                   bolitaf[0]=posicionf;
+[e = *U + &U _bolitaf * -> -> -> 0 `i `ui `ux -> -> # *U &U _bolitaf `ui `ux _posicionf ]
+"869
+[; ;Codebb.c: 869:                    bolitac[0]=posicionc;
+[e = *U + &U _bolitac * -> -> -> 0 `i `ui `ux -> -> # *U &U _bolitac `ui `ux _posicionc ]
+"871
+[; ;Codebb.c: 871:                 break;
+[e $U 1798  ]
+"872
+[; ;Codebb.c: 872:                  case 18:
+[e :U 1861 ]
+"874
+[; ;Codebb.c: 874:                    for(x=16;x>0;x--){
+{
+[e = _x -> 16 `i ]
+[e $ > _x -> 0 `i 1862  ]
+[e $U 1863  ]
+[e :U 1862 ]
+{
+"875
+[; ;Codebb.c: 875:                        bolitaf[x]=bolitaf[x-1];
+[e = *U + &U _bolitaf * -> -> _x `ui `ux -> -> # *U &U _bolitaf `ui `ux *U + &U _bolitaf * -> -> - _x -> 1 `i `ui `ux -> -> # *U &U _bolitaf `ui `ux ]
+"876
+[; ;Codebb.c: 876:                         bolitac[x]=bolitac[x-1];
+[e = *U + &U _bolitac * -> -> _x `ui `ux -> -> # *U &U _bolitac `ui `ux *U + &U _bolitac * -> -> - _x -> 1 `i `ui `ux -> -> # *U &U _bolitac `ui `ux ]
+"877
+[; ;Codebb.c: 877:                    }
+}
+[e -- _x -> 1 `i ]
+[e $ > _x -> 0 `i 1862  ]
+[e :U 1863 ]
+}
+"878
+[; ;Codebb.c: 878:                   bolitaf[0]=posicionf;
+[e = *U + &U _bolitaf * -> -> -> 0 `i `ui `ux -> -> # *U &U _bolitaf `ui `ux _posicionf ]
+"879
+[; ;Codebb.c: 879:                    bolitac[0]=posicionc;
+[e = *U + &U _bolitac * -> -> -> 0 `i `ui `ux -> -> # *U &U _bolitac `ui `ux _posicionc ]
+"881
+[; ;Codebb.c: 881:                 break;
+[e $U 1798  ]
+"882
+[; ;Codebb.c: 882:                  case 19:
+[e :U 1865 ]
+"884
+[; ;Codebb.c: 884:                    for(x=17;x>0;x--){
+{
+[e = _x -> 17 `i ]
+[e $ > _x -> 0 `i 1866  ]
+[e $U 1867  ]
+[e :U 1866 ]
+{
+"885
+[; ;Codebb.c: 885:                        bolitaf[x]=bolitaf[x-1];
+[e = *U + &U _bolitaf * -> -> _x `ui `ux -> -> # *U &U _bolitaf `ui `ux *U + &U _bolitaf * -> -> - _x -> 1 `i `ui `ux -> -> # *U &U _bolitaf `ui `ux ]
+"886
+[; ;Codebb.c: 886:                         bolitac[x]=bolitac[x-1];
+[e = *U + &U _bolitac * -> -> _x `ui `ux -> -> # *U &U _bolitac `ui `ux *U + &U _bolitac * -> -> - _x -> 1 `i `ui `ux -> -> # *U &U _bolitac `ui `ux ]
+"887
+[; ;Codebb.c: 887:                    }
+}
+[e -- _x -> 1 `i ]
+[e $ > _x -> 0 `i 1866  ]
+[e :U 1867 ]
+}
+"888
+[; ;Codebb.c: 888:                   bolitaf[0]=posicionf;
+[e = *U + &U _bolitaf * -> -> -> 0 `i `ui `ux -> -> # *U &U _bolitaf `ui `ux _posicionf ]
+"889
+[; ;Codebb.c: 889:                    bolitac[0]=posicionc;
+[e = *U + &U _bolitac * -> -> -> 0 `i `ui `ux -> -> # *U &U _bolitac `ui `ux _posicionc ]
+"891
+[; ;Codebb.c: 891:                 break;
+[e $U 1798  ]
+"892
+[; ;Codebb.c: 892:                  case 20:
+[e :U 1869 ]
+"894
+[; ;Codebb.c: 894:                    for(x=18;x>0;x--){
+{
+[e = _x -> 18 `i ]
+[e $ > _x -> 0 `i 1870  ]
+[e $U 1871  ]
+[e :U 1870 ]
+{
+"895
+[; ;Codebb.c: 895:                        bolitaf[x]=bolitaf[x-1];
+[e = *U + &U _bolitaf * -> -> _x `ui `ux -> -> # *U &U _bolitaf `ui `ux *U + &U _bolitaf * -> -> - _x -> 1 `i `ui `ux -> -> # *U &U _bolitaf `ui `ux ]
+"896
+[; ;Codebb.c: 896:                         bolitac[x]=bolitac[x-1];
+[e = *U + &U _bolitac * -> -> _x `ui `ux -> -> # *U &U _bolitac `ui `ux *U + &U _bolitac * -> -> - _x -> 1 `i `ui `ux -> -> # *U &U _bolitac `ui `ux ]
+"897
+[; ;Codebb.c: 897:                    }
+}
+[e -- _x -> 1 `i ]
+[e $ > _x -> 0 `i 1870  ]
+[e :U 1871 ]
+}
+"898
+[; ;Codebb.c: 898:                   bolitaf[0]=posicionf;
+[e = *U + &U _bolitaf * -> -> -> 0 `i `ui `ux -> -> # *U &U _bolitaf `ui `ux _posicionf ]
+"899
+[; ;Codebb.c: 899:                    bolitac[0]=posicionc;
+[e = *U + &U _bolitac * -> -> -> 0 `i `ui `ux -> -> # *U &U _bolitac `ui `ux _posicionc ]
+"901
+[; ;Codebb.c: 901:                 break;
+[e $U 1798  ]
+"902
+[; ;Codebb.c: 902:        }
+}
+[e $U 1798  ]
+[e :U 1799 ]
+[e [\ _cuerpo , $ -> 2 `i 1800
+ , $ -> 3 `i 1801
+ , $ -> 4 `i 1805
+ , $ -> 5 `i 1809
+ , $ -> 6 `i 1813
+ , $ -> 7 `i 1817
+ , $ -> 8 `i 1821
+ , $ -> 9 `i 1825
+ , $ -> 10 `i 1829
+ , $ -> 11 `i 1833
+ , $ -> 12 `i 1837
+ , $ -> 13 `i 1841
+ , $ -> 14 `i 1845
+ , $ -> 15 `i 1849
+ , $ -> 16 `i 1853
+ , $ -> 17 `i 1857
+ , $ -> 18 `i 1861
+ , $ -> 19 `i 1865
+ , $ -> 20 `i 1869
+ 1798 ]
+[e :U 1798 ]
 "907
-[; ;Codebb.c: 907:                  if(CportC[c-1]==0b11011111){
-[e $ ! == -> *U + &U _CportC * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux `i -> 223 `i 1836  ]
+[; ;Codebb.c: 907:         switch(boton){
+[e $U 1874  ]
 {
 "908
-[; ;Codebb.c: 908:                    CportC [c]=0b11101111;
-[e = *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 239 `i `uc ]
-"909
-[; ;Codebb.c: 909:                         bolitac[c-1]=CportC[c-1];
-[e = *U + &U _bolitac * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _bolitac `ui `ux *U + &U _CportC * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux ]
+[; ;Codebb.c: 908:             case 1:
+[e :U 1875 ]
 "910
-[; ;Codebb.c: 910:                   CportC [c-1]=0b11111111;
-[e = *U + &U _CportC * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 255 `i `uc ]
-"911
-[; ;Codebb.c: 911:                    valor=c-1;
-[e = _valor - _c -> 1 `i ]
+[; ;Codebb.c: 910:                 caso2=1;
+[e = _caso2 -> 1 `i ]
 "912
-[; ;Codebb.c: 912:                  bolitaf[f]=fportd[f];
-[e = *U + &U _bolitaf * -> -> _f `ui `ux -> -> # *U &U _bolitaf `ui `ux *U + &U _fportd * -> -> _f `ui `ux -> -> # *U &U _fportd `ui `ux ]
+[; ;Codebb.c: 912:             f=f+1;
+[e = _f + _f -> 1 `i ]
 "914
-[; ;Codebb.c: 914:                    break;
-[e $U 1820  ]
-"915
-[; ;Codebb.c: 915:                 }
-}
-[e :U 1836 ]
+[; ;Codebb.c: 914:             fportd[f] = fportd[f-1]>>1;
+[e = *U + &U _fportd * -> -> _f `ui `ux -> -> # *U &U _fportd `ui `ux -> >> -> *U + &U _fportd * -> -> - _f -> 1 `i `ui `ux -> -> # *U &U _fportd `ui `ux `i -> 1 `i `uc ]
 "916
-[; ;Codebb.c: 916:                  if(CportC[c-1]==0b11101111){
-[e $ ! == -> *U + &U _CportC * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux `i -> 239 `i 1837  ]
-{
+[; ;Codebb.c: 916:             posicionf=fportd[f];
+[e = _posicionf *U + &U _fportd * -> -> _f `ui `ux -> -> # *U &U _fportd `ui `ux ]
 "917
-[; ;Codebb.c: 917:                    CportC [c]=0b11110111;
-[e = *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 247 `i `uc ]
+[; ;Codebb.c: 917:              fportd[f-1] = 0b00000000;
+[e = *U + &U _fportd * -> -> - _f -> 1 `i `ui `ux -> -> # *U &U _fportd `ui `ux -> -> 0 `i `uc ]
 "918
-[; ;Codebb.c: 918:                       bolitac[c-1]=CportC[c-1];
-[e = *U + &U _bolitac * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _bolitac `ui `ux *U + &U _CportC * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux ]
-"919
-[; ;Codebb.c: 919:                   CportC [c-1]=0b11111111;
-[e = *U + &U _CportC * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 255 `i `uc ]
+[; ;Codebb.c: 918:                  valor=f-1;
+[e = _valor - _f -> 1 `i ]
 "920
-[; ;Codebb.c: 920:                    valor=c-1;
-[e = _valor - _c -> 1 `i ]
-"921
-[; ;Codebb.c: 921:                   bolitaf[f]=fportd[f];
-[e = *U + &U _bolitaf * -> -> _f `ui `ux -> -> # *U &U _bolitaf `ui `ux *U + &U _fportd * -> -> _f `ui `ux -> -> # *U &U _fportd `ui `ux ]
-"924
-[; ;Codebb.c: 924:                    break;
-[e $U 1820  ]
-"925
-[; ;Codebb.c: 925:                 }
-}
-[e :U 1837 ]
-"928
-[; ;Codebb.c: 928:                 if(CportC[c-1]==0b11110111){
-[e $ ! == -> *U + &U _CportC * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux `i -> 247 `i 1838  ]
-{
-"929
-[; ;Codebb.c: 929:                     CportC [c]=0b11111011;
-[e = *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 251 `i `uc ]
-"930
-[; ;Codebb.c: 930:                        bolitac[c-1]=CportC[c-1];
-[e = *U + &U _bolitac * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _bolitac `ui `ux *U + &U _CportC * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux ]
-"931
-[; ;Codebb.c: 931:                    CportC [c-1]=0b11111111;
-[e = *U + &U _CportC * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 255 `i `uc ]
-"932
-[; ;Codebb.c: 932:                    valor=c-1;
-[e = _valor - _c -> 1 `i ]
-"933
-[; ;Codebb.c: 933:                     bolitaf[f]=fportd[f];
-[e = *U + &U _bolitaf * -> -> _f `ui `ux -> -> # *U &U _bolitaf `ui `ux *U + &U _fportd * -> -> _f `ui `ux -> -> # *U &U _fportd `ui `ux ]
-"936
-[; ;Codebb.c: 936:                     break;
-[e $U 1820  ]
-"937
-[; ;Codebb.c: 937:                 }
-}
-[e :U 1838 ]
-"938
-[; ;Codebb.c: 938:                  if(CportC[c-1]==0b11111011){
-[e $ ! == -> *U + &U _CportC * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux `i -> 251 `i 1839  ]
-{
-"939
-[; ;Codebb.c: 939:                     CportC [c]=0b11111101;
-[e = *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 253 `i `uc ]
+[; ;Codebb.c: 920:                  valorC=c;
+[e = _valorC _c ]
+"922
+[; ;Codebb.c: 922:         posicionc=CportC[c];
+[e = _posicionc *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux ]
 "940
-[; ;Codebb.c: 940:                      bolitac[c-1]=CportC[c-1];
-[e = *U + &U _bolitac * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _bolitac `ui `ux *U + &U _CportC * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux ]
+[; ;Codebb.c: 940:             if(f>7){
+[e $ ! > _f -> 7 `i 1876  ]
+{
 "941
-[; ;Codebb.c: 941:                     CportC [c-1]=0b11111111;
-[e = *U + &U _CportC * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 255 `i `uc ]
+[; ;Codebb.c: 941:                    f=0;
+[e = _f -> 0 `i ]
 "942
-[; ;Codebb.c: 942:                    valor=c-1;
-[e = _valor - _c -> 1 `i ]
+[; ;Codebb.c: 942:                    contador=0;
+[e = _contador -> 0 `i ]
 "943
-[; ;Codebb.c: 943:                     bolitaf[f]=fportd[f];
-[e = *U + &U _bolitaf * -> -> _f `ui `ux -> -> # *U &U _bolitaf `ui `ux *U + &U _fportd * -> -> _f `ui `ux -> -> # *U &U _fportd `ui `ux ]
+[; ;Codebb.c: 943:                }
+}
+[e :U 1876 ]
+"945
+[; ;Codebb.c: 945:             break;
+[e $U 1873  ]
 "946
-[; ;Codebb.c: 946:                     break;
-[e $U 1820  ]
-"947
-[; ;Codebb.c: 947:                 }
-}
-[e :U 1839 ]
+[; ;Codebb.c: 946:             case 2:
+[e :U 1877 ]
 "948
-[; ;Codebb.c: 948:                 if(CportC[c-1]==0b11111101){
-[e $ ! == -> *U + &U _CportC * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux `i -> 253 `i 1840  ]
-{
-"949
-[; ;Codebb.c: 949:                    CportC [c]=0b11111110;
-[e = *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 254 `i `uc ]
+[; ;Codebb.c: 948:                 caso2=2;
+[e = _caso2 -> 2 `i ]
 "950
-[; ;Codebb.c: 950:                     bolitac[c-1]=CportC[c-1];
-[e = *U + &U _bolitac * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _bolitac `ui `ux *U + &U _CportC * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux ]
-"951
-[; ;Codebb.c: 951:                    CportC [c-1]=0b11111111;
-[e = *U + &U _CportC * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 255 `i `uc ]
+[; ;Codebb.c: 950:                  c=c-1;
+[e = _c - _c -> 1 `i ]
 "952
-[; ;Codebb.c: 952:                    valor=c-1;
-[e = _valor - _c -> 1 `i ]
+[; ;Codebb.c: 952:                  if(CportC[c+1]==0b11111110){
+[e $ ! == -> *U + &U _CportC * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux `i -> 254 `i 1878  ]
+{
 "953
-[; ;Codebb.c: 953:                    bolitaf[f]=fportd[f];
-[e = *U + &U _bolitaf * -> -> _f `ui `ux -> -> # *U &U _bolitaf `ui `ux *U + &U _fportd * -> -> _f `ui `ux -> -> # *U &U _fportd `ui `ux ]
+[; ;Codebb.c: 953:                    CportC[c]=0b11111101;
+[e = *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 253 `i `uc ]
+"954
+[; ;Codebb.c: 954:                  posicionc=CportC[c];
+[e = _posicionc *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux ]
+"955
+[; ;Codebb.c: 955:                    CportC [c+1]=0b11111111;
+[e = *U + &U _CportC * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 255 `i `uc ]
 "956
-[; ;Codebb.c: 956:                    break;
-[e $U 1820  ]
-"957
-[; ;Codebb.c: 957:                 }
-}
-[e :U 1840 ]
-"960
-[; ;Codebb.c: 960:                 if(CportC[c-1]==0b11111110){
-[e $ ! == -> *U + &U _CportC * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux `i -> 254 `i 1841  ]
-{
+[; ;Codebb.c: 956:                    valorC=c+1;
+[e = _valorC + _c -> 1 `i ]
+"958
+[; ;Codebb.c: 958:                    valor=f;
+[e = _valor _f ]
+"959
+[; ;Codebb.c: 959:                    posicionf=fportd[f];
+[e = _posicionf *U + &U _fportd * -> -> _f `ui `ux -> -> # *U &U _fportd `ui `ux ]
+"961
+[; ;Codebb.c: 961:                    break;
+[e $U 1873  ]
 "962
-[; ;Codebb.c: 962:                     contador=0;
-[e = _contador -> 0 `i ]
+[; ;Codebb.c: 962:                 }
+}
+[e :U 1878 ]
 "963
-[; ;Codebb.c: 963:                     }
-}
-[e :U 1841 ]
+[; ;Codebb.c: 963:                  if(CportC[c+1]==0b11111101){
+[e $ ! == -> *U + &U _CportC * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux `i -> 253 `i 1879  ]
+{
 "964
-[; ;Codebb.c: 964:                 break;
-[e $U 1820  ]
+[; ;Codebb.c: 964:                    CportC [c]=0b11111011;
+[e = *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 251 `i `uc ]
+"965
+[; ;Codebb.c: 965:                  posicionc=CportC[c];
+[e = _posicionc *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux ]
+"966
+[; ;Codebb.c: 966:                    CportC [c+1]=0b11111111;
+[e = *U + &U _CportC * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 255 `i `uc ]
 "967
-[; ;Codebb.c: 967:             break;
-[e $U 1820  ]
+[; ;Codebb.c: 967:                    valorC=c+1;
+[e = _valorC + _c -> 1 `i ]
+"968
+[; ;Codebb.c: 968:            posicionf=fportd[f];
+[e = _posicionf *U + &U _fportd * -> -> _f `ui `ux -> -> # *U &U _fportd `ui `ux ]
 "969
-[; ;Codebb.c: 969:             case 4:
-[e :U 1842 ]
-"971
-[; ;Codebb.c: 971:                 caso2=4;
-[e = _caso2 -> 4 `i ]
+[; ;Codebb.c: 969:                    valor=f;
+[e = _valor _f ]
 "972
-[; ;Codebb.c: 972:                 f=f-1;
-[e = _f - _f -> 1 `i ]
+[; ;Codebb.c: 972:                    break;
+[e $U 1873  ]
+"973
+[; ;Codebb.c: 973:                 }
+}
+[e :U 1879 ]
 "974
-[; ;Codebb.c: 974:             fportd[f] = fportd[f+1]<<1;
-[e = *U + &U _fportd * -> -> _f `ui `ux -> -> # *U &U _fportd `ui `ux -> << -> *U + &U _fportd * -> -> + _f -> 1 `i `ui `ux -> -> # *U &U _fportd `ui `ux `i -> 1 `i `uc ]
+[; ;Codebb.c: 974:                  if(CportC[c+1]==0b11111011){
+[e $ ! == -> *U + &U _CportC * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux `i -> 251 `i 1880  ]
+{
 "975
-[; ;Codebb.c: 975:                bolitaf[f+1]=fportd[f+1];
-[e = *U + &U _bolitaf * -> -> + _f -> 1 `i `ui `ux -> -> # *U &U _bolitaf `ui `ux *U + &U _fportd * -> -> + _f -> 1 `i `ui `ux -> -> # *U &U _fportd `ui `ux ]
+[; ;Codebb.c: 975:                    CportC [c]=0b11110111;
+[e = *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 247 `i `uc ]
+"976
+[; ;Codebb.c: 976:                  posicionc=CportC[c];
+[e = _posicionc *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux ]
 "977
-[; ;Codebb.c: 977:             fportd[f+1] = 0b00000000;
-[e = *U + &U _fportd * -> -> + _f -> 1 `i `ui `ux -> -> # *U &U _fportd `ui `ux -> -> 0 `i `uc ]
+[; ;Codebb.c: 977:                    CportC [c+1]=0b11111111;
+[e = *U + &U _CportC * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 255 `i `uc ]
+"978
+[; ;Codebb.c: 978:                    valorC=c+1;
+[e = _valorC + _c -> 1 `i ]
 "979
-[; ;Codebb.c: 979:             bolitac[c]= CportC[c];
-[e = *U + &U _bolitac * -> -> _c `ui `ux -> -> # *U &U _bolitac `ui `ux *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux ]
-"981
-[; ;Codebb.c: 981:               if(f<0){
-[e $ ! < _f -> 0 `i 1843  ]
-{
-"982
-[; ;Codebb.c: 982:                 contador=0;
-[e = _contador -> 0 `i ]
+[; ;Codebb.c: 979:             posicionf=fportd[f];
+[e = _posicionf *U + &U _fportd * -> -> _f `ui `ux -> -> # *U &U _fportd `ui `ux ]
+"980
+[; ;Codebb.c: 980:                    valor=f;
+[e = _valor _f ]
 "983
-[; ;Codebb.c: 983:               }
-}
-[e :U 1843 ]
+[; ;Codebb.c: 983:                    break;
+[e $U 1873  ]
 "984
-[; ;Codebb.c: 984:                valor=f+1;
-[e = _valor + _f -> 1 `i ]
+[; ;Codebb.c: 984:                 }
+}
+[e :U 1880 ]
 "985
-[; ;Codebb.c: 985:             break;
-[e $U 1820  ]
-"988
-[; ;Codebb.c: 988:         }
-}
-[e $U 1820  ]
-[e :U 1821 ]
-[e [\ _boton , $ -> 1 `i 1822
- , $ -> 2 `i 1824
- , $ -> 3 `i 1833
- , $ -> 4 `i 1842
- 1820 ]
-[e :U 1820 ]
-"1023
-[; ;Codebb.c: 1023:         }
-}
-[e :U 1698 ]
-"348
-[; ;Codebb.c: 348:    while(contador){
-[e $ != _contador -> 0 `i 1699  ]
-[e :U 1700 ]
-"1036
-[; ;Codebb.c: 1036:     for(j = 0; j<100; j++){
+[; ;Codebb.c: 985:                  if(CportC[c+1]==0b11110111){
+[e $ ! == -> *U + &U _CportC * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux `i -> 247 `i 1881  ]
 {
-[e = _j -> 0 `i ]
-[e $ < _j -> 100 `i 1844  ]
-[e $U 1845  ]
-[e :U 1844 ]
+"986
+[; ;Codebb.c: 986:                    CportC [c]=0b11101111;
+[e = *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 239 `i `uc ]
+"987
+[; ;Codebb.c: 987:                  posicionc=CportC[c];
+[e = _posicionc *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux ]
+"988
+[; ;Codebb.c: 988:                    CportC [c+1]=0b11111111;
+[e = *U + &U _CportC * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 255 `i `uc ]
+"989
+[; ;Codebb.c: 989:                    valorC=c+1;
+[e = _valorC + _c -> 1 `i ]
+"990
+[; ;Codebb.c: 990:             posicionf=fportd[f];
+[e = _posicionf *U + &U _fportd * -> -> _f `ui `ux -> -> # *U &U _fportd `ui `ux ]
+"991
+[; ;Codebb.c: 991:                    valor=f;
+[e = _valor _f ]
+"993
+[; ;Codebb.c: 993:                    break;
+[e $U 1873  ]
+"994
+[; ;Codebb.c: 994:                 }
+}
+[e :U 1881 ]
+"995
+[; ;Codebb.c: 995:                 if(CportC[c+1]==0b11101111){
+[e $ ! == -> *U + &U _CportC * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux `i -> 239 `i 1882  ]
+{
+"996
+[; ;Codebb.c: 996:                     CportC [c]=0b11011111;
+[e = *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 223 `i `uc ]
+"997
+[; ;Codebb.c: 997:                     posicionc=CportC[c];
+[e = _posicionc *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux ]
+"998
+[; ;Codebb.c: 998:                     CportC [c+1]=0b11111111;
+[e = *U + &U _CportC * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 255 `i `uc ]
+"999
+[; ;Codebb.c: 999:                   valorC=c+1;
+[e = _valorC + _c -> 1 `i ]
+"1000
+[; ;Codebb.c: 1000:             posicionf=fportd[f];
+[e = _posicionf *U + &U _fportd * -> -> _f `ui `ux -> -> # *U &U _fportd `ui `ux ]
+"1001
+[; ;Codebb.c: 1001:                    valor=f;
+[e = _valor _f ]
+"1002
+[; ;Codebb.c: 1002:                     break;
+[e $U 1873  ]
+"1003
+[; ;Codebb.c: 1003:                 }
+}
+[e :U 1882 ]
+"1004
+[; ;Codebb.c: 1004:                  if(CportC[c+1]==0b11011111){
+[e $ ! == -> *U + &U _CportC * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux `i -> 223 `i 1883  ]
+{
+"1005
+[; ;Codebb.c: 1005:                     CportC [c]=0b10111111;
+[e = *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 191 `i `uc ]
+"1006
+[; ;Codebb.c: 1006:                      posicionc=CportC[c];
+[e = _posicionc *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux ]
+"1007
+[; ;Codebb.c: 1007:                     CportC [c+1]=0b11111111;
+[e = *U + &U _CportC * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 255 `i `uc ]
+"1008
+[; ;Codebb.c: 1008:                    valorC=c+1;
+[e = _valorC + _c -> 1 `i ]
+"1009
+[; ;Codebb.c: 1009:             posicionf=fportd[f];
+[e = _posicionf *U + &U _fportd * -> -> _f `ui `ux -> -> # *U &U _fportd `ui `ux ]
+"1010
+[; ;Codebb.c: 1010:                    valor=f;
+[e = _valor _f ]
+"1013
+[; ;Codebb.c: 1013:                     break;
+[e $U 1873  ]
+"1014
+[; ;Codebb.c: 1014:                 }
+}
+[e :U 1883 ]
+"1015
+[; ;Codebb.c: 1015:                 if(CportC[c+1]==0b10111111){
+[e $ ! == -> *U + &U _CportC * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux `i -> 191 `i 1884  ]
+{
+"1016
+[; ;Codebb.c: 1016:                    CportC [c]=0b01111111;
+[e = *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 127 `i `uc ]
+"1017
+[; ;Codebb.c: 1017:                      posicionc=CportC[c];
+[e = _posicionc *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux ]
+"1018
+[; ;Codebb.c: 1018:                  CportC [c+1]=0b11111111;
+[e = *U + &U _CportC * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 255 `i `uc ]
+"1019
+[; ;Codebb.c: 1019:                    valor=c+1;
+[e = _valor + _c -> 1 `i ]
+"1020
+[; ;Codebb.c: 1020:           valorC=c+1;
+[e = _valorC + _c -> 1 `i ]
+"1021
+[; ;Codebb.c: 1021:             posicionf=fportd[f];
+[e = _posicionf *U + &U _fportd * -> -> _f `ui `ux -> -> # *U &U _fportd `ui `ux ]
+"1022
+[; ;Codebb.c: 1022:                    valor=f;
+[e = _valor _f ]
+"1023
+[; ;Codebb.c: 1023:                    break;
+[e $U 1873  ]
+"1024
+[; ;Codebb.c: 1024:                 }
+}
+[e :U 1884 ]
+"1025
+[; ;Codebb.c: 1025:                   if(CportC[c+1]==0b01111111){
+[e $ ! == -> *U + &U _CportC * -> -> + _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux `i -> 127 `i 1885  ]
+{
+"1027
+[; ;Codebb.c: 1027:                    contador=0;
+[e = _contador -> 0 `i ]
+"1028
+[; ;Codebb.c: 1028:                }
+}
+[e :U 1885 ]
+"1029
+[; ;Codebb.c: 1029:             break;
+[e $U 1873  ]
+"1030
+[; ;Codebb.c: 1030:             case 3:
+[e :U 1886 ]
+"1033
+[; ;Codebb.c: 1033:                 caso2=3;
+[e = _caso2 -> 3 `i ]
+"1034
+[; ;Codebb.c: 1034:               c=c+1;
+[e = _c + _c -> 1 `i ]
+"1036
+[; ;Codebb.c: 1036:                  if(CportC[c-1]==0b01111111){
+[e $ ! == -> *U + &U _CportC * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux `i -> 127 `i 1887  ]
 {
 "1037
-[; ;Codebb.c: 1037:          for(i = 0; i<8; i++){
+[; ;Codebb.c: 1037:                    CportC[c]=0b10111111;
+[e = *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 191 `i `uc ]
+"1038
+[; ;Codebb.c: 1038:                     posicionc=CportC[c];
+[e = _posicionc *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux ]
+"1039
+[; ;Codebb.c: 1039:                    CportC [c-1]=0b11111111;
+[e = *U + &U _CportC * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 255 `i `uc ]
+"1040
+[; ;Codebb.c: 1040:                   valorC=c-1;
+[e = _valorC - _c -> 1 `i ]
+"1041
+[; ;Codebb.c: 1041:            posicionf=fportd[f];
+[e = _posicionf *U + &U _fportd * -> -> _f `ui `ux -> -> # *U &U _fportd `ui `ux ]
+"1042
+[; ;Codebb.c: 1042:                    valor=f;
+[e = _valor _f ]
+"1044
+[; ;Codebb.c: 1044:                    break;
+[e $U 1873  ]
+"1045
+[; ;Codebb.c: 1045:                 }
+}
+[e :U 1887 ]
+"1047
+[; ;Codebb.c: 1047:                  if(CportC[c-1]==0b10111111){
+[e $ ! == -> *U + &U _CportC * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux `i -> 191 `i 1888  ]
+{
+"1048
+[; ;Codebb.c: 1048:                    CportC [c]=0b11011111;
+[e = *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 223 `i `uc ]
+"1049
+[; ;Codebb.c: 1049:                     posicionc=CportC[c];
+[e = _posicionc *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux ]
+"1050
+[; ;Codebb.c: 1050:                          CportC[c-1]=0b11111111;
+[e = *U + &U _CportC * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 255 `i `uc ]
+"1051
+[; ;Codebb.c: 1051:                valorC=c-1;
+[e = _valorC - _c -> 1 `i ]
+"1052
+[; ;Codebb.c: 1052:            posicionf=fportd[f];
+[e = _posicionf *U + &U _fportd * -> -> _f `ui `ux -> -> # *U &U _fportd `ui `ux ]
+"1053
+[; ;Codebb.c: 1053:                    valor=f;
+[e = _valor _f ]
+"1056
+[; ;Codebb.c: 1056:                    break;
+[e $U 1873  ]
+"1057
+[; ;Codebb.c: 1057:                 }
+}
+[e :U 1888 ]
+"1058
+[; ;Codebb.c: 1058:                  if(CportC[c-1]==0b11011111){
+[e $ ! == -> *U + &U _CportC * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux `i -> 223 `i 1889  ]
+{
+"1059
+[; ;Codebb.c: 1059:                    CportC [c]=0b11101111;
+[e = *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 239 `i `uc ]
+"1060
+[; ;Codebb.c: 1060:                      posicionc=CportC[c];
+[e = _posicionc *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux ]
+"1061
+[; ;Codebb.c: 1061:                   CportC [c-1]=0b11111111;
+[e = *U + &U _CportC * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 255 `i `uc ]
+"1062
+[; ;Codebb.c: 1062:                   valorC=c-1;
+[e = _valorC - _c -> 1 `i ]
+"1063
+[; ;Codebb.c: 1063:            posicionf=fportd[f];
+[e = _posicionf *U + &U _fportd * -> -> _f `ui `ux -> -> # *U &U _fportd `ui `ux ]
+"1064
+[; ;Codebb.c: 1064:                    valor=f;
+[e = _valor _f ]
+"1066
+[; ;Codebb.c: 1066:                    break;
+[e $U 1873  ]
+"1067
+[; ;Codebb.c: 1067:                 }
+}
+[e :U 1889 ]
+"1068
+[; ;Codebb.c: 1068:                  if(CportC[c-1]==0b11101111){
+[e $ ! == -> *U + &U _CportC * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux `i -> 239 `i 1890  ]
+{
+"1069
+[; ;Codebb.c: 1069:                    CportC [c]=0b11110111;
+[e = *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 247 `i `uc ]
+"1070
+[; ;Codebb.c: 1070:                      posicionc=CportC[c];
+[e = _posicionc *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux ]
+"1071
+[; ;Codebb.c: 1071:                   CportC [c-1]=0b11111111;
+[e = *U + &U _CportC * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 255 `i `uc ]
+"1072
+[; ;Codebb.c: 1072:                  valorC=c-1;
+[e = _valorC - _c -> 1 `i ]
+"1073
+[; ;Codebb.c: 1073:            posicionf=fportd[f];
+[e = _posicionf *U + &U _fportd * -> -> _f `ui `ux -> -> # *U &U _fportd `ui `ux ]
+"1074
+[; ;Codebb.c: 1074:                    valor=f;
+[e = _valor _f ]
+"1077
+[; ;Codebb.c: 1077:                    break;
+[e $U 1873  ]
+"1078
+[; ;Codebb.c: 1078:                 }
+}
+[e :U 1890 ]
+"1081
+[; ;Codebb.c: 1081:                 if(CportC[c-1]==0b11110111){
+[e $ ! == -> *U + &U _CportC * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux `i -> 247 `i 1891  ]
+{
+"1082
+[; ;Codebb.c: 1082:                     CportC [c]=0b11111011;
+[e = *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 251 `i `uc ]
+"1083
+[; ;Codebb.c: 1083:                    posicionc=CportC[c];
+[e = _posicionc *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux ]
+"1084
+[; ;Codebb.c: 1084:                    CportC [c-1]=0b11111111;
+[e = *U + &U _CportC * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 255 `i `uc ]
+"1085
+[; ;Codebb.c: 1085:                    valorC=c-1;
+[e = _valorC - _c -> 1 `i ]
+"1086
+[; ;Codebb.c: 1086:            posicionf=fportd[f];
+[e = _posicionf *U + &U _fportd * -> -> _f `ui `ux -> -> # *U &U _fportd `ui `ux ]
+"1087
+[; ;Codebb.c: 1087:                    valor=f;
+[e = _valor _f ]
+"1090
+[; ;Codebb.c: 1090:                     break;
+[e $U 1873  ]
+"1091
+[; ;Codebb.c: 1091:                 }
+}
+[e :U 1891 ]
+"1092
+[; ;Codebb.c: 1092:                  if(CportC[c-1]==0b11111011){
+[e $ ! == -> *U + &U _CportC * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux `i -> 251 `i 1892  ]
+{
+"1093
+[; ;Codebb.c: 1093:                     CportC [c]=0b11111101;
+[e = *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 253 `i `uc ]
+"1094
+[; ;Codebb.c: 1094:                   posicionc=CportC[c];
+[e = _posicionc *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux ]
+"1095
+[; ;Codebb.c: 1095:                     CportC [c-1]=0b11111111;
+[e = *U + &U _CportC * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 255 `i `uc ]
+"1096
+[; ;Codebb.c: 1096:                  valorC=c-1;
+[e = _valorC - _c -> 1 `i ]
+"1097
+[; ;Codebb.c: 1097:            posicionf=fportd[f];
+[e = _posicionf *U + &U _fportd * -> -> _f `ui `ux -> -> # *U &U _fportd `ui `ux ]
+"1098
+[; ;Codebb.c: 1098:                    valor=f;
+[e = _valor _f ]
+"1100
+[; ;Codebb.c: 1100:                     break;
+[e $U 1873  ]
+"1101
+[; ;Codebb.c: 1101:                 }
+}
+[e :U 1892 ]
+"1102
+[; ;Codebb.c: 1102:                 if(CportC[c-1]==0b11111101){
+[e $ ! == -> *U + &U _CportC * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux `i -> 253 `i 1893  ]
+{
+"1103
+[; ;Codebb.c: 1103:                    CportC [c]=0b11111110;
+[e = *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 254 `i `uc ]
+"1104
+[; ;Codebb.c: 1104:                   posicionc=CportC[c];
+[e = _posicionc *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux ]
+"1105
+[; ;Codebb.c: 1105:                    CportC [c-1]=0b11111111;
+[e = *U + &U _CportC * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux -> -> 255 `i `uc ]
+"1106
+[; ;Codebb.c: 1106:             valorC=c-1;
+[e = _valorC - _c -> 1 `i ]
+"1107
+[; ;Codebb.c: 1107:            posicionf=fportd[f];
+[e = _posicionf *U + &U _fportd * -> -> _f `ui `ux -> -> # *U &U _fportd `ui `ux ]
+"1108
+[; ;Codebb.c: 1108:                    valor=f;
+[e = _valor _f ]
+"1111
+[; ;Codebb.c: 1111:                    break;
+[e $U 1873  ]
+"1112
+[; ;Codebb.c: 1112:                 }
+}
+[e :U 1893 ]
+"1115
+[; ;Codebb.c: 1115:                 if(CportC[c-1]==0b11111110){
+[e $ ! == -> *U + &U _CportC * -> -> - _c -> 1 `i `ui `ux -> -> # *U &U _CportC `ui `ux `i -> 254 `i 1894  ]
+{
+"1117
+[; ;Codebb.c: 1117:                     contador=0;
+[e = _contador -> 0 `i ]
+"1118
+[; ;Codebb.c: 1118:                     }
+}
+[e :U 1894 ]
+"1119
+[; ;Codebb.c: 1119:                 break;
+[e $U 1873  ]
+"1122
+[; ;Codebb.c: 1122:             break;
+[e $U 1873  ]
+"1124
+[; ;Codebb.c: 1124:             case 4:
+[e :U 1895 ]
+"1126
+[; ;Codebb.c: 1126:                 caso2=4;
+[e = _caso2 -> 4 `i ]
+"1127
+[; ;Codebb.c: 1127:                 f=f-1;
+[e = _f - _f -> 1 `i ]
+"1129
+[; ;Codebb.c: 1129:             fportd[f] = fportd[f+1]<<1;
+[e = *U + &U _fportd * -> -> _f `ui `ux -> -> # *U &U _fportd `ui `ux -> << -> *U + &U _fportd * -> -> + _f -> 1 `i `ui `ux -> -> # *U &U _fportd `ui `ux `i -> 1 `i `uc ]
+"1130
+[; ;Codebb.c: 1130:              posicionf=fportd[f];
+[e = _posicionf *U + &U _fportd * -> -> _f `ui `ux -> -> # *U &U _fportd `ui `ux ]
+"1132
+[; ;Codebb.c: 1132:             fportd[f+1] = 0b00000000;
+[e = *U + &U _fportd * -> -> + _f -> 1 `i `ui `ux -> -> # *U &U _fportd `ui `ux -> -> 0 `i `uc ]
+"1134
+[; ;Codebb.c: 1134:         posicionc=CportC[c];
+[e = _posicionc *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux ]
+"1135
+[; ;Codebb.c: 1135:             valorC=c;
+[e = _valorC _c ]
+"1136
+[; ;Codebb.c: 1136:               if(f<0){
+[e $ ! < _f -> 0 `i 1896  ]
+{
+"1137
+[; ;Codebb.c: 1137:                 contador=0;
+[e = _contador -> 0 `i ]
+"1138
+[; ;Codebb.c: 1138:               }
+}
+[e :U 1896 ]
+"1139
+[; ;Codebb.c: 1139:                valor=f+1;
+[e = _valor + _f -> 1 `i ]
+"1140
+[; ;Codebb.c: 1140:             break;
+[e $U 1873  ]
+"1143
+[; ;Codebb.c: 1143:         }
+}
+[e $U 1873  ]
+[e :U 1874 ]
+[e [\ _boton , $ -> 1 `i 1875
+ , $ -> 2 `i 1877
+ , $ -> 3 `i 1886
+ , $ -> 4 `i 1895
+ 1873 ]
+[e :U 1873 ]
+"1147
+[; ;Codebb.c: 1147:           for(x=0;x<cuerpo;x++){
+{
+[e = _x -> 0 `i ]
+[e $U 1900  ]
+[e :U 1897 ]
+{
+"1148
+[; ;Codebb.c: 1148:          if ((fportd[f]==bolitaf[x])&&(CportC[c]==bolitac[x])){
+[e $ ! && == -> *U + &U _fportd * -> -> _f `ui `ux -> -> # *U &U _fportd `ui `ux `i -> *U + &U _bolitaf * -> -> _x `ui `ux -> -> # *U &U _bolitaf `ui `ux `i == -> *U + &U _CportC * -> -> _c `ui `ux -> -> # *U &U _CportC `ui `ux `i -> *U + &U _bolitac * -> -> _x `ui `ux -> -> # *U &U _bolitac `ui `ux `i 1901  ]
+{
+"1149
+[; ;Codebb.c: 1149:              contador=0;
+[e = _contador -> 0 `i ]
+"1150
+[; ;Codebb.c: 1150:             }
+}
+[e :U 1901 ]
+"1151
+[; ;Codebb.c: 1151:        }
+}
+[e ++ _x -> 1 `i ]
+[e :U 1900 ]
+[e $ < _x _cuerpo 1897  ]
+[e :U 1898 ]
+}
+"1189
+[; ;Codebb.c: 1189:         }
+}
+[e :U 1698 ]
+"364
+[; ;Codebb.c: 364:    while(contador){
+[e $ != _contador -> 0 `i 1699  ]
+[e :U 1700 ]
+"1202
+[; ;Codebb.c: 1202:     for(j = 0; j<100; j++){
+{
+[e = _j -> 0 `i ]
+[e $ < _j -> 100 `i 1902  ]
+[e $U 1903  ]
+[e :U 1902 ]
+{
+"1203
+[; ;Codebb.c: 1203:          for(i = 0; i<8; i++){
 {
 [e = _i -> 0 `i ]
-[e $ < _i -> 8 `i 1847  ]
-[e $U 1848  ]
-[e :U 1847 ]
+[e $ < _i -> 8 `i 1905  ]
+[e $U 1906  ]
+[e :U 1905 ]
 {
-"1039
-[; ;Codebb.c: 1039:            LATD=filaMsj[i];
+"1205
+[; ;Codebb.c: 1205:            LATD=filaMsj[i];
 [e = _LATD *U + &U _filaMsj * -> -> _i `ui `ux -> -> # *U &U _filaMsj `ui `ux ]
-"1040
-[; ;Codebb.c: 1040:            LATC=columnaMsj[i];
+"1206
+[; ;Codebb.c: 1206:            LATC=columnaMsj[i];
 [e = _LATC *U + &U _columnaMsj * -> -> _i `ui `ux -> -> # *U &U _columnaMsj `ui `ux ]
-"1041
-[; ;Codebb.c: 1041:            _delay((unsigned long)((1)*(32000000/4000.0)));
+"1207
+[; ;Codebb.c: 1207:            _delay((unsigned long)((1)*(32000000/4000.0)));
 [e ( __delay (1 -> * -> -> 1 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
-"1043
-[; ;Codebb.c: 1043:         }
+"1209
+[; ;Codebb.c: 1209:         }
 }
 [e ++ _i -> 1 `i ]
-[e $ < _i -> 8 `i 1847  ]
-[e :U 1848 ]
+[e $ < _i -> 8 `i 1905  ]
+[e :U 1906 ]
 }
-"1044
-[; ;Codebb.c: 1044:           _delay((unsigned long)((1)*(32000000/4000.0)));
+"1210
+[; ;Codebb.c: 1210:           _delay((unsigned long)((1)*(32000000/4000.0)));
 [e ( __delay (1 -> * -> -> 1 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
-"1045
-[; ;Codebb.c: 1045:     }
+"1211
+[; ;Codebb.c: 1211:     }
 }
 [e ++ _j -> 1 `i ]
-[e $ < _j -> 100 `i 1844  ]
-[e :U 1845 ]
+[e $ < _j -> 100 `i 1902  ]
+[e :U 1903 ]
 }
-"1046
-[; ;Codebb.c: 1046:         return;
+"1212
+[; ;Codebb.c: 1212:         return;
 [e $UE 1625  ]
-"1047
-[; ;Codebb.c: 1047: }
+"1213
+[; ;Codebb.c: 1213: }
 [e :UE 1625 ]
 }

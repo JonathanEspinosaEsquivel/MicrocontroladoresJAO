@@ -1,0 +1,151 @@
+[p LITE_MODE AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F18877 ]
+[d frameptr 6 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"13 C:\Users\Travelur\Desktop\Micros\Practica 3.4 timer 1.X\timer1.c
+[v _main main `(v  1 e 1 0 ]
+"59
+[v _INTERRUPCIONALVBB INTERRUPCIONALVBB `II(v  1 e 1 0 ]
+[s S66 . 1 `uc 1 INTEDG 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"370 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f18877.h
+[u S71 . 1 `S66 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES71  1 e 1 @11 ]
+"390
+[v _PORTA PORTA `VEuc  1 e 1 @12 ]
+"452
+[v _PORTB PORTB `VEuc  1 e 1 @13 ]
+"676
+[v _TRISA TRISA `VEuc  1 e 1 @17 ]
+"738
+[v _TRISB TRISB `VEuc  1 e 1 @18 ]
+"6672
+[v _TMR1H TMR1H `VEuc  1 e 1 @525 ]
+[s S140 . 1 `uc 1 ON 1 0 :1:0 
+`uc 1 RD16 1 0 :1:1 
+`uc 1 nSYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 CKPS 1 0 :2:4 
+]
+"6823
+[s S146 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 T1RD16 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+]
+[s S153 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 CKPS0 1 0 :1:4 
+`uc 1 CKPS1 1 0 :1:5 
+]
+[s S157 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RD161 1 0 :1:1 
+]
+[u S160 . 1 `S140 1 . 1 0 `S146 1 . 1 0 `S153 1 . 1 0 `S157 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES160  1 e 1 @526 ]
+[s S186 . 1 `uc 1 CS 1 0 :4:0 
+]
+"7277
+[s S188 . 1 `uc 1 T1CS0 1 0 :1:0 
+`uc 1 T1CS1 1 0 :1:1 
+`uc 1 T1CS2 1 0 :1:2 
+`uc 1 T1CS3 1 0 :1:3 
+]
+[s S193 . 1 `uc 1 CS0 1 0 :1:0 
+`uc 1 CS1 1 0 :1:1 
+`uc 1 CS2 1 0 :1:2 
+`uc 1 CS3 1 0 :1:3 
+]
+[u S198 . 1 `S186 1 . 1 0 `S188 1 . 1 0 `S193 1 . 1 0 ]
+[v _T1CLKbits T1CLKbits `VES198  1 e 1 @529 ]
+[s S79 . 1 `uc 1 INTF 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 IOCIF 1 0 :1:4 
+`uc 1 TMR0IF 1 0 :1:5 
+]
+"21399
+[u S84 . 1 `S79 1 . 1 0 ]
+[v _PIR0bits PIR0bits `VES84  1 e 1 @1804 ]
+[s S105 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 TMR3IF 1 0 :1:2 
+`uc 1 TMR4IF 1 0 :1:3 
+`uc 1 TMR5IF 1 0 :1:4 
+`uc 1 TMR6IF 1 0 :1:5 
+]
+"21556
+[u S112 . 1 `S105 1 . 1 0 ]
+[v _PIR4bits PIR4bits `VES112  1 e 1 @1808 ]
+[s S92 . 1 `uc 1 INTE 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 IOCIE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+"21821
+[u S97 . 1 `S92 1 . 1 0 ]
+[v _PIE0bits PIE0bits `VES97  1 e 1 @1814 ]
+[s S122 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 TMR3IE 1 0 :1:2 
+`uc 1 TMR4IE 1 0 :1:3 
+`uc 1 TMR5IE 1 0 :1:4 
+`uc 1 TMR6IE 1 0 :1:5 
+]
+"21978
+[u S129 . 1 `S122 1 . 1 0 ]
+[v _PIE4bits PIE4bits `VES129  1 e 1 @1818 ]
+[s S22 . 1 `uc 1 HFFRQ 1 0 :3:0 
+]
+"23928
+[s S24 . 1 `uc 1 HFFRQ0 1 0 :1:0 
+`uc 1 HFFRQ1 1 0 :1:1 
+`uc 1 HFFRQ2 1 0 :1:2 
+]
+[u S28 . 1 `S22 1 . 1 0 `S24 1 . 1 0 ]
+[v _OSCFRQbits OSCFRQbits `VES28  1 e 1 @2195 ]
+"29846
+[v _INTPPS INTPPS `VEuc  1 e 1 @7824 ]
+"33618
+[v _ANSELA ANSELA `VEuc  1 e 1 @7992 ]
+"34238
+[v _ANSELB ANSELB `VEuc  1 e 1 @8003 ]
+[s S44 . 1 `uc 1 WPUB0 1 0 :1:0 
+`uc 1 WPUB1 1 0 :1:1 
+`uc 1 WPUB2 1 0 :1:2 
+`uc 1 WPUB3 1 0 :1:3 
+`uc 1 WPUB4 1 0 :1:4 
+`uc 1 WPUB5 1 0 :1:5 
+`uc 1 WPUB6 1 0 :1:6 
+`uc 1 WPUB7 1 0 :1:7 
+]
+"34317
+[u S53 . 1 `S44 1 . 1 0 ]
+"34317
+"34317
+[v _WPUBbits WPUBbits `VES53  1 e 1 @8004 ]
+"39464
+"39464
+[v _LATB7 LATB7 `VEb  1 e 0 @191 ]
+"13 C:\Users\Travelur\Desktop\Micros\Practica 3.4 timer 1.X\timer1.c
+[v _main main `(v  1 e 1 0 ]
+{
+"57
+} 0
+"59
+[v _INTERRUPCIONALVBB INTERRUPCIONALVBB `II(v  1 e 1 0 ]
+{
+"117
+} 0

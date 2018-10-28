@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/default/production\Proyecto_Seguidor_de_lineas_alv.X.production.hex">
+    <memory name="program">
+      <units>words</units>
+      <length>32768</length>
+      <used>105</used>
+      <free>32663</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>4096</length>
+      <used>4</used>
+      <free>4092</free>
+    </memory>
+  </executable>
+</project>

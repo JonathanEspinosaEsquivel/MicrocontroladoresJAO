@@ -17,7 +17,7 @@
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"20 C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+"19 C:\Users\Travelur\Desktop\MicrocontroladoresJAO\Snake FP.X\Codebb.c
 [v _main main `(v  1 e 1 0 ]
 "390 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f18877.h
 [v _PORTA PORTA `VEuc  1 e 1 @12 ]
@@ -66,92 +66,82 @@
 [v _ANSELD ANSELD `VEuc  1 e 1 @8025 ]
 "5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\rand.c
 [v _seed seed `ul  1 s 4 seed ]
-"20 C:\Users\Travelur\Desktop\Micros\Snake FP.X\Codebb.c
+"19 C:\Users\Travelur\Desktop\MicrocontroladoresJAO\Snake FP.X\Codebb.c
 [v _main main `(v  1 e 1 0 ]
 {
-"73
+"50
+[v main@bolitaf bolitaf `[64]uc  1 a 64 0 ]
+"41
+[v main@bolitac bolitac `[64]uc  1 a 64 4 ]
+"89
 [v main@cabeza cabeza `[8][8]uc  1 a 64 15 ]
 "39
 [v main@CportC CportC `[8]uc  1 a 8 28 ]
 "40
-[v main@fportd fportd `[8]uc  1 a 8 16 ]
-"42
-[v main@bolitaf bolitaf `[8]uc  1 a 8 8 ]
-"41
-[v main@bolitac bolitac `[8]uc  1 a 8 0 ]
-"44
-[v main@bolita2f bolita2f `[8]uc  1 a 8 60 ]
-"43
-[v main@bolita2c bolita2c `[8]uc  1 a 8 52 ]
-"54
-[v main@filaMsj filaMsj `[8]uc  1 a 8 44 ]
-"53
-[v main@columnaMsj columnaMsj `[8]uc  1 a 8 36 ]
-"46
-[v main@bolita3f bolita3f `[8]uc  1 a 8 26 ]
-"45
-[v main@bolita3c bolita3c `[8]uc  1 a 8 18 ]
-"48
-[v main@comidaf1 comidaf1 `[8]uc  1 a 8 10 ]
-"47
-[v main@comidac comidac `[8]uc  1 a 8 2 ]
-"114
-[v main@comidaf comidaf `i  1 a 2 48 ]
-"51
-[v main@c c `i  1 a 2 46 ]
-"52
-[v main@f f `i  1 a 2 44 ]
-"121
-[v main@i i `i  1 a 2 42 ]
-"122
-[v main@x x `i  1 a 2 40 ]
-"35
-[v main@valor valor `i  1 a 2 38 ]
-"119
-[v main@boton boton `i  1 a 2 36 ]
-"38
-[v main@caso3 caso3 `i  1 a 2 26 ]
-"36
-[v main@caso2 caso2 `i  1 a 2 24 ]
-"75
-[v main@velocidad velocidad `i  1 a 2 74 ]
-"124
-[v main@j j `i  1 a 2 72 ]
-"120
-[v main@contador contador `i  1 a 2 70 ]
-"123
-[v main@y y `i  1 a 2 68 ]
-"134
-[v main@valor2 valor2 `i  1 a 2 34 ]
-"125
-[v main@a a `i  1 a 2 0 ]
+[v main@fportd fportd `[8]uc  1 a 8 14 ]
+"70
+[v main@filaMsj filaMsj `[8]uc  1 a 8 0 ]
+"69
+[v main@columnaMsj columnaMsj `[8]uc  1 a 8 72 ]
+"64
+[v main@comidaf1 comidaf1 `[8]uc  1 a 8 64 ]
+"63
+[v main@comidac comidac `[8]uc  1 a 8 68 ]
 "130
-[v main@aaaa aaaa `uc  1 a 1 76 ]
+[v main@comidaf comidaf `i  1 a 2 49 ]
+"138
+[v main@x x `i  1 a 2 47 ]
+"67
+[v main@c c `i  1 a 2 45 ]
+"68
+[v main@f f `i  1 a 2 43 ]
+"135
+[v main@boton boton `i  1 a 2 38 ]
+"137
+[v main@i i `i  1 a 2 36 ]
+"124
+[v main@cuerpo cuerpo `i  1 a 2 26 ]
+"34
+[v main@valor valor `i  1 a 2 24 ]
+"150
+[v main@valorC valorC `i  1 a 2 22 ]
+"91
+[v main@velocidad velocidad `i  1 a 2 12 ]
+"140
+[v main@j j `i  1 a 2 10 ]
+"136
+[v main@contador contador `i  1 a 2 78 ]
+"139
+[v main@y y `i  1 a 2 8 ]
+"35
+[v main@caso2 caso2 `i  1 a 2 76 ]
+"141
+[v main@a a `i  1 a 2 2 ]
 "38
-[v main@F12621 F12621 `[8]uc  1 s 8 F12621 ]
-"39
+[v main@caso3 caso3 `i  1 a 2 0 ]
+"146
+[v main@aaaa aaaa `uc  1 a 1 42 ]
+"37
+[v main@posicionc posicionc `uc  1 a 1 41 ]
+"36
+[v main@posicionf posicionf `uc  1 a 1 40 ]
+"38
 [v main@F12623 F12623 `[8]uc  1 s 8 F12623 ]
-"40
+"39
 [v main@F12625 F12625 `[8]uc  1 s 8 F12625 ]
+"40
+[v main@F12627 F12627 `[64]uc  1 s 64 F12627 ]
 "41
-[v main@F12627 F12627 `[8]uc  1 s 8 F12627 ]
-"42
-[v main@F12629 F12629 `[8]uc  1 s 8 F12629 ]
-"43
+[v main@F12629 F12629 `[64]uc  1 s 64 F12629 ]
+"50
 [v main@F12631 F12631 `[8]uc  1 s 8 F12631 ]
-"44
+"63
 [v main@F12633 F12633 `[8]uc  1 s 8 F12633 ]
-"45
-[v main@F12635 F12635 `[8]uc  1 s 8 F12635 ]
-"46
+"68
 [v main@F12637 F12637 `[8]uc  1 s 8 F12637 ]
-"47
+"69
 [v main@F12639 F12639 `[8]uc  1 s 8 F12639 ]
-"52
-[v main@F12643 F12643 `[8]uc  1 s 8 F12643 ]
-"53
-[v main@F12645 F12645 `[8]uc  1 s 8 F12645 ]
-"1047
+"1213
 } 0
 "15 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\rand.c
 [v _rand rand `(i  1 e 2 0 ]
