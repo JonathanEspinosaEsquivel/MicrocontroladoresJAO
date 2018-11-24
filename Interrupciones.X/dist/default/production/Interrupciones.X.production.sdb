@@ -1,0 +1,149 @@
+[p LITE_MODE AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F18877 ]
+[d frameptr 6 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"11 C:\Users\Travelur\Desktop\Micros\Interrupciones.X\newmainC.c
+[v _main main `(v  1 e 1 0 ]
+"54
+[v _INTERRUPCIONALVBB INTERRUPCIONALVBB `II(v  1 e 1 0 ]
+[s S87 . 1 `uc 1 INTEDG 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"370 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f18877.h
+[u S92 . 1 `S87 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES92  1 e 1 @11 ]
+"390
+[v _PORTA PORTA `VEuc  1 e 1 @12 ]
+"452
+[v _PORTB PORTB `VEuc  1 e 1 @13 ]
+"676
+[v _TRISA TRISA `VEuc  1 e 1 @17 ]
+"738
+[v _TRISB TRISB `VEuc  1 e 1 @18 ]
+[s S100 . 1 `uc 1 INTF 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 IOCIF 1 0 :1:4 
+`uc 1 TMR0IF 1 0 :1:5 
+]
+"21399
+[u S105 . 1 `S100 1 . 1 0 ]
+[v _PIR0bits PIR0bits `VES105  1 e 1 @1804 ]
+[s S113 . 1 `uc 1 INTE 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 IOCIE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+"21821
+[u S118 . 1 `S113 1 . 1 0 ]
+[v _PIE0bits PIE0bits `VES118  1 e 1 @1814 ]
+[s S22 . 1 `uc 1 HFFRQ 1 0 :3:0 
+]
+"23928
+[s S24 . 1 `uc 1 HFFRQ0 1 0 :1:0 
+`uc 1 HFFRQ1 1 0 :1:1 
+`uc 1 HFFRQ2 1 0 :1:2 
+]
+[u S28 . 1 `S22 1 . 1 0 `S24 1 . 1 0 ]
+[v _OSCFRQbits OSCFRQbits `VES28  1 e 1 @2195 ]
+"29846
+[v _INTPPS INTPPS `VEuc  1 e 1 @7824 ]
+"33618
+[v _ANSELA ANSELA `VEuc  1 e 1 @7992 ]
+[s S65 . 1 `uc 1 WPUA0 1 0 :1:0 
+`uc 1 WPUA1 1 0 :1:1 
+`uc 1 WPUA2 1 0 :1:2 
+`uc 1 WPUA3 1 0 :1:3 
+`uc 1 WPUA4 1 0 :1:4 
+`uc 1 WPUA5 1 0 :1:5 
+`uc 1 WPUA6 1 0 :1:6 
+`uc 1 WPUA7 1 0 :1:7 
+]
+"33697
+[u S74 . 1 `S65 1 . 1 0 ]
+"33697
+"33697
+[v _WPUAbits WPUAbits `VES74  1 e 1 @7993 ]
+[s S126 . 1 `uc 1 IOCAP0 1 0 :1:0 
+`uc 1 IOCAP1 1 0 :1:1 
+`uc 1 IOCAP2 1 0 :1:2 
+`uc 1 IOCAP3 1 0 :1:3 
+`uc 1 IOCAP4 1 0 :1:4 
+`uc 1 IOCAP5 1 0 :1:5 
+`uc 1 IOCAP6 1 0 :1:6 
+`uc 1 IOCAP7 1 0 :1:7 
+]
+"33945
+[u S135 . 1 `S126 1 . 1 0 ]
+"33945
+"33945
+[v _IOCAPbits IOCAPbits `VES135  1 e 1 @7997 ]
+[s S147 . 1 `uc 1 IOCAN0 1 0 :1:0 
+`uc 1 IOCAN1 1 0 :1:1 
+`uc 1 IOCAN2 1 0 :1:2 
+`uc 1 IOCAN3 1 0 :1:3 
+`uc 1 IOCAN4 1 0 :1:4 
+`uc 1 IOCAN5 1 0 :1:5 
+`uc 1 IOCAN6 1 0 :1:6 
+`uc 1 IOCAN7 1 0 :1:7 
+]
+"34007
+[u S156 . 1 `S147 1 . 1 0 ]
+"34007
+"34007
+[v _IOCANbits IOCANbits `VES156  1 e 1 @7998 ]
+[s S168 . 1 `uc 1 IOCAF0 1 0 :1:0 
+`uc 1 IOCAF1 1 0 :1:1 
+`uc 1 IOCAF2 1 0 :1:2 
+`uc 1 IOCAF3 1 0 :1:3 
+`uc 1 IOCAF4 1 0 :1:4 
+`uc 1 IOCAF5 1 0 :1:5 
+`uc 1 IOCAF6 1 0 :1:6 
+`uc 1 IOCAF7 1 0 :1:7 
+]
+"34069
+[u S177 . 1 `S168 1 . 1 0 ]
+"34069
+"34069
+[v _IOCAFbits IOCAFbits `VES177  1 e 1 @7999 ]
+"34238
+[v _ANSELB ANSELB `VEuc  1 e 1 @8003 ]
+[s S44 . 1 `uc 1 WPUB0 1 0 :1:0 
+`uc 1 WPUB1 1 0 :1:1 
+`uc 1 WPUB2 1 0 :1:2 
+`uc 1 WPUB3 1 0 :1:3 
+`uc 1 WPUB4 1 0 :1:4 
+`uc 1 WPUB5 1 0 :1:5 
+`uc 1 WPUB6 1 0 :1:6 
+`uc 1 WPUB7 1 0 :1:7 
+]
+"34317
+[u S53 . 1 `S44 1 . 1 0 ]
+"34317
+"34317
+[v _WPUBbits WPUBbits `VES53  1 e 1 @8004 ]
+"39440
+"39440
+[v _LATA7 LATA7 `VEb  1 e 0 @183 ]
+"39464
+[v _LATB7 LATB7 `VEb  1 e 0 @191 ]
+"11 C:\Users\Travelur\Desktop\Micros\Interrupciones.X\newmainC.c
+[v _main main `(v  1 e 1 0 ]
+{
+"52
+} 0
+"54
+[v _INTERRUPCIONALVBB INTERRUPCIONALVBB `II(v  1 e 1 0 ]
+{
+"67
+} 0

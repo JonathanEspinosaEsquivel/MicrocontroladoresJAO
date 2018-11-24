@@ -1,0 +1,113 @@
+[p LITE_MODE AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F18877 ]
+[d frameptr 6 ]
+"5 C:\Users\Travelur\Desktop\Micros\Programacion.X\avanzada.c
+[v _main main `(v  1 e 1 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"390 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f18877.h
+[v _PORTA PORTA `VEuc  1 e 1 @12 ]
+[s S130 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+"407
+[u S139 . 1 `S130 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES139  1 e 1 @12 ]
+"514
+[v _PORTC PORTC `VEuc  1 e 1 @14 ]
+"676
+[v _TRISA TRISA `VEuc  1 e 1 @17 ]
+"800
+[v _TRISC TRISC `VEuc  1 e 1 @19 ]
+"3818
+[v _TX1REG TX1REG `VEuc  1 e 1 @282 ]
+"3884
+[v _SPBRG SPBRG `VEuc  1 e 1 @283 ]
+[s S66 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"4029
+[u S75 . 1 `S66 1 . 1 0 ]
+[v _RC1STAbits RC1STAbits `VES75  1 e 1 @285 ]
+[s S87 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"4209
+[u S96 . 1 `S87 1 . 1 0 ]
+[v _TX1STAbits TX1STAbits `VES96  1 e 1 @286 ]
+[s S108 . 1 `uc 1 ABDEN 1 0 :1:0 
+`uc 1 WUE 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 BRG16 1 0 :1:3 
+`uc 1 SCKP 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 RCIDL 1 0 :1:6 
+`uc 1 ABDOVF 1 0 :1:7 
+]
+"4397
+[u S117 . 1 `S108 1 . 1 0 ]
+[v _BAUD1CONbits BAUD1CONbits `VES117  1 e 1 @287 ]
+[s S22 . 1 `uc 1 HFFRQ 1 0 :3:0 
+]
+"23928
+[s S24 . 1 `uc 1 HFFRQ0 1 0 :1:0 
+`uc 1 HFFRQ1 1 0 :1:1 
+`uc 1 HFFRQ2 1 0 :1:2 
+]
+[u S28 . 1 `S22 1 . 1 0 `S24 1 . 1 0 ]
+[v _OSCFRQbits OSCFRQbits `VES28  1 e 1 @2195 ]
+"32968
+[v _RC6PPS RC6PPS `VEuc  1 e 1 @7974 ]
+"33618
+[v _ANSELA ANSELA `VEuc  1 e 1 @7992 ]
+[s S44 . 1 `uc 1 WPUA0 1 0 :1:0 
+`uc 1 WPUA1 1 0 :1:1 
+`uc 1 WPUA2 1 0 :1:2 
+`uc 1 WPUA3 1 0 :1:3 
+`uc 1 WPUA4 1 0 :1:4 
+`uc 1 WPUA5 1 0 :1:5 
+`uc 1 WPUA6 1 0 :1:6 
+`uc 1 WPUA7 1 0 :1:7 
+]
+"33697
+[u S53 . 1 `S44 1 . 1 0 ]
+"33697
+"33697
+[v _WPUAbits WPUAbits `VES53  1 e 1 @7993 ]
+"34858
+[v _ANSELC ANSELC `VEuc  1 e 1 @8014 ]
+"5 C:\Users\Travelur\Desktop\Micros\Programacion.X\avanzada.c
+[v _main main `(v  1 e 1 0 ]
+{
+"6
+[v main@x x `i  1 a 2 4 ]
+"29
+[v main@p p `i  1 a 2 2 ]
+"56
+} 0
