@@ -1,0 +1,342 @@
+#include <xc.h>
+#include "config.h"
+#define _XTAL_FREQ 32000000
+
+void main(void) {
+    char x=65; 
+    OSCFRQbits.HFFRQ = 0b110;
+    PORTC = 0;
+    ANSELC =0;
+    TRISC=0;
+    
+     PORTA =0;
+     double temperatura1=0;
+     int temperatura=0;
+      ANSELBbits.ANSB0 =1; //LM35
+    TRISBbits.TRISB0 =1;  
+ ANSELAbits.ANSA0 =1;  //potenciometro
+    TRISAbits.TRISA0 = 1;
+     
+    //pps
+    RC6PPS= 0x10;
+    //puerto serie
+    RC1STAbits.SPEN =1;
+    TX1STAbits.TXEN = 1;
+    TX1STAbits.SYNC = 0;
+    TX1STAbits.BRGH =0;
+    //BAUD rate
+    BAUD1CONbits.BRG16 =0;
+    SPBRG=51;
+    
+     //Convertidor Analogico-Digital
+    
+    ADCON0bits.ADON=1; //activar ADC
+    ADCON0bits.ADCS=1;//Justificar derecha
+    ADREFbits.ADNREF=0;//Vref neg. = GND
+    ADREFbits.ADPREF=0b00;//Vref pos. = VDD
+    ADCON0bits.ADFRM=1;//Justificar derecha
+   __delay_ms(200);
+    //ciclo infinito
+   int adc1=0;
+   double volt1=0;
+    while(1){
+        /*   ADPCH=0b000000; // Potenciometro A0 Revisar si es el puerto correcto en binario
+      __delay_ms(50);
+      ADCON0bits.GO=1;//Inicia la converción
+      while(ADCON0bits.GO);
+      adc1 = ADRESH;
+      adc1 = adc1<<8;
+      adc1 = adc1+ADRESL;
+      volt1=(5.0*adc1)/1023.0;//voltaje
+      temperatura1 = volt1*100.0;*/
+    
+     ADPCH = 0b001000; //Sensor Lm35
+      __delay_ms(50);
+      ADCON0bits.GO=1;
+      while(ADCON0bits.GO);
+      adc1 = ADRESH;
+      adc1 = adc1<<8;
+      adc1 = adc1+ADRESL;
+   
+      volt1=5.0*adc1/1023.0;
+      temperatura1=volt1*100.0;  
+      
+  temperatura=temperatura1;
+        
+      if(temperatura>10&& temperatura<20){
+            TX1REG = 49;
+              if(temperatura==11){
+            TX1REG = 49;
+        }
+             if(temperatura==12){
+            TX1REG = 50;
+        }
+             if(temperatura==13){
+            TX1REG = 51;
+        }
+             if(temperatura==14){
+            TX1REG = 52;
+        }
+             if(temperatura==15){
+            TX1REG = 53;
+        } if(temperatura==16){
+            TX1REG = 54;
+        }
+             if(temperatura==17){
+            TX1REG = 55;
+        }
+             if(temperatura==18){
+            TX1REG = 56;
+        }
+             if(temperatura==19){
+            TX1REG = 57;
+        } 
+        }
+           if(temperatura>=20&& temperatura <=29){
+            TX1REG = 50;
+          if(temperatura==20){
+            TX1REG = 48;
+        }
+            
+              if(temperatura==21){
+            TX1REG = 49;
+        }
+             if(temperatura==22){
+            TX1REG = 50;
+        }
+             if(temperatura==23){
+            TX1REG = 51;
+        }
+             if(temperatura==24){
+            TX1REG = 52;
+        }
+             if(temperatura==25){
+            TX1REG = 53;
+        } if(temperatura==26){
+            TX1REG = 54;
+        }
+             if(temperatura==27){
+            TX1REG = 55;
+        }
+             if(temperatura==28){
+            TX1REG = 56;
+        }
+             if(temperatura==29){
+            TX1REG = 57;
+        } 
+        }
+           if(temperatura>=30&& temperatura <=39){
+            TX1REG = 51;
+          if(temperatura==30){
+            TX1REG = 48;
+        }
+            
+              if(temperatura==31){
+            TX1REG = 49;
+        }
+             if(temperatura==32){
+            TX1REG = 50;
+        }
+             if(temperatura==33){
+            TX1REG = 51;
+        }
+             if(temperatura==34){
+            TX1REG = 52;
+        }
+             if(temperatura==35){
+            TX1REG = 53;
+        } if(temperatura==36){
+            TX1REG = 54;
+        }
+             if(temperatura==37){
+            TX1REG = 55;
+        }
+             if(temperatura==38){
+            TX1REG = 56;
+        }
+             if(temperatura==39){
+            TX1REG = 57;
+        } 
+        }
+           if(temperatura>=50&& temperatura <=59){
+            TX1REG = 53;
+          if(temperatura==50){
+            TX1REG = 48;
+        }
+            
+              if(temperatura==51){
+            TX1REG = 49;
+        }
+             if(temperatura==52){
+            TX1REG = 50;
+        }
+             if(temperatura==53){
+            TX1REG = 51;
+        }
+             if(temperatura==54){
+            TX1REG = 52;
+        }
+             if(temperatura==55){
+            TX1REG = 53;
+        } if(temperatura==56){
+            TX1REG = 54;
+        }
+             if(temperatura==57){
+            TX1REG = 55;
+        }
+             if(temperatura==58){
+            TX1REG = 56;
+        }
+             if(temperatura==59){
+            TX1REG = 57;
+        } 
+        }
+        
+         if(temperatura>=40&& temperatura <=49){
+            TX1REG = 52;
+          if(temperatura==40){
+            TX1REG = 48;
+        }
+            
+              if(temperatura==41){
+            TX1REG = 49;
+        }
+             if(temperatura==42){
+            TX1REG = 50;
+        }
+             if(temperatura==43){
+            TX1REG = 51;
+        }
+             if(temperatura==44){
+            TX1REG = 52;
+        }
+             if(temperatura==45){
+            TX1REG = 53;
+        } if(temperatura==46){
+            TX1REG = 54;
+        }
+             if(temperatura==47){
+            TX1REG = 55;
+        }
+             if(temperatura==48){
+            TX1REG = 56;
+        }
+             if(temperatura==49){
+            TX1REG = 57;
+        } 
+        }
+             if(temperatura>=50&& temperatura <=59){
+            TX1REG = 53;
+          if(temperatura==50){
+            TX1REG = 48;
+        }
+            
+              if(temperatura==51){
+            TX1REG = 49;
+        }
+             if(temperatura==52){
+            TX1REG = 50;
+        }
+             if(temperatura==53){
+            TX1REG = 51;
+        }
+             if(temperatura==54){
+            TX1REG = 52;
+        }
+             if(temperatura==55){
+            TX1REG = 53;
+        } if(temperatura==56){
+            TX1REG = 54;
+        }
+             if(temperatura==57){
+            TX1REG = 55;
+        }
+             if(temperatura==58){
+            TX1REG = 56;
+        }
+             if(temperatura==59){
+            TX1REG = 57;
+        } 
+        
+           
+        }
+  
+   if(temperatura>=60&& temperatura <=69){
+            TX1REG = 54;
+          if(temperatura==60){
+            TX1REG = 48;
+        }
+            
+              if(temperatura==61){
+            TX1REG = 49;
+        }
+             if(temperatura==62){
+            TX1REG = 50;
+        }
+             if(temperatura==63){
+            TX1REG = 51;
+        }
+             if(temperatura==64){
+            TX1REG = 52;
+        }
+             if(temperatura==65){
+            TX1REG = 53;
+        } if(temperatura==66){
+            TX1REG = 54;
+        }
+             if(temperatura==67){
+            TX1REG = 55;
+        }
+             if(temperatura==68){
+            TX1REG = 56;
+        }
+             if(temperatura==69){
+            TX1REG = 57;
+        } 
+        }
+     if(temperatura>=70&& temperatura <=79){
+            TX1REG = 55;
+          if(temperatura==70){
+            TX1REG = 48;
+        }
+            
+              if(temperatura==71){
+            TX1REG = 49;
+        }
+             if(temperatura==72){
+            TX1REG = 50;
+        }
+             if(temperatura==73){
+            TX1REG = 51;
+        }
+             if(temperatura==74){
+            TX1REG = 52;
+        }
+             if(temperatura==75){
+            TX1REG = 53;
+        } if(temperatura==76){
+            TX1REG = 54;
+        }
+             if(temperatura==77){
+            TX1REG = 55;
+        }
+             if(temperatura==78){
+            TX1REG = 56;
+        }
+             if(temperatura==79){
+            TX1REG = 57;
+        } 
+        }
+        
+        
+      
+          while(TX1STAbits.TRMT==0);
+           __delay_ms(295);
+    
+        
+        
+     
+    }
+  
+    return;
+}
