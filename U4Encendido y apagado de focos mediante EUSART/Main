@@ -1,0 +1,47 @@
+#include <xc.h>
+#include "config.h"
+#define _XTAL_FREQ 32000000
+char dato;
+void main(void) {
+    
+    OSCFRQbits.HFFRQ = 0b110;
+    PORTD = 0;
+    ANSELD =0;
+    TRISD=0b00000100;
+    PORTC = 0;
+    ANSELC =0;
+    TRISC=0b10000000;   //RC7 como entrada
+    //pps
+    RXPPS= 0x17;
+    //puerto serie
+    RC1STAbits.SPEN =1; //Habilita puerto serie
+    TX1STAbits.BRGH =0; //Low speed
+    TX1STAbits.SYNC = 0;    //Asincrono
+    RC1STAbits.CREN = 1;    //Recepcion continua
+    //BAUD rate
+    BAUD1CONbits.RCIDL =0;
+    SPBRG=51;
+    //Interrupcion
+    PIR3bits.RCIF =0;
+    PIE3bits.RCIE = 1;
+    INTCONbits.PEIE=1;
+    INTCONbits.GIE=1;
+    //ciclo infinito
+    while(1);
+    
+  
+    return;
+}
+
+void __interrupt() isr(void){
+    dato = RC1REG;
+    if(dato == 65){
+      LATD0= LATD0+1;
+      PIR3bits.RCIF =0;
+    }
+    if(dato==66){
+        LATD1=LATD1+1;
+        PIR3bits.RCIF =0;
+    }
+    
+}
